@@ -3,8 +3,7 @@ name: LioranBoard • Free Stream Deck
 description: Transform your ordinary stream into interactive experience for your viewers
 url: "https://docs.lioranboard.ca"
 repository: https://github.com/LioranBoard/1
-baseurl: /1/
-permalink: /1/
+baseurl: /1
 timezone: US/Pacific
 google_analytics_id: G-BW26WQFHV8
 google_site_verification: XXX
