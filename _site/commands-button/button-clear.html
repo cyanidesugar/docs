@@ -1,0 +1,36 @@
+<p>Changes the appearance of a button (color, text, image and border).<br />
+All changes are temporary, the button will return to its original state if you reset or close and reopen Receiver.<br />
+If you wish to reset the button back to its default appearance, set the values to <code class="language-plaintext highlighter-rouge">buttond_id, -1, -1, -1, notext, leave empty, -1</code>.</p>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Button ID</td>
+      <td>Int</td>
+      <td>Button ID to clear</td>
+    </tr>
+    <tr>
+      <td>Ongoing</td>
+      <td>boolean</td>
+      <td>Specify whether ongoing buttons should be cleared.</td>
+    </tr>
+    <tr>
+      <td>Queue</td>
+      <td>boolean</td>
+      <td>Specify whether the queued buttons should be cleared.</td>
+    </tr>
+    <tr>
+      <td>Self</td>
+      <td>boolean</td>
+      <td>If you selected <code class="language-plaintext highlighter-rouge">all</code> in your Button ID field, you can choose whether you want to clear this button as well. <br />Does not work if the button ID is itself (in that case use False in Ongoing field).</td>
+    </tr>
+  </tbody>
+</table>
+

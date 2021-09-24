@@ -1,0 +1,37 @@
+<p>You can try these steps to troubleshoot your OBS Websocket connection to LB:</p>
+
+<ul>
+  <li><strong>Reinstall OBS websocket</strong><br />
+Try completely reinstalling the plugin. Make sure you have the latest version.<br />
+You can check whether your OBS websocket is correctly installed by going to OBS-Tools-Websockets Server Settings.</li>
+  <li><strong>Run as administrator</strong><br />
+Try running LioranBoard as administrator. Right click on LioranBoard Receiver and select <code class="language-plaintext highlighter-rouge">Run as administrator</code>.</li>
+  <li><strong>Check your firewall and antivirus</strong><br />
+Make sure your firewall is not blocking LB.<br />
+You can try <a href="https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960">temporatily disabling your antivirus/firewall</a> or <a href="https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26">adding an exception</a> to allow the app through.</li>
+  <li><strong>Check OBS websocket password</strong><br />
+Your passwords in OBS-Tools-Websockets Server Settings and LioranBoard Receiver-Options need to match. If you do not use a password, uncheck Enable authentication.
+    <figure class="figure"><img src="/assets/images/troubleshooting-common/obsws-pw.png" class="figure-img img-fluid rounded w-75" alt="Matching passwords for OBSWS" title="Click to enlarge" data-bs-target="#obsws-pwpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Matching passwords for OBSWS </figcaption></figure>
+  </li>
+</ul>
+<div class="modal fade" id="obsws-pwpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/troubleshooting-common/obsws-pw.png" class="img-fluid" alt="Matching passwords for OBSWS" /></div></div></div>
+
+<ul>
+  <li><strong>Change Ports</strong><br />
+Change the port of OBS websocket (both in OBS and LioranBoard) to a new one, for example 4445.\</li>
+  <li><strong>Lower or increase timeout</strong><br />
+Open <code class="language-plaintext highlighter-rouge">connect.ini</code> (either in LioranBoard Receiver or in APPDATA/local/lioranboard folder).<br />
+Add <code class="language-plaintext highlighter-rouge">timeout="1000"</code> under <code class="language-plaintext highlighter-rouge">[connection]</code>. Try 100 and 5000.</li>
+  <li><strong>Try Non Blocking Connection</strong><br />
+In your Receiver, go to Options and check/uncheck non blocking connection.</li>
+  <li><strong>Change IP connection</strong><br />
+Normally you use 127.0.0.1 to connect to OBS, but you can try local IP as well.
+    <ol>
+      <li>Run <code class="language-plaintext highlighter-rouge">whats my local ip.bat</code> located in LioranBoard folder.</li>
+      <li>Note down your IPv4 address (it will start with <code class="language-plaintext highlighter-rouge">192.168</code>).</li>
+      <li>Open <code class="language-plaintext highlighter-rouge">connect.ini</code> file and add <code class="language-plaintext highlighter-rouge">websocket_ip="YOUR IVP4 ADDRESS"</code> under <code class="language-plaintext highlighter-rouge">[connection]</code>.
+<strong>Try connecting using other means</strong><br />
+You can try a chrome extension <a href="https://chrome.google.com/webstore/detail/simple-websocket-client/pfdhoblngboilpfeibdedpjgfnlcodoo">Simple Websocket Client</a> to check if you can make a connection in the first place.</li>
+    </ol>
+  </li>
+</ul>

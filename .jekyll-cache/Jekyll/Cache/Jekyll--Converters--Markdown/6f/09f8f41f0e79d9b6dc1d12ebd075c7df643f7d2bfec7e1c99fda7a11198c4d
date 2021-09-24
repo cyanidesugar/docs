@@ -1,0 +1,99 @@
+I"�<p>LioranBoard has some very useful premade triggers.   <br />
+For example, you can make your buttons automatically trigger every time you start LioranBoard or every time your LioranBoard connects to Transmitter.</p>
+
+<h5 id="attach-a-premade-trigger-to-a-button">Attach a premade trigger to a button</h5>
+<p>You can attach a premade trigger by right clicking on a button - Add/Edit Twitch Triggers, clicking on the + sign and selecting Extension trigger.</p>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Trigger Name</th>
+      <th>Event</th>
+      <th>Math: Trigger Pull</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>!initlioranboard</td>
+      <td>Lioranboard starts up.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!reinitializing</td>
+      <td>Decks are reloaded.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!resetlioranboard</td>
+      <td>You use the reset button.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!obsconnected</td>
+      <td>Receiver first connects to OBS.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!twitchconnected</td>
+      <td>Receiver first connects to Twitch chat.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!transmitterconnected</td>
+      <td>Receiver first connects to Transmitter.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!obsalways</td>
+      <td>Every time Receiver connects to OBS.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!twitchalways</td>
+      <td>Every time Receiver connects to Twitch chat.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!transmitteralways</td>
+      <td>Every time Receiver connects to Transmitter.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>!leavescene <code class="language-plaintext highlighter-rouge">Scene Name</code></td>
+      <td>Every time you leave a scene.</td>
+      <td>1 = transition type, 2 = transition duration</td>
+    </tr>
+    <tr>
+      <td>!enterscene <code class="language-plaintext highlighter-rouge">Scene Name</code></td>
+      <td>Every time you enter a scene.</td>
+      <td>1 = transition type, 2 = transition duration</td>
+    </tr>
+    <tr>
+      <td>!ban</td>
+      <td>A user gets banned in your channel.</td>
+      <td>1 = name of the mod, 2 = user name who got banned</td>
+    </tr>
+    <tr>
+      <td>!unban</td>
+      <td>A user gets unbanned in your channel.</td>
+      <td>1 = name of the mod, 2 = user name who got unbanned</td>
+    </tr>
+    <tr>
+      <td>!timeout</td>
+      <td>A user gets timed out in your channel.</td>
+      <td>1 = name of the mod, 2 = user name who got timed out, 3 = duration of the timeout in seconds</td>
+    </tr>
+    <tr>
+      <td>!untimedout</td>
+      <td>A user’s timeout is cleared.</td>
+      <td>1 = name of the mod, 2 = user name whose timeout got cleared</td>
+    </tr>
+    <tr>
+      <td>!clearchat</td>
+      <td>Every time chat gets cleared.</td>
+      <td>1 = name of the mod who cleared the chat</td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

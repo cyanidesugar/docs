@@ -1,0 +1,34 @@
+<p>Triggers any button of a given ID.<br />
+If the button ID does not exist, sends an extension trigger instead.</p>
+
+<div class="alert alert-info" role="alert">
+   You can right click on a button to retrieve its button ID.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Button ID</td>
+      <td>Any</td>
+      <td>ID of a button you want to activate.</td>
+    </tr>
+    <tr>
+      <td>Queue-Able</td>
+      <td>boolean</td>
+      <td>If set to true and the button is already activated, it will wait for it to finish and trigger the button again. Will get queued as many times as you execute the command. <br /> If set to false and the button is already activated, nothing will happen.</td>
+    </tr>
+    <tr>
+      <td>Hidden Delay</td>
+      <td>Int</td>
+      <td>This exists to make a button happen without greying it out in case the button is showing valuable info.<br /> The delay is hidden and cannot be cancelled (unless you use Reset or press Done in your Receiver).</td>
+    </tr>
+  </tbody>
+</table>
+

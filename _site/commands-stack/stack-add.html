@@ -1,0 +1,57 @@
+<p>Adds a value to a given stack. Will create the stack if it doesn’t exist yet.</p>
+
+<p>The <strong>position</strong> you’re adding the value to can be:</p>
+
+<ul>
+  <li>
+    <p>top - adds a value to the end of the stack (same as Array Push in Javascript)</p>
+
+    <figure class="figure"><img src="/assets/images/commands-stack/push.png" class="figure-img img-fluid rounded w-75" alt="Add a value to the end of the stack" title="Click to enlarge" data-bs-target="#pushpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the end of the stack </figcaption></figure>
+  </li>
+</ul>
+<div class="modal fade" id="pushpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/push.png" class="img-fluid" alt="Add a value to the end of the stack" /></div></div></div>
+
+<ul>
+  <li>
+    <p>bottom - adds a value to the beginning of the stack (same as Array Unshift in Javascript), the positions of all elements will shifted by one</p>
+
+    <figure class="figure"><img src="/assets/images/commands-stack/unshift.png" class="figure-img img-fluid rounded w-75" alt="Add a value to the beginning of the stack" title="Click to enlarge" data-bs-target="#unshiftpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the beginning of the stack </figcaption></figure>
+  </li>
+</ul>
+<div class="modal fade" id="unshiftpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/unshift.png" class="img-fluid" alt="Add a value to the beginning of the stack" /></div></div></div>
+
+<ul>
+  <li>index of the position to push the value to. The original values will be shifted by one from this position.</li>
+</ul>
+
+<div class="alert alert-info" role="alert">
+   Any position index higher than the stack size will be regarded as the top.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stack Name</td>
+      <td>String</td>
+      <td>Name of the stack</td>
+    </tr>
+    <tr>
+      <td>Position</td>
+      <td>index/top/bottom <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Position to add the value to. Can be <strong>top</strong> <a href="#" data-bs-toggle="tooltip" title="end of the stack" class="optionTooltip" data-bs-html="true" data-original-title="end of the stack"><i class="far fa-question-circle fa-lg"></i></a>, <strong>bottom</strong> <a href="#" data-bs-toggle="tooltip" title="beginning of the stack" class="optionTooltip" data-bs-html="true" data-original-title="beginning of the stack"><i class="far fa-question-circle fa-lg"></i></a> or <strong>index</strong> of the position.</td>
+    </tr>
+    <tr>
+      <td>Var./real/”string” <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Variable, real or string</td>
+      <td>Value you want to add to the stack</td>
+    </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,29 @@
+I"z<ol>
+  <li>Open LioranBoard Receiver and click on Link your Twitch.</li>
+  <li>You can select which Authorization scopes (permissions) you want LB to be able to use. Default values are recommended, unless you’re installing a new extension that requires some additional ones.</li>
+  <li>Click on Open URL.<a class="img-toggle" role="button" href="#lb_link_twitch" data-bs-toggle="collapse" aria-controls="lb_link_twitch" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>LioranBoard Linking Twitch Account </b></a></li>
+</ol>
+<div class="collapse row" id="lb_link_twitch"><img src="assets/images/setup/LM7Zjfg.png" class="figure-img img-fluid rounded" alt="LioranBoard Linking Twitch Account" title="LioranBoard Linking Twitch Account" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i="></script></div></div>
+
+<ol start="4">
+  <li>Click on Authorize and LB should do the rest.<a class="img-toggle" role="button" href="#lb_link_authorize" data-bs-toggle="collapse" aria-controls="lb_link_authorize" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>LioranBoard Authorize </b></a></li>
+</ol>
+<div class="collapse row" id="lb_link_authorize"><img src="assets/images/setup/t5XT330.png" class="figure-img img-fluid rounded" alt="LioranBoard Authorize" title="LioranBoard Authorize" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i="></script></div></div>
+
+<p>Once you have successfully linked your account, click on Connect to Twitch in your Receiver to test your connection (Transmitter must be running).</p>
+
+<p>You should see these following yellow notification messages and it is important to check that ALL of these messages actually come up:</p>
+
+<ul>
+  <li>Twitch is connected</li>
+  <li>Listening for Channel points</li>
+  <li>Listening for Bits donations</li>
+  <li>Listening for Channel subscriptions</li>
+  <li>Listening for Chat Moderation</li>
+  <li>Connected to Twitch chat.</li>
+</ul>
+
+<p>Congratulations, your Twitch account is now connected</p>
+:ET

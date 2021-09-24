@@ -1,0 +1,216 @@
+I"�L<p>So you have discovered LioranBoard… I can only say: Welcome to the world of endless possibilities!</p>
+
+<p>We will walk you through a step by step tutorial on how to set up LioranBoard, and connect it to OBS and your Twitch account. You will also learn how to create your first button, add a command and trigger it via Twitch chat.</p>
+
+<div class="alert alert-warning" role="alert">
+   LioranBoard is a closed source application made for Windows. Our tutorial covers its usage in Windows only. 
+  </div>
+
+<h4 id="1-download-and-install-all-dependencies">1. Download and install all dependencies</h4>
+<ul>
+  <li>Download and install <strong><a href="https://obsproject.com/">OBS Studio</a></strong>. As of now, LioranBoard does not support other streaming software.</li>
+  <li>Download and install <strong><a href="https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/">OBS Websocket</a></strong>. This is how LioranBoard communicates with OBS Studio.</li>
+</ul>
+
+<h4 id="2-download-lioranboard">2. Download <a href="https://obsproject.com/forum/resources/lioranboard-stream-deck-animator.862/">LioranBoard</a>.</h4>
+
+<p>Unpack the zip file and place the folder anywhere in your computer, preferably in your non windows drive.</p>
+
+<div class="alert alert-danger" role="alert">
+   Do not place lioranboard folder in your Program files, as it sometimes can cause issues.
+  </div>
+
+<h4 id="3-launch-lioranboard-receiverexe">3. Launch LioranBoard Receiver.exe</h4>
+
+<p>Navigate to lioran/LioranBoard Receiver(PC) folder and launch LioranBoard Receiver.exe (‘Receiver’).  <br />
+Allow the app through the firewall if there’s a prompt and slowly work your way through the onscreen built-in tutorial.  <br />
+There is much to learn, take your time to read everything carefully and do not skip any of the parts, as they are all essential to using LioranBoard.</p>
+
+<figure class="figure">
+    <a href="/assets/images/getting-started/receiver_tutorial.png" data-bs-toggle="lightbox" data-title="LioranBoard Receiver" data-type="image">
+    <img src="/assets/images/getting-started/receiver_tutorial.png" class="figure-img img-fluid rounded w-50" alt="LioranBoard Receiver" title="Click to enlarge" />
+    <figcaption class="figure-caption">LioranBoard Receiver</figcaption>
+    </a></figure>
+
+<h4 id="4-connect-receiver-to-your-obs">4. Connect Receiver to your OBS</h4>
+
+<ol>
+  <li>
+    <p>In your OBS go to Tools-Websocket Server Settings. Uncheck ‘Enable authorization’ (for easy setup, you can change it later) and press OK.</p>
+
+    <figure class="figure">
+ <a href="/assets/images/getting-started/obsws_settings.png" data-bs-toggle="lightbox" data-title="OBS Websocket Settings" data-type="image">
+ <img src="/assets/images/getting-started/obsws_settings.png" class="figure-img img-fluid rounded w-80" alt="OBS Websocket Settings" title="Click to enlarge" />
+ <figcaption class="figure-caption">OBS Websocket Settings</figcaption>
+ </a></figure>
+  </li>
+</ol>
+
+<ol start="2">
+  <li>
+    <p>In your Receiver main menu press <strong>Connect to OBS</strong> button. It will grey out and you will see 3 yellow notification messages at the bottom of your Receiver. That means OBS is connected!</p>
+
+    <figure class="figure">
+ <a href="/assets/images/getting-started/connect_obs_message.png" data-bs-toggle="lightbox" data-title="OBS Websocket Connection Messages" data-type="image">
+ <img src="/assets/images/getting-started/connect_obs_message.png" class="figure-img img-fluid rounded w-80" alt="OBS Websocket Connection Messages" title="Click to enlarge" />
+ <figcaption class="figure-caption">OBS Websocket Connection Messages</figcaption>
+ </a></figure>
+  </li>
+</ol>
+
+<h4 id="5-add-transmitter-to-your-obs-dock">5. Add Transmitter to your OBS Dock</h4>
+
+<p>In your OBS menu navigate to View - Docks - Custom Browser Docks. Your new dock name can be <code class="language-plaintext highlighter-rouge">Transmitter</code> and the URL will be the path to the <code class="language-plaintext highlighter-rouge">tsl_transmitter.html</code> file located in your <code class="language-plaintext highlighter-rouge">lioranboard</code> folder.   <br />
+Press apply and you should see your new dock. If it does not pop up for some reason, you can always press View - Docks - Transmitter. <br />
+Fit your new dock somewhere in your OBS screen as you see fit.</p>
+
+<figure class="figure">
+    <a href="/assets/images/getting-started/transmitter_dock.png" data-bs-toggle="lightbox" data-title="OBS Dock Settings" data-type="image">
+    <img src="/assets/images/getting-started/transmitter_dock.png" class="figure-img img-fluid rounded w-80" alt="OBS Dock Settings" title="Click to enlarge" />
+    <figcaption class="figure-caption">OBS Dock Settings</figcaption>
+    </a></figure>
+
+<div class="alert alert-danger" role="alert">
+   Transmitter must be running at all times. Do not close it while LioranBoard is on.
+  </div>
+
+<p>Inside the dock you should see <strong><span style="color:green">Connected</span></strong> or <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='green' class='bi bi-circle-fill d-md-none me-1' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='8'%3E%3C/circle%3E%3C/svg%3E" alt="svg image" /> next to Receiver. This means it is connected to your Receiver and listening for messages.</p>
+
+<figure class="figure">
+    <a href="/assets/images/getting-started/transmitter_dock2.png" data-bs-toggle="lightbox" data-title="Transmitter Dock added to OBS" data-type="image">
+    <img src="/assets/images/getting-started/transmitter_dock2.png" class="figure-img img-fluid rounded w-50" alt="Transmitter Dock added to OBS" title="Click to enlarge" />
+    <figcaption class="figure-caption">Transmitter Dock added to OBS</figcaption>
+    </a></figure>
+
+<h4 id="6-connect-your-twitch-account">6. Connect your Twitch account</h4>
+<p>Connecting your Twitch account to LioranBoard is a necessary step if you want to be able to listen to alerts and control your Twitch via LioranBoard.</p>
+
+<ol>
+  <li>In your Receiver click on <strong>Link your Twitch</strong> button. 
+A new menu will pop up and you will see a bunch of options to check, leave them all at default values.</li>
+  <li>Click on <strong>Open URL</strong> which should open a new browser window and redirect you to Twitch to authorize LioranBoard.<br />
+Press <strong>Authorize</strong> and wait to be redirected again to see <code class="language-plaintext highlighter-rouge">All good, you can go back to LioranBoard now</code> message in your browser.</li>
+  <li>
+    <p>Go back to your Receiver. You should see a green text <code class="language-plaintext highlighter-rouge">Token was obtained successfully. Token will expire on XXX.</code> It means you will need to repeat this process again on this date. Don’t worry, LioranBoard will remind you when it’s due. Press Close.</p>
+
+    <figure class="figure">
+ <a href="/assets/images/getting-started/twitch_connect.png" data-bs-toggle="lightbox" data-title="Successfully linked Twitch account" data-type="image">
+ <img src="/assets/images/getting-started/twitch_connect.png" class="figure-img img-fluid rounded w-50" alt="Successfully linked Twitch account" title="Click to enlarge" />
+ <figcaption class="figure-caption">Successfully linked Twitch account</figcaption>
+ </a></figure>
+  </li>
+  <li>
+    <p>Press <strong>Connect to Twitch</strong> button. The button will grey out and you should see <strong>all</strong> the following yellow notification messages:</p>
+
+    <figure class="figure">
+ <a href="/assets/images/getting-started/twitch_connected_message.png" data-bs-toggle="lightbox" data-title="Successfully connected to Twitch" data-type="image">
+ <img src="/assets/images/getting-started/twitch_connected_message.png" class="figure-img img-fluid rounded w-80" alt="Successfully connected to Twitch" title="Click to enlarge" />
+ <figcaption class="figure-caption">Successfully connected to Twitch</figcaption>
+ </a></figure>
+
+    <p>In your Transmitter, Pubsub and Chat status should change to <strong><span style="color:green">Connected</span></strong> or <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='green' class='bi bi-circle-fill d-md-none me-1' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='8'%3E%3C/circle%3E%3C/svg%3E" alt="svg image" />. Congratulations, your Twitch account is now connected!</p>
+  </li>
+</ol>
+
+<div class="alert alert-warning" role="alert">
+   Your Transmitter must be running at all times for Twitch to stay connected.
+  </div>
+
+<p><strong>If you wish to connect multiple accounts to LioranBoard, please refer to our FAQ section!</strong></p>
+
+<h4 id="7-create-your-first-button-add-a-trigger-and-execute-it">7. Create your first button, add a trigger and execute it</h4>
+<p>In this part of the tutorial we will learn how to create a button with a simple command and add a Twitch chat trigger to it.   <br />
+You can follow the text instructions or click on <i class="far fa-plus-square fa-2x mx-auto"></i> to watch a short video.</p>
+
+<div class="alert alert-warning" role="alert">
+   Pressing Done Twice (once in your edit button screen and once in your edit deck screen) is essential to saving any changes you make to a button.
+  </div>
+
+<ol>
+<li> <a class="img-toggle" role="button" href="#create_deck" data-bs-toggle="collapse" aria-controls="create_deck" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Creating a new deck</b></span></a>
+<div class="collapse" id="create_deck"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="80%" src="/assets\videos\step_by_step/create_deck.mp4" title="Creating a new deck" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div>   
+  
+  In your Receiver click on <strong>Add New Deck</strong> button. You should see a newly created blank deck named New Deck 6. Click on it.  
+  </li>
+
+
+<li> <a class="img-toggle" role="button" href="#add_button" data-bs-toggle="collapse" aria-controls="add_button" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Creating a new button</b></span></a>
+<div class="collapse" id="add_button"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="80%" src="/assets\videos\step_by_step/create_button.mp4" title="Creating a new button" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div> You will see an empty grid. This is your deck where you can create new buttons.  
+Right click anywhere in the emtpy area and select <strong>Create Blank Button</strong>. A new empty button will be created. You can optionally add some text to it as well.   
+ </li>
+
+<li> <a class="img-toggle" role="button" href="#add_commands" data-bs-toggle="collapse" aria-controls="add_commands" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> How to add commands to a button</b></span></a>
+<div class="collapse" id="add_commands"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="80%" src="/assets\videos\step_by_step/add_command.mp4" title="How to add commands to a button" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div> Right click on the empty button - <strong>Add Commands</strong>.  
+ </li>
+
+<li> <a class="img-toggle" role="button" href="#add_command" data-bs-toggle="collapse" aria-controls="add_command" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Adding a new command to a button</b></span></a>
+<div class="collapse" id="add_command"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="80%" src="/assets\videos\step_by_step/create_command.mp4" title="Adding a new command to a button" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div> Click on the <strong>+</strong> symbol. A default command Math:Change Variable will be created. Left click on the field with its name and change it to <strong>Twitch: Chat Message</strong> command instead. 
+ </li>
+
+<li>  <a class="img-toggle" role="button" href="#new_twitch_button" data-bs-toggle="collapse" aria-controls="new_twitch_button" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Edit Twitch:Chat button command</b></span></a>
+<div class="collapse" id="new_twitch_button"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="80%" src="/assets\videos\step_by_step/populate_command.mp4" title="Edit Twitch:Chat button command" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div> Populate the fields: 
+    <ol>
+	  <li> <code>Message</code> - Put a random text in there. For example 'Hello World!'. </li>
+	  <li> <code>Channel Name</code> - Leave empty </li> </ol>
+
+	Press <b>done</b> once you're finished. 
+
+<li>  <a class="img-toggle" role="button" href="#new_twitch_trigger" data-bs-toggle="collapse" aria-controls="new_twitch_trigger" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Edit Twitch:Chat button command</b></span></a>
+<div class="collapse" id="new_twitch_trigger"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="80%" src="/assets\videos\step_by_step/add_trigger.mp4" title="Edit Twitch:Chat button command" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div> Back at our main deck view, right click on the new button - Add Twitch Triggers. This is where you assign Twitch events  (such as new subscriber or chat message) to automatically trigger your buttons.
+	<ol>
+  <li> Click on the + sign - Chat Message.</li> 
+  <li>Populate the Message field with <code>!test</code>. </li>
+  <li>Press Done. </li>
+   </ol>
+</li> 
+
+<li>Once you're back at your main deck view, press <strong>Done</strong>.</li>
+
+We have now created a button that will send a chat message <code>Hello World</code> anytime it's triggered. We have also created a Twitch chat trigger which will execute the button any time someone types <code>!test'</code> in your Twitch chat. 
+
+<br /><p><h5> Let's try to trigger the button manually from our Stream Deck!  </h5>
+
+<ol> 
+	<li> Navigate to lioranboard/LioranBoard Stream deck(PC) folder and launch <strong>LioranBoard Stream Deck.exe</strong>. This is your Stream Deck where you can manually trigger buttons you create in your Receiver. </li>  
+
+<div class="alert alert-warning" role="alert">
+   Receiver only acts as an editor. You can press your buttons in Stream Deck.
+  </div>     
+<li> You will see a green screen with some additional settings. 
+Leave IP and Port at default. Selected Deck number needs to match your newly created deck number in your Receiver. In our case it should be number 6. 	<figure class="figure">
+    <a href="/assets/images/getting-started/streamdeck_settings.png" data-bs-toggle="lightbox" data-title="OBS Websocket Connection Messages" data-type="image">
+    <img src="/assets/images/getting-started/streamdeck_settings.png" class="figure-img img-fluid rounded w-50" alt="OBS Websocket Connection Messages" title="Click to enlarge" />
+    <figcaption class="figure-caption">OBS Websocket Connection Messages</figcaption>
+    </a></figure>
+
+     </li>
+
+<li> Press <strong>Connect</strong> and you should see your newly created button that we named<code>chat message</code>. </li>
+
+
+<li>  <a class="img-toggle" role="button" href="#button_manual" data-bs-toggle="collapse" aria-controls="button_manual" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Edit Twitch:Chat button command</b></span></a>
+<div class="collapse" id="button_manual"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="80%" src="/assets\videos\step_by_step/trigger_button.mp4" title="Edit Twitch:Chat button command" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div> While looking at your Twitch chat, click on the button in your Stream Deck. It should send a <code>Hello World</code> message to your chat! <br />
+<b>Important:</b> Your Receiver must be running, connected to Transmitter and connected to Twitch.
+ </li>
+
+</ol>
+<br /><p><h5>Now we can try to trigger the button via your Twitch chat instead! </h5><p> Do you still remember the Twitch chat trigger you configured for your button? If you followed the tutorial, it should be <code>!test</code>. 
+
+<ol>
+<li> <a class="img-toggle" role="button" href="#button_trigger_twitch" data-bs-toggle="collapse" aria-controls="button_trigger_twitch" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Edit Twitch:Chat button command</b></span></a>
+<div class="collapse" id="button_trigger_twitch"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="80%" src="/assets\videos\step_by_step/trigger_button_Chat.mp4" title="Edit Twitch:Chat button command" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div> Try typing <code>!test</code> (or anything else you chose to be your trigger) in your Twitch chat while looking both at your chat and Stream Deck. </li> 
+<li> Two things should happen : 
+	<ul>
+	<li> You will see the button in your Stream Deck blink, just like when you manually pressed it with your mouse. </li>
+	<li> LioranBoard will respond back with 'Hello World' in your Twitch chat. </li> </ul>
+</li>
+</ol>
+<br />
+Now you have learned how to create a button, add a command and trigger it via Twitch chat! You can find more information about the individual components, commands and triggers in the next sections of the documentation. </p> 
+
+<div class="alert alert-info" role="alert">
+   Didn't work as expected? Cannot connect to OBS, Transmitter or Twitch chat? Please refer to our Troubleshooting section!
+  </div> 
+
+</p></p></li></ol>
+:ET

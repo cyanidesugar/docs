@@ -1,0 +1,51 @@
+<p>Changes the appearance of a button (color, text, image and border).<br />
+All changes are temporary, the button will return to its original state if you reset or close and reopen Receiver.<br />
+If you wish to reset the button back to its default appearance, set the values to <code class="language-plaintext highlighter-rouge">buttond_id, -1, -1, -1, notext, leave empty, -1</code>.</p>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Button ID</td>
+      <td>Int</td>
+      <td>Button ID to change the appearance of</td>
+    </tr>
+    <tr>
+      <td>Red <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Int</td>
+      <td>Red value, 0-255.</td>
+    </tr>
+    <tr>
+      <td>Green <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Int</td>
+      <td>Green value, 0-255.</td>
+    </tr>
+    <tr>
+      <td>Blue <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Int</td>
+      <td>Blue value, 0-255.</td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td>String</td>
+      <td>New button text. Leave blank or enter notext to use default value.</td>
+    </tr>
+    <tr>
+      <td>Picture</td>
+      <td>String</td>
+      <td>File name of a picture to use. <br /> Must be formatted as image.png and placed in Lioranboard Receiver/image folder. <br />Do not include path. Leave empty to use default value.</td>
+    </tr>
+    <tr>
+      <td>Border Size</td>
+      <td>Int</td>
+      <td>Size of the button border, between 0-8. Only applies if a picture is included. <br /> Use -1 for default border size and 0 for no border.</td>
+    </tr>
+  </tbody>
+</table>
+

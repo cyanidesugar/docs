@@ -1,0 +1,39 @@
+<p>Executes hotkey routine.<br />
+Does not actually perform the key presses, it simply activates any hotkey action you’ve set.</p>
+
+<div class="alert alert-warning" role="alert">
+   If your hotkey is <b>ctrl+A</b>, setting <b>ctrl+shift+alt+OBS_KEY_X</b> will trigger it.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>keyId</td>
+      <td>String</td>
+      <td>Main key ID, such as A or F1. It has to be the OBS name for it, such as OBS_KEY_A. <br /> All OBS hotkeys can be found in <a href="https://github.com/obsproject/obs-studio/blob/master/libobs/obs-hotkeys.h">OBS Studio’s documentation</a>.</td>
+    </tr>
+    <tr>
+      <td>Shift</td>
+      <td>Boolean</td>
+      <td>Whether to include Shift key</td>
+    </tr>
+    <tr>
+      <td>Alt</td>
+      <td>Boolean</td>
+      <td>Whether to include Alt key</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>Boolean</td>
+      <td>Whether to include CTRL key</td>
+    </tr>
+  </tbody>
+</table>
+

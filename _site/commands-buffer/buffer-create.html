@@ -1,0 +1,51 @@
+<p>Creates a new buffer with the given name.</p>
+
+<div class="alert alert-warning" role="alert">
+   You must delete a buffer before creating another one with the same name.
+  </div>
+
+<p>When creating a buffer, you should always try to create it to a size that is appropriate to the type, with the general rule being that it should be created to accommodate the maximum size of data that it is to store.</p>
+
+<p><strong>Buffer types:</strong></p>
+<ul>
+  <li>Fixed - A buffer of a fixed size in bytes. The size is set when the buffer is created and cannot be changed again. LioranBoard will crash when you reach the limit size.</li>
+  <li>Grow - A buffer that will grow dynamically as data is added. You create it with an initial size (which should be an approximation of the size of the data expected to be stored), and then it will expand to accept further data that overflows this initial size.</li>
+  <li>
+    <p>Wrap - A buffer where the data will wrap. When the data being added reaches the limit of the buffer size, the overwrite will be placed back at the start of the buffer, and further writing will continue from that point.</p>
+
+    <figure class="figure"><img src="/assets/images/commands-buffer/Buffer_Types.png" class="figure-img img-fluid rounded w-200px" alt="Buffer types" title="Click to enlarge" data-bs-target="#Buffer_Typespng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Buffer types </figcaption></figure>
+  </li>
+</ul>
+<div class="modal fade" id="Buffer_Typespng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-buffer/Buffer_Types.png" class="img-fluid" alt="Buffer types" /></div></div></div>
+
+<div class="alert alert-info" role="alert">
+   If in doubt, use a grow buffer to prevent overwrite errors.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Buffer Name</td>
+      <td>String</td>
+      <td>Name of the buffer to create</td>
+    </tr>
+    <tr>
+      <td>Size</td>
+      <td>Size of the buffer in bytes.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Type</td>
+      <td>dropdown menu</td>
+      <td>Fixed, Grow or Wrap</td>
+    </tr>
+  </tbody>
+</table>
+

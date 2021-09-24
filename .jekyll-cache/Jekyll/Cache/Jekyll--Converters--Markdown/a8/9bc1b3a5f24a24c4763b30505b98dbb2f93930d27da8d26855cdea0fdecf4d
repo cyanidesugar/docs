@@ -1,0 +1,43 @@
+I"™
+<p>Stream Deck 
+Stream Deck is where you press all the buttons you previously created in the Receiver.</p>
+
+<h3 id="pc-version">PC Version</h3>
+<p>Desktop version of Stream Deck can be found at <code class="language-plaintext highlighter-rouge">lioranboard/LioranBoard Stream deck(PC)</code> folder.  <br />
+Once launched, you will see settings for IP and Port which should be left at default.   <br />
+Selected deck is the deck number you want to connect to.</p>
+
+<figure class="figure">
+    <a href="/assets/images/getting-started/streamdeckvsreceiver.png" data-bs-toggle="lightbox" data-title="Receiver vs Streamdeck" data-type="image">
+    <img src="/assets/images/getting-started/streamdeckvsreceiver.png" class="figure-img img-fluid rounded w-50" alt="Receiver vs Streamdeck" title="Click to enlarge" />
+    <figcaption class="figure-caption">Receiver vs Streamdeck</figcaption>
+    </a></figure>
+
+<h3 id="android-version">Android Version</h3>
+<p>Android version of Stream Deck can be found at <code class="language-plaintext highlighter-rouge">lioranboard/LioranBoard Stream deck(Android)</code> folder.   <br />
+Stream Deck is not available in the Play Store. You need to manually transfer the .apk file to your Android device and install it. You may need to change permissions to install external files.</p>
+
+<div class="alert alert-warning" role="alert">
+   Some devices, such as Windows tablets, require double taps on the buttons.
+  </div>
+
+<p><strong>Connecting to Stream Deck from your Android device</strong>   <br />
+Unlike in Desktop version, you will need to change the settings in order to connect to Receiver.</p>
+<ol>
+  <li>Launch <code class="language-plaintext highlighter-rouge">whats my local ip.bat</code> in <code class="language-plaintext highlighter-rouge">lioranboard</code> folder or type <code class="language-plaintext highlighter-rouge">ipconfig</code> in command your line.</li>
+  <li>Copy your IPv4 Address. It will start with 192.168.</li>
+  <li>Paste your IPv4 address into the IP field in your Stream Deck. You should not need to change port.</li>
+  <li>Connect as you normally would.</li>
+</ol>
+
+<figure class="figure">
+    <a href="/assets/images/getting-started/streamdeckAndroid.png" data-bs-toggle="lightbox" data-title="Android Stream Deck" data-type="image">
+    <img src="/assets/images/getting-started/streamdeckAndroid.png" class="figure-img img-fluid rounded w-50" alt="Android Stream Deck" title="Click to enlarge" />
+    <figcaption class="figure-caption">Android Stream Deck</figcaption>
+    </a></figure>
+
+<div class="alert alert-info" role="alert">
+   Having difficulties connecting your Android Stream Deck? Check out our Troubleshooting section!
+  </div>
+
+:ET

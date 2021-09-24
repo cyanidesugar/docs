@@ -1,0 +1,49 @@
+<p>Extensions are meant to add new functionality to LioranBoard. They’re made be the LioranBoard community.\</p>
+
+<div class="alert alert-warning" role="alert">
+   Extensions live in your Transmitter. If you update your Transmitter, you must reinstall all the extensions.
+  </div>
+
+<p><strong>We recommend installing only <a href="">officially released extensions</a> that have been verified to be safe to use.</strong></p>
+
+<h4>Install an extension:</h4>
+
+<ol>
+  <li>Download the .lbe extension file</li>
+  <li>Click on <strong>Install Extension</strong> in your LioranBoard Receiver</li>
+  <li>Select the extension file you downloaded</li>
+  <li>Select your default Transmitter you are using. That’s the <code class="language-plaintext highlighter-rouge">tsl_transmitter.html</code> file residing in your lioranboard folder. Make 100% sure it is the correct file.</li>
+  <li>Your Transmitter will automatically refresh, adding a new tab for the extension you just installed. You should also see it added in at the bottom list of all the extensions.</li>
+  <li>Most extensions include a premade deck with buttons. If you do not see one, create a new button, add (Send to Extension)[]  command and select the extension you just installed.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+   Some extensions have built in requirements, such as placing them in the Receiver/Ext folder or running a compatible version of LB/OBS. You must meet all the requirements to install the extension.
+  </div>
+
+<p><strong>Extension is installed properly if:</strong></p>
+
+<ul>
+  <li>You can see all its fields in your <a href="">Send to extension</a> command. If you can only see the extension name, the extension was not installed properly or your Transmitter is not running. The amount of input fields depends on the extension, but it should in most cases contain at least one.
+    <figure class="figure"><img src="/assets/images/faq-general/extension_installed.png" class="figure-img img-fluid rounded w-75" alt="Correctly vs. incorrectly installed extension" title="Click to enlarge" data-bs-target="#extension_installedpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Correctly vs. incorrectly installed extension </figcaption></figure>
+  </li>
+</ul>
+<div class="modal fade" id="extension_installedpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/faq-general/extension_installed.png" class="img-fluid" alt="Correctly vs. incorrectly installed extension" /></div></div></div>
+
+<ul>
+  <li>Your Transmitter displays that it’s correctly installed. You should see a new tab and a checkbox at the bottom with the extension name added.</li>
+</ul>
+
+<h4>Uninstall an extension</h4>
+<ol>
+  <li>Click on the <strong>Uninstall Extens.</strong> button in your LioranBoard Receiver.</li>
+  <li>Select the correct Transmitter where your extension is installed and press Yes when prompted whether you want to replace it.</li>
+  <li>You will get a dropdown menu in your Receiver. Click on the extension you wish to uninstall and press Yes.</li>
+  <li>The extension is now completely removed from your Transmitter.</li>
+</ol>
+
+<h4>Create an extension</h4>
+<p>Lioranboard communicates with all its extensions via transmitter.html and its own websocket.<br />
+Information about how to make your own extension can be found in <code class="language-plaintext highlighter-rouge">LioranBoard/extension/readme.txt</code> file.\ 
+We encourage you to go over a few premade extensions to understand the process.<br />
+Once you have an extension working, you can submit it in <em>#development</em> channel in the official <a href="https://discord.gg/dXez8Zh">LioranBoard Discord server</a>. You will need one of the mods to approve it before it can officially released.</p>

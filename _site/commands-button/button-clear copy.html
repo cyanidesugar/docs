@@ -1,0 +1,37 @@
+<p>Blocks a button by its ID or an entire Group ID.<br />
+Won’t cancel an ongoing button but will prevent any already existing queue from happening when its turn comes.<br />
+The block does not persist when LioranBoard is restarted.<br />
+By setting the ID to all you can remove all current blocks. This only works for unblocking buttons.</p>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Button ID or Group ID</td>
+      <td>Anything</td>
+      <td>Button Id or Group ID to block/unblock</td>
+    </tr>
+    <tr>
+      <td>Block</td>
+      <td>boolean</td>
+      <td>Select true to block a button and false to unblock a button</td>
+    </tr>
+    <tr>
+      <td>Allow Queue</td>
+      <td>boolean</td>
+      <td><strong>True</strong> = queue will wait for button to be unblocked and then will continue as normal &lt;br&gt; <strong>False</strong> =  any queue when the button is blocked will be ignored and deleted</td>
+    </tr>
+    <tr>
+      <td>Self</td>
+      <td>boolean</td>
+      <td>If you selected <code class="language-plaintext highlighter-rouge">all</code> in your Button ID field, you can choose whether you want to clear this button as well. <br />Does not work if the button ID is itself (in that case use False in Ongoing field).</td>
+    </tr>
+  </tbody>
+</table>
+

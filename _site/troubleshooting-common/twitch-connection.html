@@ -1,0 +1,89 @@
+<h4>Getting an ERR_BADAUTH error</h4>
+<p>Your auth token probably expired.</p>
+<ol>
+  <li>In your Receiver, go to Link your Twitch and press the Unlink button.</li>
+  <li>Relaunch Receiver and Link your Twitch account again.</li>
+</ol>
+
+<p><strong>Didn’t help? Try these steps instead:</strong></p>
+<ol>
+  <li>Completely close your Receiver</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">connect.ini</code> file located in LioranBoard Receiver folder</li>
+  <li>Relaunch your Receiver</li>
+  <li>Link your Twitch account again</li>
+</ol>
+
+<h4>Twitch Alerts don’t work</h4>
+
+<p><strong>Check your Transmitter connection</strong><br />
+Make sure your Transmitter is running and press Connect to Twitch in your Receiver if it’s not automatically connected.<br />
+In your Transmitter it must say <strong>Pubsub: <span style="color:green">Connected</span><strong>.</strong></strong></p>
+
+<p><strong>Try triggering a test alert from your Transmitter</strong></p>
+
+<p>In your Transmitter, go to Twitch Triggers tab and press any of the test buttons.<br />
+A small yellow notification message should pop up at the bottom of your Receiver.</p>
+
+<figure class="figure"><img src="/assets/images/troubleshooting-common/tsl-test.png" class="figure-img img-fluid rounded w-75" alt="Notification messages from test alert" title="Click to enlarge" data-bs-target="#tsl-testpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Notification messages from test alert </figcaption></figure>
+<div class="modal fade" id="tsl-testpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/troubleshooting-common/tsl-test.png" class="img-fluid" alt="Notification messages from test alert" /></div></div></div>
+
+<ul>
+  <li><em>I do not see the message at all</em> - your Transmitter is not connected to the Receiver. You might be running a wrong version or duplicate instance of your Transmitter.</li>
+  <li><em>I see the message, but buttons do not trigger at all</em> - your button triggers are set up wrong. Follow the guide in our Triggers section.</li>
+  <li><em>I see the message, buttons trigger, but nothing happens in OBS</em> - You’re either not connected to OBS or your commands are wrong.</li>
+</ul>
+
+<h4>Twitch: Chat message doesn’t work</h4>
+
+<p><strong>Check you’re connected to Twitch Chat</strong><br />
+Check that your Transmitter is running and says <strong>Chat: <span style="color:green">Connected</span>.<strong></strong></strong></p>
+<ul>
+  <li><em>it says chat is disconnected</em> - press Connect to Twitch in your Receiver.
+    <ul>
+      <li><em>it says Twitch account must be linked to connect to Twitch</em> - press Link your Twitch in your Receiver and Open URL. Authenticate your Twitch account. Press close once you see  <code><span style="color:green">Token was obtained successfully.</span></code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Check you’re sending the message to the right channel</strong></p>
+<ul>
+  <li>If you have only a single Twitch account linked to your LioranBoard, leave the channel name empty.
+    <figure class="figure"><img src="/assets/images/troubleshooting-common/chat-message.png" class="figure-img img-fluid rounded w-75" alt="Chat Message with single Twitch account linked" title="Click to enlarge" data-bs-target="#chat-messagepng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Chat Message with single Twitch account linked </figcaption></figure>
+  </li>
+</ul>
+<div class="modal fade" id="chat-messagepng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/troubleshooting-common/chat-message.png" class="img-fluid" alt="Chat Message with single Twitch account linked" /></div></div></div>
+
+<ul>
+  <li>If you have multiple Twitch accounts linked to your LioranBoard, correctly fill out the channel name with your Twitch channel name (all lowercase characters)
+    <figure class="figure"><img src="/assets/images/troubleshooting-common/chat-message2.png" class="figure-img img-fluid rounded w-75" alt="Chat Message with multiple Twitch accounts linked" title="Click to enlarge" data-bs-target="#chat-message2png-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Chat Message with multiple Twitch accounts linked </figcaption></figure>
+  </li>
+</ul>
+<div class="modal fade" id="chat-message2png-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/troubleshooting-common/chat-message2.png" class="img-fluid" alt="Chat Message with multiple Twitch accounts linked" /></div></div></div>
+
+<p><strong>Check you’re not sending too many messages</strong><br />
+If you send too many messages in a short period of time from LioranBoard, Twitch might temporarily block you from sending more.</p>
+
+<p><strong>Enable Twitch Chat debugging</strong></p>
+<ol>
+  <li>In your Transmitter, go to Status tab and enable Message Logging for Twitch Chat.</li>
+  <li>Refresh your Transmitter and connect to Twitch</li>
+  <li>Try sending a few chat messages</li>
+  <li>Look at the generated log in your Status tab in Transmitter. See if there are any error messages received from Twitch IRC (red arrow).</li>
+</ol>
+
+<p><strong>Did none of these help? Try these steps instead:</strong></p>
+<ol>
+  <li>Completely close your Receiver</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">connect.ini</code> file located in LioranBoard Receiver folder</li>
+  <li>Relaunch your Receiver</li>
+  <li>Link your Twitch account again</li>
+</ol>
+
+<h4>Twitch Chat Whispers do not work</h4>
+
+<p><strong>Check you’re using the right formatting</strong><br />
+You can send a whisper by using Twitch: Chat Message command and putting <code class="language-plaintext highlighter-rouge">/w username</code> in the message field.</p>
+
+<p><strong>Request Verified Bot Status</strong><br />
+Sometimes Twitch will block your account from sending whispers from 3rd party applications (such as LioranBoard).<br />
+You can try filling out the <a href="https://dev.twitch.tv/limit-increase">IRC Command and Message Rate form</a> to verify your bot.</p>

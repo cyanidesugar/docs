@@ -1,0 +1,100 @@
+<p>Allows you to request data from OBS websocket and save it in a variable.<br />
+All the possible requests are documented in <a href="https://github.com/Palakis/obs-websocket/blob/4.x-current/docs/generated/protocol.md">OBS websocket protocol reference</a>.<br />
+The requested value will not be saved immediately, you must give you other commands a delay of 100-500ms to process the request.<br />
+If the requested value is inside another object already, you can access it with a simple dot-notation.\ 
+For example, if you want to retrieve Brightness value from Color Correction Filter, you will notice that it is inside an object called settings. <code class="language-plaintext highlighter-rouge">{"settings": {"brightness": 0.78}, "status": "ok", "type": "color_filter"}</code>. In this case, the Fetch Value will be <code class="language-plaintext highlighter-rouge">settings.brightness</code>.<br />
+Use <a href="https://jsonlint.com/">JSON string validator</a> if you want to make sure your formatting is correct.</p>
+
+<div class="alert alert-warning" role="alert">
+   If the name of the fetched value contains dots, it needs to be wrapped in parentheses like this: <code>(Filter.Transform.Rotation.X)</code>.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OBS command</td>
+      <td>JSON String</td>
+      <td>Works the same as the custom packet command. Do not include the <code class="language-plaintext highlighter-rouge">"message-id"</code> part.</td>
+    </tr>
+    <tr>
+      <td>Fetch Value</td>
+      <td>String or object</td>
+      <td>Name of a value you wish to get. <br /> For values inside another object use <a href="https://grasshopper.app/glossary/data-types/object-dot-notation/">object dot notation</a>. For values inside an array use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">index position</a></td>
+    </tr>
+    <tr>
+      <td>Variable</td>
+      <td>String</td>
+      <td>Name of a variable to save the data under.</td>
+    </tr>
+    <tr>
+      <td>Turn to real</td>
+      <td>boolean</td>
+      <td>Whether you expect a real value (=number) or a string.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Fetch OBS Data Examples</strong></p>
+
+<table class="table table-secondary w-auto table-responsive table-hover text-break">
+  <thead>
+    <tr>
+      <th>Object Snippet (if present)</th>
+      <th>What to retrieve</th>
+      <th>OBS Command</th>
+      <th>Fetch Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">"stats":{"cpu-usage":0.75013036185501325,...}</code></td>
+      <td>current CPU usage</td>
+      <td>{“request-type”:”GetStats”}</td>
+      <td>stats.cpu-usage</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>Time elapsed since streaming started</td>
+      <td>{“request-type”:”GetStreamingStatus”}</td>
+      <td>stream-timecode</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>Current width of a source</td>
+      <td>{“scene-name”:”YOURSCENENAME”,”item”:”YOURSOURCENAME”,”request-type”:”GetSceneItemProperties”}</td>
+      <td>width</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">"crop":{"left":0,...}</code></td>
+      <td>Current left crop of a source</td>
+      <td>{“scene-name”:”YOURSCENENAME”,”item”:”YOURSOURCENAME”,”request-type”:”GetSceneItemProperties”}</td>
+      <td>crop.left</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>Current text in a GDI source</td>
+      <td>{“request-type”:”GetTextGDIPlusProperties”,”source”:”YOURSOURCENAME”}</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">"settings":{"brightness":-0.5,...}</code></td>
+      <td>Color Correction Brightness Value</td>
+      <td>{“request-type”:”GetSourceFilterInfo”,”sourceName”:”YOURSOURCENAME”,”filterName”:”Color Correction”}</td>
+      <td>settings.brightness</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">"sceneItems":["sourceName":"Browser",...},{"sourceName":"Text GDI",...}]</code></td>
+      <td>First source name in a specified scene</td>
+      <td>{“request-type”:”GetSceneItemList”,”sceneName”:”YOURSCENENAME”}</td>
+      <td>sceneItems[0].sourceName</td>
+    </tr>
+  </tbody>
+</table>
+

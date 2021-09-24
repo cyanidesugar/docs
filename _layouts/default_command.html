@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Documentation and guide for OBS StreamDeck LioranBoard">
+<meta name="author" content="Christina K.">
+<title>{{ page.title }}</title>
+<link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+<link href={{ "assets/css/bootstrap.min.css" | relative_url }} rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href={{ "assets/css/main.css" | relative_url }} rel="stylesheet">
+<link href={{ "assets/css/dark-mode.css" | relative_url }} rel="stylesheet">
+{% feed_meta %}
+{% seo %}
+</head>
+
+  <body>
+
+     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- MAIN TITLE -->
+          <div class="col">
+          <span class='text-light'><h4>LioranBoard Documentation</h4></span>
+        </div>
+        <!-- SEARCH -->
+        <div class="col">
+          <input class="form-control form-control-dark w-50" type="text" placeholder="Search" aria-label="Search"></input>
+        </div>
+        <!-- SOME LINKS -->
+        <div class="col">
+          <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+              <a class="nav-link" href="#">Some link</a>
+            </li>
+          </ul>
+        </div>
+        <!-- DARK MODE SWITCH -->
+        <div class="col">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="darkSwitch" >
+            <label class="form-check-label"for="darkSwitch">Dark Mode</label>
+         </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+      <div class="col">
+    <button type="button" id="mButton" class="navbar-toggle sidebar-toggle d-md-none" data-toggle="collapse" data-target=".sidebar-xs-collapse">
+      <span class="sr-only">Sidebar</span>
+       Menu
+      </button>
+      </div></div>
+
+    </div>
+   </nav>
+    
+    <div class="container-fluid">
+    <!-- enlarge all images -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">              
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <img src="" class="imagepreview" style="width: 100%;" >
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- enlarge all images -->
+      <div class="row align-items-start">  <!-- align left -->
+        {% include navigation.html %}
+        <main role="main" class="col-lg-7 col-md-auto col-sd-auto pt-3 pr-5 pl-4">  <!-- col must be 12 total pt pr pl = padding -->
+          
+          <!-- page content -->
+           <h1> {{ page.title }} </h1>
+           <br>
+            {{ content }}
+          <!-- page content -->  
+        </main>
+      </div>
+
+</div></div>
+</body>
+
+    <!-- Place at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src={{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}></script>
+       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src={{ '/assets/js/main.js' | relative_url }}></script>
+    <script src={{ '/assets/js/dark-mode-switch.min.js' | relative_url }}></script>
+    <!-- initialize popper tooltips -->
+    <script>
+    $(() => {
+      $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+      
+
+<div at-magnifier-wrapper=""><div class="at-theme-light"><div class="at-base notranslate" translate="no"><div class="Z1-AJ" style="top: 0px; left: 0px;"></div></div></div></div></body></html>

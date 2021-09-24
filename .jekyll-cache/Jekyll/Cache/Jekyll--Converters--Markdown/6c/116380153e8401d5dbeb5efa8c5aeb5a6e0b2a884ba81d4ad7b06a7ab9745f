@@ -1,0 +1,508 @@
+I"HK<p>LioranBoard can listen to Twitch events and automatically execute your buttons. For example, it can automatically trigger a button every time you get a new subscriber.</p>
+
+<h5 id="add-a-new-trigger">Add a new trigger</h5>
+<ol>
+  <li>Right click on the button in your Receiver - Add Twitch Triggers.</li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">+</code> button and select the trigger type.</li>
+  <li>Optionally check <code class="language-plaintext highlighter-rouge">Add to Request Queue</code>, which acts as a button queue. If there is another trigger event while the button is still active (for example if you get two subscribers at the same time), it will place is in the queue and reactivate the button as soon as it’s ready again.</li>
+  <li>In your button commands, use Math:Trigger Pull command to retrieve all the provided information (viewer’s name, their message, emotes, badge etc.).</li>
+</ol>
+
+<h3 id="type-of-twitch-triggers">Type of Twitch Triggers</h3>
+
+<h5 id="chat-or-whisper-message">Chat or whisper message</h5>
+<p>Listens to all chat messages and triggers when specific conditions are met.   <br />
+Will also listen to whisper messages if you use Twitch: Open Whispers command.  <br />
+All chat message triggers are case sensitive by default. You can uncheck <code class="language-plaintext highlighter-rouge">Case Sensitive</code> to allow all messages no matter the case.</p>
+
+<p><a class="img-toggle" role="button" href="#chat_trigger" data-bs-toggle="collapse" aria-controls="chat_trigger" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Twitch Chat Trigger Example </b></a></p>
+<div class="collapse row" id="chat_trigger"><img src="/assets\images\triggers\chat_message.png" class="figure-img img-fluid rounded" alt="Twitch Chat Trigger Example" title="Twitch Chat Trigger Example" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i=vBfdhdH9"></script></div></div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1st</td>
+      <td>Triggers only if the viewer has founders badge.</td>
+    </tr>
+    <tr>
+      <td>Sub</td>
+      <td>Triggers only if a subscriber sends the message.</td>
+    </tr>
+    <tr>
+      <td>Broadcaster</td>
+      <td>Triggers only if the broadcast themselves sends the message.</td>
+    </tr>
+    <tr>
+      <td>Mod</td>
+      <td>Triggers only if a mod sends the message.</td>
+    </tr>
+    <tr>
+      <td>VIP</td>
+      <td>Triggers only if a VIP viewer sends the message.</td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>Chat message to listen to. Must be an exact match. Can include wild cards.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-warning" role="alert">
+   If two or more conditions are checked, all conditions must be met. Create multiple chat triggers for multiple conditions.
+  </div>
+
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th>Math Trigger Pull</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User Name</td>
+      <td>Viewer’s username (all lowercase characters).</td>
+    </tr>
+    <tr>
+      <td>Display Name</td>
+      <td>Viewer’s display name (can contain uppercase characters).</td>
+    </tr>
+    <tr>
+      <td>User ID</td>
+      <td>Viewer’s user ID.</td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>Viewer’s message.</td>
+    </tr>
+    <tr>
+      <td>Emote List</td>
+      <td>Viewer’s available emotes. <br /> Basic format: <code class="language-plaintext highlighter-rouge">FirstEmoteID:FirstIndex-LastIndex/SecondEmoteID:FirstIndex-LastIndex</code> <br /> Message containing multiple emotes will be formatted such as: <code class="language-plaintext highlighter-rouge">FirstEmoteID:FirstIndex(1)-LastIndex(1),FirstIndex(2)-LastIndex(2),FirstIndex(3)-LastIndex(3)</code> <br /> <a class="img-toggle" role="button" href="#chat_emotes" data-bs-toggle="collapse" aria-controls="chat_emotes" aria-expanded="false"><i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b></b></a><span class="collapse row" id="chat_emotes"><img src="/assets\images\triggers\chat_emotes.png" class="figure-img img-fluid rounded" alt="Chat Emotes List" title="Chat Emotes List" /></span></td>
+    </tr>
+    <tr>
+      <td>Badge List</td>
+      <td>Basic format: <code class="language-plaintext highlighter-rouge">FirstBadgeName/version,SecondBadgeName/version</code> <br /> For example: <code class="language-plaintext highlighter-rouge">broadcaster/1, subscriber/0</code> <br /> <a href="https://badges.twitch.tv/v1/badges/global/display">Global Badges List</a>, <a href="https://badges.twitch.tv/v1/badges/channels/CHANNEL_ID/display">Channel Badges List</a> <br /> To find the badge ID in the JSON, look for BadgeList.badge_sets[<code class="language-plaintext highlighter-rouge">BADGENAME</code>].versions[<code class="language-plaintext highlighter-rouge">VERSION</code>].image_url_1x. The last part 1x can be changed to 2x, 3x or 4x for bigger size.</td>
+    </tr>
+    <tr>
+      <td>Channel</td>
+      <td>Channel Name where the message originated from. Will return <code class="language-plaintext highlighter-rouge">w</code> if it’s a whisper.</td>
+    </tr>
+    <tr>
+      <td>Name Color</td>
+      <td>Chat name color in hexadecimal format.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="follower">Follower</h5>
+<p>This requires a standalone extension, since Twitch Pubsub does not send follower events. You can either use the preinstalled Follower Alert extension or download Streamlabs Alerts extension, which contains follower triggers. Parameters will differ depending on which extension you use.</p>
+
+<h5 id="subscriber">Subscriber</h5>
+<p>Listens to all new subscribers in your channel.</p>
+
+<p><a class="img-toggle" role="button" href="#sub_trigger" data-bs-toggle="collapse" aria-controls="sub_trigger" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Subscriber Trigger Example </b></a></p>
+<div class="collapse row" id="sub_trigger"><img src="/assets\images\triggers\sub_trigger.png" class="figure-img img-fluid rounded" alt="Subscriber Trigger Example" title="Subscriber Trigger Example" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i=tRp5tPpN"></script></div></div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T1</td>
+      <td>Triggers for tier 1 subs.</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>Triggers for tier 2 subs.</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>Triggers for tier 3 subs.</td>
+    </tr>
+    <tr>
+      <td>Prime</td>
+      <td>Triggers for prime subs.</td>
+    </tr>
+    <tr>
+      <td>SubGift</td>
+      <td>Triggers for non anonymous subgifts.</td>
+    </tr>
+    <tr>
+      <td>AnonSubGift</td>
+      <td>Triggers for anonymous subgifts.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-warning" role="alert">
+   You need 6 triggers total to receive all possible subscriber triggers.
+  </div>
+
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th>Math Trigger Pull</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User Name</td>
+      <td>Viewer’s or gifter’s username (all lowercase characters).</td>
+    </tr>
+    <tr>
+      <td>Display Name</td>
+      <td>Viewer’s or gifter’s display name (can contain uppercase characters).</td>
+    </tr>
+    <tr>
+      <td>User ID</td>
+      <td>Viewer’s or gifter’s user ID.</td>
+    </tr>
+    <tr>
+      <td>Gifted User Name</td>
+      <td>Recipient’s user name if the sub was gifted.</td>
+    </tr>
+    <tr>
+      <td>Gifted Display Name</td>
+      <td>Recipient’s display name if the sub was gifted.</td>
+    </tr>
+    <tr>
+      <td>Gifted User ID</td>
+      <td>Recipient’s user ID if the sub was gifted.</td>
+    </tr>
+    <tr>
+      <td>Tier</td>
+      <td>Sub Tier. Returns <code class="language-plaintext highlighter-rouge">Tier 1</code>, <code class="language-plaintext highlighter-rouge">Tier 2</code>, <code class="language-plaintext highlighter-rouge">Tier 3</code> or <code class="language-plaintext highlighter-rouge">Prime</code></td>
+    </tr>
+    <tr>
+      <td>Context</td>
+      <td>Sub Type. Returns <code class="language-plaintext highlighter-rouge">sub</code>, <code class="language-plaintext highlighter-rouge">resub</code>, <code class="language-plaintext highlighter-rouge">subgift</code> or <code class="language-plaintext highlighter-rouge">anonsubgift</code></td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>Viewer’s message</td>
+    </tr>
+    <tr>
+      <td>Month</td>
+      <td>Amount of months the viewer has been subscribed</td>
+    </tr>
+    <tr>
+      <td>Community Gift</td>
+      <td>Whether it’s a community gift. Boolean value. Returns <code class="language-plaintext highlighter-rouge">0</code> or <code class="language-plaintext highlighter-rouge">1</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="gift-sub-amount">Gift Sub Amount</h5>
+<p>Trigers every time a viewer gifts a subscriber to another viewer.</p>
+
+<p><a class="img-toggle" role="button" href="#giftsub_trigger" data-bs-toggle="collapse" aria-controls="giftsub_trigger" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Gift Sub Amount Trigger Example </b></a></p>
+<div class="collapse row" id="giftsub_trigger"><img src="/assets\images\triggers\subgift_trigger.png" class="figure-img img-fluid rounded" alt="Gift Sub Amount Trigger Example" title="Gift Sub Amount Trigger Example" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i=DX8hCNK4"></script></div></div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gift Amount</td>
+      <td>Specify the minimum and maximum amount of gifted subscribers to trigger the button.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-warning" role="alert">
+   If you want to retrieve all the names of the gifted subs, you need to also use Subscriber trigger
+  </div>
+
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th>Math Trigger Pull</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User Name</td>
+      <td>Gifter’s username. Returns <code class="language-plaintext highlighter-rouge">ananonymousgifter</code> for anonymous gifters.</td>
+    </tr>
+    <tr>
+      <td>Display Name</td>
+      <td>Gifter’s display name. Returns <code class="language-plaintext highlighter-rouge">AnAnonymousGifter</code> for anonymous gifters.</td>
+    </tr>
+    <tr>
+      <td>User ID</td>
+      <td>Gifter’s user ID.</td>
+    </tr>
+    <tr>
+      <td>Amount</td>
+      <td>Amount of subs gifted.</td>
+    </tr>
+    <tr>
+      <td>Tier</td>
+      <td>Sub Tier. Returns <code class="language-plaintext highlighter-rouge">Tier 1</code>, <code class="language-plaintext highlighter-rouge">Tier 2</code>, <code class="language-plaintext highlighter-rouge">Tier 3</code> or <code class="language-plaintext highlighter-rouge">Prime</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="bits">Bits</h5>
+<p>Listens to all bit events in your stream.</p>
+
+<p><a class="img-toggle" role="button" href="#bits_trigger" data-bs-toggle="collapse" aria-controls="bits_trigger" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Bits Trigger Example </b></a></p>
+<div class="collapse row" id="bits_trigger"><img src="/assets\images\triggers\bits_trigger.png" class="figure-img img-fluid rounded" alt="Bits Trigger Example" title="Bits Trigger Example" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i=pAhUZgpt"></script></div></div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bits</td>
+      <td>Specify the minimum and maximum amount of bits to trigger the button.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th>Math Trigger Pull</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User Name</td>
+      <td>Viewer’s username.</td>
+    </tr>
+    <tr>
+      <td>User ID</td>
+      <td>Viewer’s user ID.</td>
+    </tr>
+    <tr>
+      <td>Amount</td>
+      <td>Amount of bits donated.</td>
+    </tr>
+    <tr>
+      <td>Total Amount</td>
+      <td>Amount of total bits donated.</td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>Viewer’s message.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="host-and-raid">Host and Raid</h5>
+<p>Listens to all hosts or raid events in your stream. These are two separate triggers.</p>
+
+<p><a class="img-toggle" role="button" href="#raid_trigger" data-bs-toggle="collapse" aria-controls="raid_trigger" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Raid Trigger Example </b></a></p>
+<div class="collapse row" id="raid_trigger"><img src="/assets\images\triggers\raid_trigger.png" class="figure-img img-fluid rounded" alt="Raid Trigger Example" title="Raid Trigger Example" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i=twdTrWkt"></script></div></div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amount</td>
+      <td>Specify the minimum and maximum amount of raiders to trigger the button.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th>Math Trigger Pull</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User Name</td>
+      <td>Raider’s username. Host’s username not provided.</td>
+    </tr>
+    <tr>
+      <td>Display Name</td>
+      <td>Raider’s or host’s display name.</td>
+    </tr>
+    <tr>
+      <td>User ID</td>
+      <td>Raider’s user ID. Host’s user ID not provided.</td>
+    </tr>
+    <tr>
+      <td>Amount</td>
+      <td>Amount of raiders or host’s viewers.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="channel-points-redeem">Channel Points Redeem</h5>
+<p>Listens to all custom channel points redeems.</p>
+
+<p><a class="img-toggle" role="button" href="#redeem_trigger" data-bs-toggle="collapse" aria-controls="redeem_trigger" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Channel Points Trigger Example </b></a></p>
+<div class="collapse row" id="redeem_trigger"><img src="/assets\images\triggers\redeem_trigger.png" class="figure-img img-fluid rounded" alt="Channel Points Trigger Example" title="Channel Points Trigger Example" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i=b7B5jDeh"></script></div></div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Redeem Name</td>
+      <td>Specify the name of the redeem. A single <code class="language-plaintext highlighter-rouge">*</code> allows all redeems to trigger the button (does not act as a wildcard).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th>Math Trigger Pull</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User Name</td>
+      <td>Viewer’s username.</td>
+    </tr>
+    <tr>
+      <td>Display Name</td>
+      <td>Viewer’s display name.</td>
+    </tr>
+    <tr>
+      <td>User ID</td>
+      <td>Viewer’s user ID.</td>
+    </tr>
+    <tr>
+      <td>Redeem Title</td>
+      <td>Name of the reward redeemed.</td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>Viewer’s redeem message if required.</td>
+    </tr>
+    <tr>
+      <td>Cost</td>
+      <td>Reward cost.</td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>Reward’s image URL. Returns default crystal ball if there’s no image.</td>
+    </tr>
+    <tr>
+      <td>Reward ID</td>
+      <td>Reward’s general ID.</td>
+    </tr>
+    <tr>
+      <td>Redeem ID</td>
+      <td>Redeem’s specific ID. Can be used to fulfill or cancel the redemption with Channel Points extension.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="channel-points-redeem-with-message">Channel Points Redeem With Message</h5>
+<p>Listens to all custom channel points redeems that require viewers to enter text.</p>
+
+<p><a class="img-toggle" role="button" href="#redeemmsg_trigger" data-bs-toggle="collapse" aria-controls="redeemmsg_trigger" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Channel Points with Message Trigger Example </b></a></p>
+<div class="collapse row" id="redeemmsg_trigger"><img src="/assets\images\triggers\redeemmsg_trigger.png" class="figure-img img-fluid rounded" alt="Channel Points with Message Trigger Example" title="Channel Points with Message Trigger Example" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i=jGF3WCiS"></script></div></div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Redeem Name</td>
+      <td>Specify the name of the redeem. A single <code class="language-plaintext highlighter-rouge">*</code> allows all redeems to trigger the button.</td>
+    </tr>
+    <tr>
+      <td>Redeem Message</td>
+      <td>Specify the redeem message. Can contain wildcards. A single <code class="language-plaintext highlighter-rouge">*</code> allows all redeem messages to trigger the button (does not act as a wildcard).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th>Math Trigger Pull</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User Name</td>
+      <td>Viewer’s username.</td>
+    </tr>
+    <tr>
+      <td>Display Name</td>
+      <td>Viewer’s display name.</td>
+    </tr>
+    <tr>
+      <td>User ID</td>
+      <td>Viewer’s user ID.</td>
+    </tr>
+    <tr>
+      <td>Redeem Title</td>
+      <td>Name of the reward redeemed.</td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>Viewer’s redeem message.</td>
+    </tr>
+    <tr>
+      <td>Cost</td>
+      <td>Reward cost.</td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>Reward’s image URL. Returns default crystal ball if there’s no image.</td>
+    </tr>
+    <tr>
+      <td>Reward ID</td>
+      <td>Reward’s general ID.</td>
+    </tr>
+    <tr>
+      <td>Redeem ID</td>
+      <td>Redeem’s specific ID. Can be used to fulfill or cancel the redemption with Channel Points extension.</td>
+    </tr>
+  </tbody>
+</table>
+:ET

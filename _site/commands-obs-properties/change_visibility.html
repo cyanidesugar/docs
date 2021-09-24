@@ -1,0 +1,33 @@
+<p>Changes the visibility of a source.</p>
+
+<div class="alert alert-warning" role="alert">
+   Changing visiblity of sources residing in groups has inconsistent results. It is advised to use nested scenes instead.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scene-name</td>
+      <td>String (optional)</td>
+      <td>Scene name containing the source. Leave blank for current active scene.</td>
+    </tr>
+    <tr>
+      <td>item</td>
+      <td>String</td>
+      <td>Source name</td>
+    </tr>
+    <tr>
+      <td>visible</td>
+      <td>boolean</td>
+      <td><code class="language-plaintext highlighter-rouge">True</code> for visible, <code class="language-plaintext highlighter-rouge">False</code> for not visible or <code class="language-plaintext highlighter-rouge">Toggle</code> to invert current visibility status <br />  Toggle should be used only if it’s a single button command.</td>
+    </tr>
+  </tbody>
+</table>
+

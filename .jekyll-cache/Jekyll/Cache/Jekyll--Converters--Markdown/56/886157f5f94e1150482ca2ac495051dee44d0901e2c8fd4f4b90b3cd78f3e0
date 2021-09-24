@@ -1,0 +1,6 @@
+I"X<p>Transmitter is the <code>tsl_transmitter.html</code> file in your lioranboard folder. 
+Transmitter connects to your Receiver to receive and send messages. It also controls Twitch connection.</p>
+<div class="alert alert-warning" role="alert">
+   Transmitter must be running at all times for Twitch connection and extensions to work.
+  </div>
+:ET

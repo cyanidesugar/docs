@@ -1,0 +1,53 @@
+<p>Changes the rotation of a source over a set duration.<br />
+The center point of the rotation is based on the Positional Alignment option (right click on the source in OBS-Transform-Edit Transform).<br />
+You can use Math: Pull Source Value command to get the current rotation of a source and incorporate it in this command.</p>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scene</td>
+      <td>String</td>
+      <td>Scene name including the source.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>item</td>
+      <td>String</td>
+      <td>Source name to change the rotation.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Start</td>
+      <td>Rotation <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real	Starting Rotation. 0-360</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Final</td>
+      <td>Rotation <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real	Final Rotation. 0-360</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dur.(MS) <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Int</td>
+      <td> </td>
+      <td>Duration of the transition in milliseconds</td>
+    </tr>
+    <tr>
+      <td>Smooth</td>
+      <td>dropdown</td>
+      <td>Type of transition.<br /> <strong>None</strong> = Normal, <strong>Out</strong> = Starts out fast and ends slow, <strong>In</strong> = Starts out slow and ends fast,  <br /> <strong>In/Out</strong>= Starts out slow, gets faster and then slows down at the end again.</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+

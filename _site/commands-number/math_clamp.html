@@ -1,0 +1,39 @@
+<p>Clamps a variable between two values. Intended to use on real values (numbers) only.</p>
+
+<ol>
+  <li>If value of the variable &lt; minimum allowed value, returns minimum allowed value.</li>
+  <li>If value of the variable &gt; maximum allowed value, returns maximum allowed value.</li>
+  <li>If value of the variable is within the allowed range, returns the original value.</li>
+</ol>
+
+<div class="alert alert-danger" role="alert">
+   Do not use Math: Clamp on strings, as this will result in a syntax error and LB crashing.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variable</td>
+      <td>String</td>
+      <td>Name of the variable to clamp.</td>
+    </tr>
+    <tr>
+      <td>Min <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real (number)</td>
+      <td>Minimum value allowed.</td>
+    </tr>
+    <tr>
+      <td>Max <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real (number)</td>
+      <td>Maximum value allowed.</td>
+    </tr>
+  </tbody>
+</table>
+

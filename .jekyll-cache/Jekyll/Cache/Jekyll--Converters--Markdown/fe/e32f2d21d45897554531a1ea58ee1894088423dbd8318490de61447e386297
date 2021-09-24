@@ -1,0 +1,7 @@
+I"‚<ul>
+  <li>OBS Studio <a href="https://obsproject.com/">Download Link</a>
+LioranBoard is to be used in combination with OBS Studio. It does not work with Streamlabs OBS.</li>
+  <li>OBS Websocket <a href="https://github.com/Palakis/obs-websocket">Download link</a>
+This is how LioranBoard communicates with OBS. We recommend installing the latest version to avoid any issues.</li>
+</ul>
+:ET

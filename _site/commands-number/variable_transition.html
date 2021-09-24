@@ -1,0 +1,35 @@
+<p>Transitions a variable (number) from a starting value to a final value over a given duration.<br />
+This command can act as a timer to trigger other commands or buttons.<br />
+For example, if you set the start value to 10, final value to 0 and duration to 10000ms (=10 seconds), it will decrease the value by 1 every second and reach 0 after exactly 10 seconds.</p>
+
+<div class="alert alert-warning" role="alert">
+   Variable will stop transitioning if the button it was triggered with is cleared.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variable</td>
+      <td>String</td>
+      <td>Name of the variable.</td>
+    </tr>
+    <tr>
+      <td>Operator</td>
+      <td>Dropdown</td>
+      <td>Operator you wish to use on the value.</td>
+    </tr>
+    <tr>
+      <td>Value <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Any</td>
+      <td>Whatever you want to set the variable value to. Can contain complex math.</td>
+    </tr>
+  </tbody>
+</table>
+

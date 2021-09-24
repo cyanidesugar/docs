@@ -1,0 +1,20 @@
+<p>LioranBoard can connect to your OBS from another PC, as long as they are both sharing the same network.\</p>
+
+<p><strong>Streaming PC</strong></p>
+<ol>
+  <li>Run your OBS as normal.</li>
+  <li>Open your command line and type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note down your IPv4 address. It should start with <code class="language-plaintext highlighter-rouge">192.168</code>.</li>
+</ol>
+
+<p><strong>Gaming PC</strong></p>
+<ol>
+  <li>Go to your LioranBoard/Receiver folder and open <code class="language-plaintext highlighter-rouge">connect.ini</code>. Under <code class="language-plaintext highlighter-rouge">[connection]</code> section, add a new entry: <code class="language-plaintext highlighter-rouge">websocket_ip="YOUR STREAMING PC IPv4"</code>.</li>
+  <li>
+    <p>Save the file, open Lioranboard and try connecting to the OBS websocket on your streaming PC.<br />
+It should work as long as nothing (antivirus, firewall) is blocking connection to your streaming PC.</p>
+
+    <figure class="figure"><img src="/assets/images/faq-general/obs-another-pc.png" class="figure-img img-fluid rounded w-50" alt="Modified connect.ini" title="Click to enlarge" data-bs-target="#obs-another-pcpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Modified connect.ini </figcaption></figure>
+  </li>
+</ol>
+<div class="modal fade" id="obs-another-pcpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/faq-general/obs-another-pc.png" class="img-fluid" alt="Modified connect.ini" /></div></div></div>
+

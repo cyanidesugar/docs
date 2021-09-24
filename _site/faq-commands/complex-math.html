@@ -1,0 +1,85 @@
+<p>You can execute complex math operations in every parameter box, using a mix of variables and real values.</p>
+<ul>
+  <li>Each time you want LB to execute any kind of math, you need to wrap the whole sequence in parentheses: <code class="language-plaintext highlighter-rouge">(some math operation)</code>, for example <code class="language-plaintext highlighter-rouge">(variable+3*5+round(variable2))</code> or <code class="language-plaintext highlighter-rouge">(variable+10)</code>.</li>
+  <li>If you just want to insert a stack or variable name, it still needs to be wrapped in <code class="language-plaintext highlighter-rouge">( )</code>, for example <code class="language-plaintext highlighter-rouge">(variable)</code>.</li>
+  <li>For stacks you can use <code class="language-plaintext highlighter-rouge">([x]stackname)</code> where x is  the position of the stack value.</li>
+  <li>There is a maximum of 256 characters per input box.</li>
+</ul>
+
+<table class="table table-primary table-hover">
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Name</th>
+      <th>Example (without parentheses)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>+</td>
+      <td>Add</td>
+      <td><code class="language-plaintext highlighter-rouge">3+2</code></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Subtract</td>
+      <td><code class="language-plaintext highlighter-rouge">3-2</code></td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Divide (including decimals)</td>
+      <td><code class="language-plaintext highlighter-rouge">3/2</code> = 1.5</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Multiply</td>
+      <td><code class="language-plaintext highlighter-rouge">3*2</code> = 6</td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td>XOR</td>
+      <td><code class="language-plaintext highlighter-rouge">3^2</code> = 1</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>OR</td>
+      <td><code>3|2</code> = 3</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>AND</td>
+      <td><code class="language-plaintext highlighter-rouge">3&amp;2</code> = 2</td>
+    </tr>
+    <tr>
+      <td>$</td>
+      <td>Hexadecimal</td>
+      <td><code class="language-plaintext highlighter-rouge">$FFF</code> = 4095</td>
+    </tr>
+    <tr>
+      <td>round()</td>
+      <td>Round to nearest integer</td>
+      <td><code class="language-plaintext highlighter-rouge">round(3.4)</code> = 3</td>
+    </tr>
+    <tr>
+      <td>ceil()</td>
+      <td>Ceil (Round up)</td>
+      <td><code class="language-plaintext highlighter-rouge">ceil(3.4)</code> = 4</td>
+    </tr>
+    <tr>
+      <td>floor()</td>
+      <td>Floor (Round down)</td>
+      <td><code class="language-plaintext highlighter-rouge">floor(3.8)</code> = 3</td>
+    </tr>
+    <tr>
+      <td>mod</td>
+      <td>Modulus (division remainder). Space required before and after mod.</td>
+      <td><code class="language-plaintext highlighter-rouge">7 mod 3</code> = 1 or <code class="language-plaintext highlighter-rouge">(7+3) mod (2+4)</code> = 4</td>
+    </tr>
+    <tr>
+      <td>div</td>
+      <td>Divide (no decimals). Space required before and after div.</td>
+      <td><code class="language-plaintext highlighter-rouge">7 div 3</code> = 2 or <code class="language-plaintext highlighter-rouge">(7+3) div (2+4)</code> = 1</td>
+    </tr>
+  </tbody>
+</table>
+

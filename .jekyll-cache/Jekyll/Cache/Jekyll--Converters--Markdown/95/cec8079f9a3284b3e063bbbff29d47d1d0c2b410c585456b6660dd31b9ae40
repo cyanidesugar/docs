@@ -1,0 +1,24 @@
+I"³<p>Complete installation instructions:</p>
+
+<div class="embed-responsive embed-responsive-16by9 w-100">
+<iframe class="embed-responsive-item" src="wLqz5um0hjQ" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div>
+
+<p>After downloading and extracting the .zip file, you will see a few different folders:</p>
+
+<ul>
+  <li>LioranBoard Receiver
+This folder contains the main editor called LioranBoard Receiver.exe, where you set up all the important connections, create buttons and commands. This needs to be running at all times for LioranBoard to work.</li>
+  <li>LioranBoard Stream Deck (PC)
+This is your PC Stream Deck which connects to the Receiver. From here you can trigger your buttons that you created in the Receiver.</li>
+  <li>LioranBoard Stream deck (Android)
+This is your Android Stream Deck which can be used to connect to Receiver on any Android device.</li>
+</ul>
+
+<p>For now you can ignore the other folders.</p>
+
+<blockquote>
+  <p>It is recommended to not install LioranBoard in Program Files folder as it sometimes tends to block LioranBoard from writing in its own folder.</p>
+</blockquote>
+:ET

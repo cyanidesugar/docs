@@ -1,0 +1,8 @@
+I"”<ol>
+  <li>Open LioranBoard Receiver and click on Link your Twitch.</li>
+  <li>You can select which Authorization scopes (permissions) you want LB to be able to use. Default values are recommended, unless youâ€™re installing a new extension that requires some additional ones.</li>
+  <li>Click on Open URL.<a class="img-toggle" role="button" href="#lb_link_twitch" data-bs-toggle="collapse" aria-controls="lb_link_twitch" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>LioranBoard Linking Twitch Account </b></a></li>
+</ol>
+<div class="collapse row" id="lb_link_twitch"><img src="assets/images/setup/LM7Zjfg.png" class="figure-img img-fluid rounded" alt="LioranBoard Linking Twitch Account" title="LioranBoard Linking Twitch Account" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i="></script></div></div>
+:ET

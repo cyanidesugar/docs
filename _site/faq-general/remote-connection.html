@@ -1,0 +1,22 @@
+<p>It’s possible to remotely connect and control your LioranBoard via Stream Deck from anywhere in the world.<br />
+There are multiple ways to accomplish this. This documentation covers the easiest and most accessible one.</p>
+
+<ol>
+  <li>Download Ngrok and sign up for an account.</li>
+  <li>Log in to your account and retrieve your authtoken.</li>
+  <li>Go to the downloaded file, unzip it and run ngrok.exe. You should see a command line open.</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">ngrok authtoken YOURAUTHTOKEN</code> and press enter. You should see a message <code class="language-plaintext highlighter-rouge">Authtoken saved to configuration file: C:\Users\...</code>. This step is necessary to prevent your session from timing out.</li>
+  <li>To start the tunnel, type <code class="language-plaintext highlighter-rouge">ngrok tcp 9423</code> and hit enter. <br /> The default region is US. You can change it by adding <code class="language-plaintext highlighter-rouge">-region=REGION</code> flag. Available regions: us, eu, ap, au, sa, jp, in. Example: <code class="language-plaintext highlighter-rouge">ngrok tcp -region=eu 9423</code>.</li>
+  <li>You should see your session started. Go to your Stream Deck and paste the new IP and port from the Forwarding line (make sure to omit the <code class="language-plaintext highlighter-rouge">tcp://</code> part). As long as your tunnel is active, you can connect to your Receiver from anywhere in the world now! :)
+    <figure class="figure"><img src="/assets/images/faq-general/ngrok.png" class="figure-img img-fluid rounded w-50" alt="Creating a new tunnel via ngrok" title="Click to enlarge" data-bs-target="#ngrokpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Creating a new tunnel via ngrok </figcaption></figure>
+  </li>
+</ol>
+<div class="modal fade" id="ngrokpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/faq-general/ngrok.png" class="img-fluid" alt="Creating a new tunnel via ngrok" /></div></div></div>
+
+<p>All currently active tunnels can be seen on your dashboard.<br />
+If you wish to close the tunnel, you can press CTRL+C or type <code class="language-plaintext highlighter-rouge">taskkill /f /im ngrok.exe</code> in the command line and press enter.</p>
+
+<div class="alert alert-warning" role="alert">
+   Do not share your tunnel IP and port with anyone else. If you accidentally leak it, you should terminate the service and relaunch it, as anyone who knows the address could potentially connect and press buttons in your Stream Deck.
+  </div>
+

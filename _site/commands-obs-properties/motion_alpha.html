@@ -1,0 +1,45 @@
+<p>Changes the transparency of a source over a set duration.<br />
+Requires a Color Correction filter to be added to your source.<br />
+This way you can gradually fade out a source before turning its visibility completely off and gradually fade in a source after turning its visibility on.</p>
+
+<div class="alert alert-warning" role="alert">
+   Older Color Correction filters require 0-100 range, however newer ones require 0-1 range.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>source</td>
+      <td>String	Source name to change the transparency of.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>filterName</td>
+      <td>String</td>
+      <td>Filter name. Must be a Color Correction filter.</td>
+    </tr>
+    <tr>
+      <td>Start Alpha% <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real</td>
+      <td>Starting transparency percentage. 0-100 or 0-1 depending on the filter’s version.</td>
+    </tr>
+    <tr>
+      <td>Final Alpha% <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real</td>
+      <td>Final transparency percentage. 0-100 or 0-1 depending on the filter’s version.</td>
+    </tr>
+    <tr>
+      <td>Dur.(MS) <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Int</td>
+      <td>Transition duration in milliseconds</td>
+    </tr>
+  </tbody>
+</table>
+

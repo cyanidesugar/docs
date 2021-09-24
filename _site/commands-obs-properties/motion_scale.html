@@ -1,0 +1,62 @@
+<p>Resizes a source from Size A to size B over a given duration.<br />
+Due to the way the OBS source resizing work, the result might look a bit snappy sometimes.<br />
+The way the source is resized is based on what the source’s point of origin is set to in OBS.<br />
+You can use negative values for a horizontal (mirror) or vertical source flip.<br />
+You can use Math: Pull Source Value command to find current source’s X and Y size and incorporate it into this command.</p>
+
+<div class="alert alert-info" role="alert">
+   The higher your Receiver's FPS (max 60) the smoother the animation is going to be.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scene</td>
+      <td>String</td>
+      <td>Scene name containing the source</td>
+    </tr>
+    <tr>
+      <td>source</td>
+      <td>String</td>
+      <td>Source name to scale</td>
+    </tr>
+    <tr>
+      <td>Start Xscale <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real</td>
+      <td>Starting X size</td>
+    </tr>
+    <tr>
+      <td>Start Yscale <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real</td>
+      <td>Starting Y size</td>
+    </tr>
+    <tr>
+      <td>Final Xscale <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real</td>
+      <td>Final X size</td>
+    </tr>
+    <tr>
+      <td>Final Yscale <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Real</td>
+      <td>Final Y size</td>
+    </tr>
+    <tr>
+      <td>Dur.(MS) <i class="fas fa-asterisk" style="color:FireBrick;" title="Parameter can be a variable, real value or a string"></i></td>
+      <td>Int</td>
+      <td>Duration of the transition in milliseconds</td>
+    </tr>
+    <tr>
+      <td>Smooth</td>
+      <td>dropdown</td>
+      <td>Type of transition.<br /> <strong>None</strong> = Normal, <strong>Out</strong> = Starts out fast and ends slow, <strong>In</strong> = Starts out slow and ends fast,  <br /> <strong>In/Out</strong>= Starts out slow, gets faster and then slows down at the end again.</td>
+    </tr>
+  </tbody>
+</table>
+

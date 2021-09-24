@@ -1,0 +1,4 @@
+I"(<p>If you installed all the necessary dependencies, go to your OBS-Tools-Websockets Server Settings and make sure Enable Websockets server is checked. You can also enable authentication and set up a password if desired. <a class="img-toggle" role="button" href="#obsws_settings" data-bs-toggle="collapse" aria-controls="obsws_settings" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>OBS Websocket Server Settings </b></a></p>
+<div class="collapse row" id="obsws_settings"><img src="assets/images/setup/UBYECH0.png" class="figure-img img-fluid rounded" alt="OBS Websocket Server Settings" title="OBS Websocket Server Settings" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i="></script></div></div>
+:ET

@@ -1,0 +1,61 @@
+I"�<p>LioranBoard can listen to OBS events provided by OBS Websocket. All triggers you create are saved in <code class="language-plaintext highlighter-rouge">listen_obs_event.ini</code> in your Receiver folder.</p>
+
+<h4 id="1-add-a-new-obs-trigger">1. Add a new OBS trigger</h4>
+<p>You can add new triggers manually or by listening to OBS events.</p>
+
+<h5 id="manually">Manually</h5>
+<ol>
+  <li>Find the event’s name you would like to listen to. All available events can be found in the <a href="https://github.com/Palakis/obs-websocket/blob/4.x-current/docs/generated/protocol.md#events">OBS websocket documentation</a>.</li>
+  <li>In the main Receiver menu, click on <code class="language-plaintext highlighter-rouge">OBS Trigger</code> button.</li>
+  <li>Press Add:
+    <ul>
+      <li>Event: The event’s name found in the OBS Websocket documentation</li>
+      <li>Trigger: Your custom trigger. Can be anything you’d like.</li>
+      <li>Values 1-10: Response item’s names found in the OBS Websocket documentation. One per box.</li>
+    </ul>
+  </li>
+  <li>Press Add again.</li>
+  <li>Press Done.</li>
+</ol>
+
+<p><a class="img-toggle" role="button" href="#obs_add" data-bs-toggle="collapse" aria-controls="obs_add" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Video Guide</b></span></a></p>
+<div class="collapse" id="obs_add"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="100%" src="/assets/videos/triggers/obs_add.mp4" title="Video Guide" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div>
+
+<h5 id="by-listening-to-obs-events">By listening to OBS events</h5>
+<ol>
+  <li>In the main Receiver menu, click on <code class="language-plaintext highlighter-rouge">OBS Trigger</code> button.</li>
+  <li>Press Add. LioranBoard will start scanning for all OBS events.</li>
+  <li>Manually perform the OBS action in your OBS. For example, for Switch Scenes event, go to your OBS and switch scenes.</li>
+  <li>A list of all events will appear in the Latest Event window.
+    <ul>
+      <li>Select the one you wish to add.</li>
+      <li>Event and Trigger boxes will automatically populate</li>
+      <li>You can freely change the Trigger name to a custom name. Can contain spaces.</li>
+    </ul>
+  </li>
+  <li>Perform the same OBS action in your OBS again.</li>
+  <li>This time you will see a list of all values OBS Websocket provides for the specific event in the same window.
+    <ul>
+      <li>Select all values you need.</li>
+      <li>Selected values will automatically populate Value 1-10 boxes.</li>
+    </ul>
+  </li>
+  <li>Press Add.</li>
+  <li>Press Done.</li>
+</ol>
+
+<p><a class="img-toggle" role="button" href="#obs_add2" data-bs-toggle="collapse" aria-controls="obs_add2" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Video Guide</b></span></a></p>
+<div class="collapse" id="obs_add2"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="100%" src="/assets/videos/triggers/obs_add2.mp4" title="Video Guide" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div>
+
+<h4 id="2-attach-your-newly-added-trigger-to-a-button">2. Attach your newly added trigger to a button</h4>
+<ol>
+  <li>Select a button you want to trigger for the event.</li>
+  <li>Right click on the button - Add/Edit Twitch Triggers.</li>
+  <li>Click on the + sign and select Extension Trigger.</li>
+  <li>Type the custom trigger’s name you added in the previous step.</li>
+  <li>Inside the button, use Math: Trigger Pull command to pull Extension values 1-10 that you added in the previous steps.</li>
+</ol>
+
+<p><a class="img-toggle" role="button" href="#obs_attach" data-bs-toggle="collapse" aria-controls="obs_attach" aria-expanded="false"><span class="iconCollapse"><i class="far fa-plus-square fa-2x mx-auto"></i><i class="far fa-minus-square fa-2x mx-auto"></i><b> Video Guide</b></span></a></p>
+<div class="collapse" id="obs_attach"><div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="100%" src="/assets/videos/triggers/obs_attach.mp4" title="Video Guide" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div></div>
+:ET

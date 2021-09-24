@@ -1,0 +1,2 @@
+I"#<p>Transmitter (tsl_transmitter.html) is a simple .html file which allows LioranBoard to communicate with external sources, including Twitch and all the extensions. It needs to be running at ALL times and always only ONE instance, as LioranBoard does not allow more than one connection.</p>
+:ET

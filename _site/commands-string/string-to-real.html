@@ -1,0 +1,83 @@
+<p>Turns a string value into a real value (number).</p>
+<ul>
+  <li>returns 0 if the string does not start with a number or <code class="language-plaintext highlighter-rouge">.</code></li>
+  <li>stops the conversion if it encounters any non number in the string and returns the current converted value</li>
+  <li>converting a value that’s already real returns 0</li>
+  <li>removes any leading zeroes and rounds the number to 2 decimal points</li>
+  <li>string X beginning with a <code class="language-plaintext highlighter-rouge">.</code> will be converted to 0.X</li>
+  <li>accepts strings containing Euler’s number</li>
+</ul>
+
+<table class="table table-primary ">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variable</td>
+      <td>String</td>
+      <td>Name of a variable to save the real value.</td>
+    </tr>
+    <tr>
+      <td>String Variable</td>
+      <td>String</td>
+      <td>Name of a variable containing the string to convert.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-secondary w-auto table-responsive table-hover">
+  <thead>
+    <tr>
+      <th>String Variable value</th>
+      <th>Returned real value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“Hello World”</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>“Hello World 123”</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>“123 Hello World”</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>“123 Hello World 456”</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>“.99”</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>“1.239999”</td>
+      <td>1.24</td>
+    </tr>
+    <tr>
+      <td>“000010”</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>“10e-2”</td>
+      <td>0,10</td>
+    </tr>
+    <tr>
+      <td>“10e+2”</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+

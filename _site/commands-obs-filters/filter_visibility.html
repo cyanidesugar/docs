@@ -1,0 +1,35 @@
+<p>Changes visibility of a filter in a given source.<br />
+It is highly recommended to use True and False. Toggle should be used only if it’s a single button command.</p>
+
+<div class="alert alert-warning
+" role="alert">
+   Changing filter visibility on sources inside groups is very inconsistent. It's recommended to use nested scenes instead.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sourceName</td>
+      <td>String</td>
+      <td>Source name containing the filter</td>
+    </tr>
+    <tr>
+      <td>filterName</td>
+      <td>String</td>
+      <td>Filter name to change the visibility</td>
+    </tr>
+    <tr>
+      <td>filterEnabled</td>
+      <td>boolean</td>
+      <td>Enable or disable filter’s visibility. On/off or toggle to reverse current state.</td>
+    </tr>
+  </tbody>
+</table>
+

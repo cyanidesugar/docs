@@ -1,0 +1,45 @@
+<p>Returns a JSON string of the whole stack.<br />
+First value will be listed as “0”, second one as “1”, etc., “name”  and “size” values will be also included.<br />
+Default JSON string format is <code class="language-plaintext highlighter-rouge">{"size":3, "0":"white cat", "1":"blue car", "2":8}</code>.<br />
+You can use this command together with File: Save String command to save the stack values into .ini file. Once loading it back from the .ini file, you can use Stack: Parse to turn the JSON string back into a stack.</p>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stack Name</td>
+      <td>String</td>
+      <td>Name of the stack</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-secondary w-auto table-hover align-middle data-toggle='table">
+  <thead>
+    <tr>
+      <th>Original Stack</th>
+      <th>JSON string after conversion (notice the order is not consistent)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0: 5 <br /> 1: 20 <br />2: 100</td>
+      <td>{ “1”: 20.000000, “size”: 3.000000, “0”: 5.000000, “2”: 100.000000, “name”: “numbers” }</td>
+    </tr>
+    <tr>
+      <td>0: “Cat” <br /> 1: “Rabbit” <br />2: “Dog”</td>
+      <td>{ “1”: “Rabbit”, “size”: 3.000000, “0”: “Cat”, “2”: “Dog”, “name”: “animals” }</td>
+    </tr>
+    <tr>
+      <td>0: “Cat” <br /> 1: 50<br />2: “Rabbit” <br />3: 100</td>
+      <td>{ “1”: 50.000000, “3”: 100.000000, “size”: 4.000000, “0”: “Cat”, “2”: “Rabbit”, “name”: “mixed” }</td>
+    </tr>
+  </tbody>
+</table>
+

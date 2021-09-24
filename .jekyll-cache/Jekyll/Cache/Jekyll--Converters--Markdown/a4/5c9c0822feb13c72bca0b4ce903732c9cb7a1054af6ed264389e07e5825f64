@@ -1,0 +1,37 @@
+I"�<p>Transmitter (tsl_transmitter.html) is a simple .html file which allows LioranBoard to communicate with external sources, including Twitch and all the extensions. It needs to be running at ALL times and always only ONE instance, as LioranBoard does not allow more than one connection.</p>
+
+<p>The Transmitter is divided into tabs, each representing one extension. You can freely organize them and also completely hide them (by ticking/unticking the checkboxes). There are different themes you can choose from as well. The main tab Pubsub Alerts contains buttons and input boxes that you can use to test various Twitch alerts (once you set them up in your Receiver), coming from either Twitch Pubsub or Twitch Chat. Please note that Follower Alerts need to be tested in a separate extension.</p>
+
+<figure class="figure">
+    <a href="assets/images/setup/transmitter.png" data-bs-toggle="lightbox" data-title="Basic structure of Transmitter.html" data-type="image">
+    <img src="assets/images/setup/transmitter.png" class="figure-img img-fluid rounded w-50" alt="Basic structure of Transmitter.html" title="Click to enlarge" />
+    <figcaption class="figure-caption">Basic structure of Transmitter.html</figcaption>
+    </a></figure>
+
+<p><strong>Adding Transmitter to OBS</strong></p>
+
+<p>There are three different ways to use Transmitter:</p>
+
+<ol>
+  <li>As a dock in OBS<br />
+ This is the simplest and most effective way. You can create a dock by clicking on View-Docks-Custom Browser Docks and fill in the path to the file. Click on apply and place the dock wherever it suits you in OBS. You will need to keep it open at all times. <figure class="figure">
+ <a href="assets/images/setup/uUpvr4N.png" data-bs-toggle="lightbox" data-title="Transmitter in OBS Dock" data-type="image">
+ <img src="assets/images/setup/uUpvr4N.png" class="figure-img img-fluid rounded w-80" alt="Transmitter in OBS Dock" title="Click to enlarge" />
+</a></figure>    <figcaption class="figure-caption">Transmitter in OBS Dock</figcaption>
+    <p>&lt;/a&gt;&lt;/figure&gt;</p>
+  </li>
+  <li>As a browser source in OBS.<br />
+This is highly discouraged as it is easy to lose track of it and accidentally get two transmitters running at the same time (which you then have to locate and disable/remove, else LB will not work).</li>
+  <li>Running it in your browser outside of OBS.<br />
+This is needed in some cases, for example if you want to use Text to Speech extension.</li>
+</ol>
+
+<p><a class="img-toggle" role="button" href="#" data-bs-toggle="collapse" aria-controls="" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Basic structure of Transmitter.html </b></a></p>
+<div class="collapse row"><img src="assets/images/setup/transmitter.png" class="figure-img img-fluid rounded" alt="Basic structure of Transmitter.html" title="Basic structure of Transmitter.html" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i="></script></div></div>
+
+<p>If you did everything right, there should be a green text saying “Connected to LioranBoard” inside your Transmitter.
+You should also see a yellow notification message in your Receiver saying “TSL Transmittor is connected”.
+If you see an error message that second Transmitter tried to connect, you need to locate and close it for LB to work properly. If your Receiver crashes when you try to connect to the Transmitter, make sure you are on the latest version. Some improperly coded extensions can also crash your Receiver.</p>
+
+:ET

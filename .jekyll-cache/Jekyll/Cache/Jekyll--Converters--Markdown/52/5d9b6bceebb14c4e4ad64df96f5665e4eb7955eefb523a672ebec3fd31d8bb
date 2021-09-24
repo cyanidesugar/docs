@@ -1,0 +1,23 @@
+I"ˆ<h3 id="requirements">Requirements</h3>
+<p><strong>Operating System</strong>   <br />
+LioranBoard is fully supported on Windows. <br />
+You should be able to run it on Linux and MacOs using <a href="https://www.winehq.org/">Wine</a>, however we cannot guarantee its functionality.</p>
+
+<p><strong>OBS Studio</strong>   <br />
+LioranBoard is compatible with OBS Studio. Other streaming software, such as Streamlabs OBS, is not currently supported.   <br />
+<strong><a href="https://obsproject.com/">Download Link</a></strong></p>
+
+<p><strong>OBS Websocket</strong>     <br />
+This is how LioranBoard communicates with OBS Studio. We recommend always installing the latest version. <br />
+<strong><a href="https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/">Download Link</a></strong></p>
+
+<h3 id="lioranboard">LioranBoard</h3>
+<p>Latest stable version. Recommended for most users.   <br />
+<strong><a href="https://obsproject.com/forum/resources/lioranboard-stream-deck-animator.862/">Download Link</a></strong></p>
+
+<p>You can check our <strong><a href="https://discord.gg/dXez8Zh">Discordâ€™s</a></strong> Announcements channel for any unreleased and beta versions.</p>
+
+<h3 id="extensions">Extensions</h3>
+
+<p>Extensions can be found in our Extension section or #releases channel in our <strong><a href="https://discord.gg/dXez8Zh">Discord</a></strong> server!</p>
+:ET

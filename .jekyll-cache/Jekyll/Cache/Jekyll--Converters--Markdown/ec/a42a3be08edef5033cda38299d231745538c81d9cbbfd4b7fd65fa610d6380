@@ -1,0 +1,66 @@
+I"R<p>Transmitter is the <code>tsl_transmitter.html</code> file in your lioranboard folder. 
+Transmitter connects to your Receiver to receive and send messages. It also controls Twitch connection.</p>
+<div class="alert alert-warning" role="alert">
+   Transmitter must be running at all times for Twitch connection and extensions to work.
+  </div>
+
+<p><strong>Latest Version</strong>  <br />
+The latest Transmitter version can be found at our <a href="https://github.com/christinna9031/LioranBoard-Transmitter">Github repository</a>.   <br />
+Go to releases and download the latest version if you just need to replace your current Transmitter with a clean one.</p>
+
+<p><strong>How to run Transmitter:</strong></p>
+<ol>
+  <li>
+    <p>As a dock in OBS 
+This is the simplest and most effective way. You can create a dock by clicking on View-Docks-Custom Browser Docks and fill in the path to the file. Click on apply and place the dock wherever it suits you in OBS. You will need to keep it open at all times.</p>
+
+    <figure class="figure">
+ <a href="/assets/images/getting-started/transmitter_dock.png" data-bs-toggle="lightbox" data-title="Transmitter Dock in OBS" data-type="image">
+ <img src="/assets/images/getting-started/transmitter_dock.png" class="figure-img img-fluid rounded w-" alt="Transmitter Dock in OBS" title="Click to enlarge" />
+ <figcaption class="figure-caption">Transmitter Dock in OBS</figcaption>
+ </a></figure>
+  </li>
+  <li>As a browser source in OBS.  <br />
+This is highly discouraged as it is easy to lose track of it and accidentally get two Transmitters running at the same time.</li>
+  <li>In your browser (such as Chrome or Firefox) outside of OBS.
+This might be needed for some extensions or debugging purposes.</li>
+</ol>
+
+<div class="alert alert-danger" role="alert">
+   You can have only one Transmitter open at the same time. If you see an error 'Second Transmitter tried to connect', locate the other Transmitter and close it.
+  </div>
+
+<figure class="figure">
+    <a href="/assets/images/getting-started/transmitter.png" data-bs-toggle="lightbox" data-title="Transmitter" data-type="image">
+    <img src="/assets/images/getting-started/transmitter.png" class="figure-img img-fluid rounded w-" alt="Transmitter" title="Click to enlarge" />
+    <figcaption class="figure-caption">Transmitter</figcaption>
+    </a></figure>
+
+<h4 id="connection-status">Connection Status</h4>
+<p>You can see whether you’re connected to Receiver, Twitch Pubsub and Twitch Chat within your Transmitter. Green text ‘Connected’ or a green dot means the connection is alive.</p>
+
+<h4 id="tabs">Tabs</h4>
+<p>Transmitter has a few default tabs. A new tab is created every time you install a new extension.</p>
+
+<ul>
+  <li>Status - you can check whether you’re on the latest versions for all dependencies and components</li>
+  <li>Appearance - remove or enable tab appearance</li>
+  <li>Message Logging - intended for debugging purposes. Logs all messages for Receiver and Twitch connection. Will remember the state even after you close and reopen Transmitter. Don’t forget to turn it off once you’re done debugging.</li>
+  <li>Twitch Triggers - test all your Twitch button triggers by pressing the test buttons. They simulate how Twitch sends all its events.</li>
+</ul>
+
+<h4 id="preinstalled-extensions">Preinstalled extensions</h4>
+
+<p>Please see our Extensions section to understand how to install and use extensions. 
+If you do not wish for the preinstalled extensions to be included, you can use the empty Transmitter file in <code>lioranboard/extensions</code> folder instead.</p>
+
+<ul>
+  <li>Follower Alert - default Twitch connection does not include follower alerts.</li>
+  <li>Change Twitch Status - changes your Twitch title</li>
+  <li>Viewer Count - get the current amount of viewers</li>
+  <li>Subscriber Count - get the current amount of subscribers</li>
+  <li>Get Channel ID - retrieve channel ID by providing your Twitch channel name. Generally needed for a lot of extensions.</li>
+  <li>Bits Leaderboard - retrieve your bits leaderboard.</li>
+  <li>Get Profile Picture - get a profile picture of a user by providing their username.</li>
+</ul>
+:ET

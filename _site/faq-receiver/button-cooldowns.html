@@ -1,0 +1,15 @@
+<p><strong>Adding a cooldown for a single button</strong><br />
+Use the Overtime command, which artificially increases the duration of the button and prevents it from getting triggered again.\</p>
+
+<p><strong>Adding a cooldown for a group of buttons</strong><br />
+If you want to put a group of buttons on cooldown as soon as one of them is triggered, you can follow these steps:</p>
+<ol>
+  <li>Add all buttons to the <strong>same</strong> group ID <em>(right click on a button - Group ID).</em></li>
+  <li>Make sure <code class="language-plaintext highlighter-rouge">Add to Request Queue</code> is checked for all your button triggers <em>(right click on a button - Twitch triggers)</em>.</li>
+  <li>Now every time one of the buttons in the same group triggers, it will automatically add any other triggered buttons sharing the same group into a <strong>queue</strong>, wait for the currently running button to be over and execute the next button in the queue.</li>
+</ol>
+
+<div class="alert alert-warning" role="alert">
+   Group ID and queues only work for buttons that have NOT been manually triggered from your Stream Deck, but rather initiated from an external trigger or Button: Trigger command.
+  </div>
+

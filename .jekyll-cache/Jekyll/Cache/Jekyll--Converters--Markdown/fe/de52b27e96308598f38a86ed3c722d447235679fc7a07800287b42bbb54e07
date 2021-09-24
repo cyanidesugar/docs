@@ -1,0 +1,13 @@
+I"R	<p>If you installed all the necessary dependencies, go to your OBS-Tools-Websockets Server Settings and make sure Enable Websockets server is checked. You can also enable authentication and set up a password if desired. <a class="img-toggle" role="button" href="#obsws_settings" data-bs-toggle="collapse" aria-controls="obsws_settings" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>OBS Websocket Server Settings </b></a></p>
+<div class="collapse row" id="obsws_settings"><img src="assets/images/setup/UBYECH0.png" class="figure-img img-fluid rounded" alt="OBS Websocket Server Settings" title="OBS Websocket Server Settings" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i="></script></div></div>
+
+<p>Launch your LioranBoard Receiver and click on Connect to OBS. If you set up a password in the earlier step, you also need to click on Options and fill out OBSwebsocket Password field.  <a class="img-toggle" role="button" href="#lbobs_settings" data-bs-toggle="collapse" aria-controls="lbobs_settings" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>LioranBoard OBSWS Settings </b></a></p>
+<div class="collapse row" id="lbobs_settings"><img src="assets/images/setup/slg8evY.png" class="figure-img img-fluid rounded" alt="LioranBoard OBSWS Settings" title="LioranBoard OBSWS Settings" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i="></script></div></div>
+
+<p>If connected successfully, the Connect to OBS button will turn gray and you will see a yellow notification message at the bottom of your Receiver, shortly followed by another yellow message “OBS data have been fetched”.   <a class="img-toggle" role="button" href="#lbobs_settings" data-bs-toggle="collapse" aria-controls="lbobs_settings" aria-expanded="false">
+<i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>LioranBoard OBSWS Settings </b></a></p>
+<div class="collapse row" id="lbobs_settings"><img src="assets/images/setup/njcf0z7.png" class="figure-img img-fluid rounded" alt="LioranBoard OBSWS Settings" title="LioranBoard OBSWS Settings" /><div class="row mb-2"><b>Import JSON button</b><script src="http://pastebin.com/embed_js.php?i="></script></div></div>
+
+:ET
