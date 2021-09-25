@@ -9,7 +9,7 @@ permalink: /integrations/youtube
 {% include alert.html text="YouTube Live is a <strong>completely new integration</strong> that we have been working on hard to bring to you! <br> Please note it's still in <strong>alpha phase</strong> and there might be bugs. <br> Feel free to report any issues in <i>#bug-report</i> channel in our official <a href='https://discord.gg/dXez8Zh'><strong>LioranBoard Discord server.</strong></a>" type="info" %} 
 
 #### Download and install
-YouTube Live is not a native integration in LioranBoard, but rather an extension made by [Christina K](https://github.com/christinna9031?tab=repositories).\
+LioranBoard YouTube Live is not a native integration in LioranBoard, but rather an extension made by [Christina K](https://github.com/christinna9031?tab=repositories).\
 It can be downloaded from Itch.io, which is a platform for developers to share their indie games and tools.
 
 <iframe frameborder="0" src="https://itch.io/embed/1206259?border_width=2&bg_color=0b1a2d&fg_color=ffffff&link_color=790158&border_color=284c7b" width="554" height="169"><a href="https://christinak.itch.io/lb-eventsub-webhook">LioranBoard YouTube Live</a></iframe><br>
@@ -47,16 +47,12 @@ Chat polling mode:
 - Stream Elements - polls for new chat messages every 1-2 seconds\
   *This mode is available only if you have set up your SE credentials in the INIT button* 
 
-##### YouTube 
-
-
-
 
 #### Terms of Service 
-Read our [Terms of service]() before using the extension.
+Read our [Terms of service]({{ "integrations/youtube/tos" | relative_url }}) before using the extension.
 
 #### Privacy Policy
-Read our [Privacy Policy]() before using the extension.
+Read our [Privacy Policy]({{ "integrations/youtube/privacy-policy" | relative_url }}) before using the extension.
 
 <!---
 **Why is YouTube Live not completely free like other integrations**\

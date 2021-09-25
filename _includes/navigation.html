@@ -29,8 +29,10 @@
           <ul class="list-unstyled fw-normal pb-1 small sidebar-sidemenu ">
           {% assign posts = site[item.collection] | sort: "num"  %}
           {% for post in posts %}
-            <li><a href="{{ post.url | relative_url }}" class="d-inline-flex align-items-center rounded sidebar-subbutton fs-6 {% if page.title == post.title   %} active {% endif %}">{{ post.title }}</a>
+          {% if post.ignore != true %}
+            <li><a href="{{ post.url | relative_url }}" class="d-inline-flex align-items-center rounded sidebar-subbutton fs-6 {% if page.title == post.title or page.parent == post.title %} active {% endif %}">{{ post.title }}</a>
             </li>
+            {% endif %}
             {% endfor %}
           </ul>
           {% endif %}

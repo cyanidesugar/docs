@@ -2,13 +2,15 @@
 layout: default
 title: LioranBoard YouTube Live Privacy Policy
 menu: Integrations
+parent: YouTube Live
 num: 3
 permalink: /integrations/youtube/privacy-policy
+ignore: true
 ---
 
 LioranBoard YouTube Live and its developer take your privacy very seriously. Beyond the information YouTube provides to developers that you can decide to provide, it uses no third-party analytics or advertising frameworks.
 
-Please see [Google Privacy Policy]https://policies.google.com/privacy, which services our extension uses.
+Please see [Google Privacy Policy](https://policies.google.com/privacy), which services our extension uses.
 
 Any information you provide to us will be only used to generate a token to access the extension and to monitor any excessive traffic in violation with our Terms of Service. 
 
