@@ -22,7 +22,7 @@ Once you have downloaded the zip file, extract it. You will see the following fi
 {% include alert.html text="<code>transmitter_youtube.html</code> does not contain any Twitch related integrations. If you wish to regularly switch between streaming on YouTube Live and Twitch, add both Transmitters to your OBS dock and swap between them." type="warning" %} 
 
 #### Link your account
-You must [Authorize the extension]() to get access to your YouTube Live account. 
+You must [Authorize the extension]({{ "integrations/youtube/auth" | relative_url }}) to get access to your YouTube Live account. 
 
 #### Setup your INIT button
 1. Go to your YouTube Live premade deck in LioranBoard Receiver.
