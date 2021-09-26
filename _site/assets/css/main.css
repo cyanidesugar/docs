@@ -510,6 +510,7 @@ a {
     position:sticky;
     top:66px;
     z-index:9999;
+    background: white;
 
 	}
 
@@ -585,7 +586,7 @@ font-size:0.95rem
 		padding: 1.5rem .75rem;
 		background-color: #f8f9fa;
 		border-bottom: 1px solid #e9ecef;
-    max-height: 500px;
+    max-height: 82vh
 	}
 }
 
