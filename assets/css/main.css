@@ -8,6 +8,9 @@ body {
  /* background: rgb(0 28 36 / 2%);*/
 }
 
+hr {
+height: 4px !important;
+}
  
 code {
 color:#bf3077;
