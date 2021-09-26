@@ -17,6 +17,7 @@ The following premade variables are accessible from all the buttons and their co
 {% include selectAll.html text="transmitter_is_connected" %} | whether Transmitter is connected, 1 for connected and 0 for disconnected
 {% include selectAll.html text="channel_id" %}(hidden) | Twitch Channel ID. Does not show in the list of variables, but can be passed as a parameter in extension fields.
 {% include selectAll.html text="oauth_token" %}(hidden) | Twitch Channel ID. Does not show in the list of variables, but can be passed as a parameter in extension fields.
+{% include selectAll.html text="USERNAME_channelid" %} | Your channel ID for your alternative accounts. Available after Transmitter is connected.
 {:class='table table-secondary w-auto table-hover data-toggle='table' text-break }
 
 

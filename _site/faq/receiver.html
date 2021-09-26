@@ -545,7 +545,7 @@ You can see all the stack values if you type the whole name of the stack.</p>
 
 <div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="50%" src="/assets/videos/faq-receiver/see-variables.mp4" title="Variable screen in Receiver" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div>
 
-</p>
+</p><hr>
       <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="premadevariables">
         
         
@@ -600,10 +600,14 @@ You can see all the stack values if you type the whole name of the stack.</p>
       <td> <span class="user-select-all"> oauth_token </span> (hidden)</td>
       <td>Twitch Channel ID. Does not show in the list of variables, but can be passed as a parameter in extension fields.</td>
     </tr>
+    <tr>
+      <td> <span class="user-select-all"> USERNAME_channelid </span> </td>
+      <td>Your channel ID for your alternative accounts. Available after Transmitter is connected.</td>
+    </tr>
   </tbody>
 </table>
 
-</p>
+</p><hr>
       <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="setupbuttoncooldowns">
         
         
@@ -627,7 +631,7 @@ If you want to put a group of buttons on cooldown as soon as one of them is trig
    Group ID and queues only work for buttons that have NOT been manually triggered from your Stream Deck, but rather initiated from an external trigger or Button: Trigger command.
   </div>
 
-</p>
+</p><hr>
       <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="blockbuttonsfromexecutingtemporarily">
         
         
@@ -639,7 +643,7 @@ If you want to put a group of buttons on cooldown as soon as one of them is trig
   <p><p>You can use  <a href="">Block Button </a> command to temporarily block a button from executing.<br />
  If you enable <code class="language-plaintext highlighter-rouge">Allow Queue</code>, all the incoming triggers will be savely queued up and executed as soon as you use Block Button command again to unblock the button.<br />
 This is extremely useful if you want to make sure you don’t miss any alerts while you’re on a BRB scene.</p>
-</p>
+</p><hr>
       <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="customfontsandspecialcharacters">
         
         
@@ -650,7 +654,7 @@ This is extremely useful if you want to make sure you don’t miss any alerts wh
     
   <p><p>Any characters not supported by LioranBoard will be displayed as invisible characters within the Receiver.<br />
 The characters themselves are correctly saved and will be correctly displayed outside of LioranBoard (such as in your Twitch Chat message).</p>
-</p>
+</p><hr>
       <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="wildcards">
         
         
@@ -730,7 +734,7 @@ Now if you make your <a href="">String: Wildcard Pull</a> command pull the first
 <div class="alert alert-warning" role="alert">
    A single <i class="fas fa-star-of-life fa-sm"></i> in your Point Redeem With Message Trigger field allows for any message to trigger your button, but does not function as an actual wild card. Use Math: Trigger pull to pull the whole message.
   </div>
-</p>
+</p><hr>
       <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="triggerbuttonswithkeyboardshortcuts">
         
         
@@ -742,7 +746,7 @@ Now if you make your <a href="">String: Wildcard Pull</a> command pull the first
   <p><p>You can set up hotkeys to trigger LioranBoard buttons by selecting Trigger Shortcut button in the main Receiver menu.<br />
 Click on the little <code class="language-plaintext highlighter-rouge">+,</code> choose the type (only keyboard, gamepad and midi keyboard supported), key, an optional modifier and fill in your button ID.</p>
 
-</p>
+</p><hr>
       <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="shareabutton">
         
         
@@ -763,7 +767,7 @@ Click on the little <code class="language-plaintext highlighter-rouge">+,</code>
 
 <div class="embed-responsive mb-3"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video" width="50%" src="/assets/videos/faq-receiver/import-button.mp4" title="Import a button" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div>
 
-</p>
+</p><hr>
       <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="shareadeck">
         
         
@@ -786,8 +790,10 @@ Click on the little <code class="language-plaintext highlighter-rouge">+,</code>
   </li>
   <li>To make sure you’re copying the right deck file, you can open the <code class="language-plaintext highlighter-rouge">configs.ini</code> file and find <code class="language-plaintext highlighter-rouge">[configs]</code> section. The name value should be the name of your deck.</li>
 </ol>
-</p>
+</p><hr>
     
+
+
     </div>
 
   </div>
