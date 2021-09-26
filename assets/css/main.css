@@ -517,6 +517,7 @@ a {
   .collapse.lb-links.show {
     transition: 0.3s ease-in-out 0s, opacity 0.3s ease-in-out .3s;
     box-shadow: 0 0 4px 4px #3146617a;
+    background:#f8f9fa
   }
 }
 
