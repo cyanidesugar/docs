@@ -8,7 +8,7 @@ main:
 - name: Commands
   submenus: 
     - name: Variables
-      link: commands/variable
+      link: commands/variables
       collection: commands-variable
     - name: Number methods
       link: commands/number

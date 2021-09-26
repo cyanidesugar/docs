@@ -309,19 +309,23 @@ a {
 
 /*search bar */
 
-.lb-subnavbar {
+/*.lb-subnavbar {
      position: relative; 
      z-index: 1020; 
      background-color: rgba(255,255,255,0.95); 
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05),inset 0 -1px 0 rgba(0,0,0,0.15);
-}
+}*/
 
 .lb-subnavbar {
-	position: relative;
-	z-index: 1020;
-	background-color: rgba(255, 255, 255, 0.95);
-	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.15)
+  position: relative; 
+  z-index: 1020; 
+  background-color: rgba(255,255,255,0.95); 
+ box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05),inset 0 -1px 0 rgba(0,0,0,0.15);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
+
 
 .lb-subnavbar .dropdown-menu {
 	font-size: .875rem;
@@ -336,13 +340,14 @@ a {
 	background-size: .75rem .75rem
 }
 
+/*
 @media (min-width: 768px) {
 	.lb-subnavbar {
 		position: -webkit-sticky;
 		position: sticky;
 		top: 0
 	}
-}
+}*/
 
 .lb-search {
 	position: relative
@@ -497,8 +502,18 @@ a {
 
 @media (max-width: 767.98px) {
 	.lb-sidebar {
-		margin: 0 -.75rem 1rem
+		margin: 0 -.75rem 1rem;
+    overflow:visible;
+    position:sticky;
+    top:66px;
+    z-index:9999;
+
 	}
+
+  .collapse.lb-links.show {
+    transition: 0.3s ease-in-out 0s, opacity 0.3s ease-in-out .3s;
+    box-shadow: 0 0 4px 4px #3146617a;
+  }
 }
 
 a.nav-link.sidebar-innerbutton.fs-7.active {
@@ -1018,4 +1033,77 @@ a {
   font-size: larger;
 }
 
+.footer-basic {
+  padding:40px 0;
+  background-color:#142e50;
+  color:white;
+}
 
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:45px;
+  display:inline-block;
+  text-align:center;
+  /*border-radius:50%;
+  border:1px solid #ccc;*/
+  margin:0 8px;
+  color:white;
+  opacity:0.75;
+
+}
+
+.footer-basic svg {
+  vertical-align:text-top !important;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+.copyright a {
+  color:white;
+  text-decoration: underline;
+  opacity:0.75;
+}
+
+.footer-basic a:hover{
+  opacity:0.9;
+}

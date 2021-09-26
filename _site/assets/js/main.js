@@ -25,14 +25,15 @@ $(window).scroll(function () {
   sessionStorage.scrollTop = $(this).scrollTop();
 }); */
 
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   maintainScroll();
-  initDrag();
+  // initDrag();
   initTooltip();
   initPopOver();
   // imgToggleIcon();
-  sideBarToggle();
-  refreshScrollSpy();
+  // sideBarToggle();
+  // refreshScrollSpy();
+  openLinksNewTab();
 });
 
 /*
@@ -108,10 +109,8 @@ function initTooltip() {
 
 // initiate bootstrap popovers
 function initPopOver() {
-  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl)
-  })
+  const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+  const popoverList = popoverTriggerList.map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
 }
 
 // toggle plus minus icon on image
@@ -138,4 +137,12 @@ function refreshScrollSpy() {
     bootstrap.ScrollSpy.getInstance(dataSpyEl)
       .refresh();
   });
+}
+
+// open all links in new tab
+function openLinksNewTab() {
+  const { links } = document;
+  for (let i = 0; i < links.length; i++) {
+    if (!links[i].href.includes('lioranboard.ca')) links[i].target = '_blank';
+  }
 }
