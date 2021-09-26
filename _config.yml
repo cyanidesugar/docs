@@ -13,6 +13,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-toc
+  - jekyll-mentions
 kramdown:
   auto_ids: false
 toc:
@@ -52,6 +53,8 @@ collections_dir: doc_posts
 collections:
   getting-started:
       output: true
+  about:
+      output: true
   components:
       output: true
   integrations:
@@ -78,7 +81,7 @@ collections:
       output: true
   commands-stack: 
       output: true 
-  commands-conditions: 
+  commands-statements: 
       output: true 
   commands-trigger: 
       output: true       

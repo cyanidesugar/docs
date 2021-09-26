@@ -38,10 +38,10 @@ Transmitter has a few default tabs. A new tab is created every time you install 
 - Message Logging - intended for debugging purposes. Logs all messages for Receiver and Twitch connection. Will remember the state even after you close and reopen Transmitter. Don't forget to turn it off once you're done debugging. 
 - Twitch Triggers - test all your Twitch button triggers by pressing the test buttons. They simulate how Twitch sends all its events. 
 
+#### Preinstalled extensions
 
-{% include header.html h="4" title="Preinstalled extensions" %}
+Please see our [FAQ section]({{ "faq-general#extensions" | relative_url }}) to understand how to install and use extensions. 
 
-Please see our Extensions section to understand how to install and use extensions. 
 If you do not wish for the preinstalled extensions to be included, you can use the empty Transmitter file in <code>lioranboard/extensions</code> folder instead.
 
 - Follower Alert - default Twitch connection does not include follower alerts.

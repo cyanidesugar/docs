@@ -3,7 +3,7 @@ layout: default
 title: Premade Triggers
 menu: Triggers
 num: 3
-permalink: /triggers-premade
+permalink: /triggers/premade
 ---
 LioranBoard has some very useful premade triggers.     
 For example, you can make your buttons automatically trigger every time you start LioranBoard or every time your LioranBoard connects to Transmitter. 

@@ -3,7 +3,7 @@ title: Load Clipboard
 num: 2
 ---
 
-Loads the contents of your clipboard (after using CTRL+C) into a variable.\
+Loads the contents of your clipboard (after using CTRL+C) into a variable.
 
 | Box Name | Type | Description | 
 |-------|--------|--------

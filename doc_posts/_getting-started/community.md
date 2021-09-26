@@ -3,7 +3,7 @@ layout: default
 title: Community
 menu: Getting Started
 num: 4
-permalink: /community
+permalink: /getting-started/community
 ---
 
 ## Where to get support

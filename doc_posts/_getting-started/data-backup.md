@@ -3,7 +3,7 @@ layout: default
 title: Update and Backup
 menu: Getting Started
 num: 3
-permalink: /data-backup
+permalink: /getting-started/data-backup
 ---
 
 #### Auto Update LioranBoard
@@ -17,7 +17,7 @@ There is a simple [Auto Updater for LioranBoard](https://github.com/christinna90
 
 #### Back up your data
 LioranBoard is a self contained app in lioranboard folder, you do not go through the process of installing it like with other apps.\
-This means you can freely copy the whole lioranboard folder to another computer and it will work just the same!\
+This means you can freely copy the whole lioranboard folder to another computer and it will work just the same!
 
 
 You still need to **back up additional** data if your LioranBoard uses AppData folder to save your files.

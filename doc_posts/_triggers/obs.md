@@ -3,7 +3,7 @@ layout: default
 title: OBS Triggers
 menu: Triggers
 num: 2
-permalink: /triggers-obs
+permalink: /triggers/obs
 ---
 LioranBoard can listen to OBS events provided by OBS Websocket. All triggers you create are saved in `listen_obs_event.ini` in your Receiver folder. 
 

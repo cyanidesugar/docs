@@ -309,6 +309,7 @@ DEPENDENCIES
   html-proofer
   jekyll
   jekyll-algolia
+  jekyll-mentions
   jekyll-toc
   tzinfo-data
   webrick (~> 1.7)

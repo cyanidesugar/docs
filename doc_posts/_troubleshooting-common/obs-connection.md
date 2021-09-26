@@ -17,7 +17,7 @@ You can try [temporatily disabling your antivirus/firewall](https://support.micr
 Your passwords in OBS-Tools-Websockets Server Settings and LioranBoard Receiver-Options need to match. If you do not use a password, uncheck Enable authentication.\
   {% include image.html w="75" src="obsws-pw.png" alt="Matching passwords for OBSWS" %}
 - **Change Ports**\
-Change the port of OBS websocket (both in OBS and LioranBoard) to a new one, for example 4445.\
+Change the port of OBS websocket (both in OBS and LioranBoard) to a new one, for example 4445.
 - **Lower or increase timeout**\
 Open `connect.ini` (either in LioranBoard Receiver or in APPDATA/local/lioranboard folder).\
 Add `timeout="1000"` under `[connection]`. Try 100 and 5000.

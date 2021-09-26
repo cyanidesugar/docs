@@ -1,7 +1,5 @@
 ---
-title: 123
+title: Coming soon!
 num: 0
 ---
 
-
-test

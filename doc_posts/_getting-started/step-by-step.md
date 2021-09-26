@@ -3,7 +3,7 @@ layout: default
 title: Step by step tutorial
 menu: Getting Started
 num: 3
-permalink: /step-by-step
+permalink: /getting-started/step-by-step
 ---
 
 So you have discovered LioranBoard... I can only say: Welcome to the world of endless possibilities!
@@ -16,7 +16,7 @@ We will walk you through a step by step tutorial on how to set up LioranBoard, a
 - Download and install **[OBS Studio](https://obsproject.com/)**. As of now, LioranBoard does not support other streaming software.
 - Download and install **[OBS Websocket](https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/)**. This is how LioranBoard communicates with OBS Studio. 
 
-{% include header.html h="4" title="2. Download LioranBoard" %}
+#### 2. Download LioranBoard
 
 <a href="https://obsproject.com/forum/resources/lioranboard-stream-deck-animator.862/"><button type="button" class="btn btn-primary">Download LioranBoard</button></a>
   
@@ -50,8 +50,7 @@ In your OBS menu navigate to View - Docks - Custom Browser Docks. Your new dock 
 Press apply and you should see your new dock. If it does not pop up for some reason, you can always press View - Docks - Transmitter.   
 Fit your new dock somewhere in your OBS screen as you see fit. 
 
-{% include image.html w="100" file="/assets/images/getting-started/transmitter_dock.png" alt="OBS Dock Settings" type="image" %}
-
+{% include image.html w="100" file="transmitter_dock.png" alt="OBS Dock Settings" type="image" %}
 
 
 {% include alert.html text="Transmitter must be running at all times. Do not close it while LioranBoard is on." type="danger" %} 
@@ -77,7 +76,7 @@ Press **Authorize** and wait to be redirected again to see `All good, you can go
 
 	{% include image.html w="100" src="twitch_connected_message.png" alt="Successfully connected to Twitch" type="image" %}
 
-	In your Transmitter, Pubsub and Chat status should change to **{% include colored_text.html color="green" text="Connected" %}** or {% include svg_dot.md color="green" %}. Congratulations, your Twitch account is now connected!    
+   In your Transmitter, Pubsub and Chat status should change to **{% include colored_text.html color="green" text="Connected" %}** or {% include svg_dot.md color="green" %}. Congratulations, your Twitch account is now connected!    
 
 
 {% include alert.html text="Your Transmitter must be running at all times for Twitch to stay connected." type="warning" %} 
@@ -90,7 +89,7 @@ You can follow the text instructions or click on <i class="far fa-plus-square fa
 {% include alert.html text="Pressing Done <b>twice</b> (once in your edit button screen and once in your edit deck screen) is essential to saving any changes you make to a button." type="warning" %}
 
 <ol>
-<li> {% include video_collapse.html w="80" name="create_deck" alt="Creating a new deck" src="create_deck.mp4" %}   
+<li> {% include video_collapse.html w="80" alt="Creating a new deck" src="create_deck.mp4" %}   
   
   In your Receiver click on <strong>Add New Deck</strong> button. You should see a newly created blank deck named New Deck 6. Click on it.  
   </li>
@@ -100,20 +99,20 @@ You can follow the text instructions or click on <i class="far fa-plus-square fa
 Right click anywhere in the emtpy area and select <strong>Create Blank Button</strong>. A new empty button will be created. You can optionally add some text to it as well.   
  </li>
 
-<li> {% include video_collapse.html w="80" src="add_command.mp4" name="add_commands" alt="How to add commands to a button" %} Right click on the empty button - <strong>Add Commands</strong>.  
+<li> {% include video_collapse.html w="80" src="add_command.mp4" alt="How to add commands to a button" %} Right click on the empty button - <strong>Add Commands</strong>.  
  </li>
 
-<li> {% include video_collapse.html w="80" src="create_command.mp4" name="add_command" alt="Adding a new command to a button" %} Click on the <strong>+</strong> symbol. A default command Math: Change Variable will be created. Left click on the field with its name and change it to <strong>Twitch: Chat Message</strong> command instead. 
+<li> {% include video_collapse.html w="80" src="create_command.mp4" alt="Adding a new command to a button" %} Click on the <strong>+</strong> symbol. A default command Math: Change Variable will be created. Left click on the field with its name and change it to <strong>Twitch: Chat Message</strong> command instead. 
  </li>
 
-<li>  {% include video_collapse.html w="80" src="populate_command.mp4" name="new_twitch_button" alt="Edit Twitch:Chat button command" %} Populate the fields: 
+<li>  {% include video_collapse.html w="80" src="populate_command.mp4" alt="Edit Twitch: Chat button command" %} Populate the fields: 
     <ol>
 	  <li> <code>Message</code> - Put a random text in there. For example <code>Hello World!</code>. </li>
 	  <li> <code>Channel Name</code> - Leave empty </li> </ol>
 
 	Press <b>done</b> once you're finished. 
 
-<li>  {% include video_collapse.html w="80" src="add_trigger.mp4" name="new_twitch_trigger" alt="Edit Twitch:Chat button command" %} Back at our main deck view, right click on the new button - Add Twitch Triggers. This is where you assign Twitch events  (such as new subscriber or chat message) to automatically trigger your buttons.
+<li>  {% include video_collapse.html w="80" src="add_trigger.mp4" alt="Edit Twitch: Chat button command" %} Back at our main deck view, right click on the new button - Add Twitch Triggers. This is where you assign Twitch events  (such as new subscriber or chat message) to automatically trigger your buttons.
 	<ol>
   <li> Click on the + sign - Chat Message.</li> 
   <li>Populate the Message field with <code>!test</code>. </li>
@@ -127,7 +126,7 @@ We have now created a button that will send a chat message <code>Hello World</co
 
 <br><p>
 
-##### Trigger the button manually from Stream Deck
+<h5>Trigger the button manually from Stream Deck</h5>
 
 <ol> 
 	<li> Navigate to lioranboard/LioranBoard Stream deck(PC) folder and launch <strong>LioranBoard Stream Deck.exe</strong>. This is your Stream Deck where you can manually trigger buttons you create in your Receiver. </li>  
@@ -145,7 +144,7 @@ Leave IP and Port at default. Selected Deck number needs to match your newly cre
 
 </ol>
 <br><p>
-##### Trigger the button via your Twitch chat
+<h5>Trigger the button via your Twitch chat</h5>
 <p> Do you still remember the Twitch chat trigger you configured for your button? If you followed the tutorial, it should be <code>!test</code>. 
 
 <ol>
@@ -159,5 +158,5 @@ Two things should happen:
 <br>
 Now you have learned how to create a button, add a command and trigger it via Twitch chat! You can find more information about the individual components, commands and triggers in the next sections of the documentation. </p> 
 
-{% include alert.html text="Didn't work as expected? Cannot connect to OBS, Transmitter or Twitch chat? Please refer to our Troubleshooting section!" type="info" %} 
+{% include alert.html text="Didn't work as expected? Cannot connect to OBS, Transmitter or Twitch chat? Please refer to our <a href='https://lioranboard.ca/docs/troubleshooting-common'>Troubleshooting</a> section!" type="info" %} 
 

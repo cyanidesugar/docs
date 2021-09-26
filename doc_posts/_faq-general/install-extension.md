@@ -3,7 +3,7 @@ title: Extensions
 num: 1.1
 ---
 
-Extensions are meant to add new functionality to LioranBoard. They're made be the LioranBoard community.\
+Extensions are meant to add new functionality to LioranBoard. They're made be the LioranBoard community.
 
 {% include alert.html text="Extensions live in your Transmitter. If you update your Transmitter, you must reinstall all the extensions." type="warning" %} 
 
@@ -35,6 +35,6 @@ Extensions are meant to add new functionality to LioranBoard. They're made be th
 
 #### Create an extension
 Lioranboard communicates with all its extensions via transmitter.html and its own websocket.\
-Information about how to make your own extension can be found in `LioranBoard/extension/readme.txt` file.\ 
+Information about how to make your own extension can be found in `LioranBoard/extension/readme.txt` file.\
 We encourage you to go over a few premade extensions to understand the process.\
 Once you have an extension working, you can submit it in *#development* channel in the official [LioranBoard Discord server](https://discord.gg/dXez8Zh). You will need one of the mods to approve it before it can officially released. 

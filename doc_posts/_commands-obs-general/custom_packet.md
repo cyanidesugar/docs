@@ -3,7 +3,7 @@ title: "Custom Packet"
 num: 4
 ---
 Sends a custom packet to the OBS websocket in JSON format.\
-All the possible requests are documented in [OBS websocket protocol reference](https://github.com/Palakis/obs-websocket/blob/4.x-current/docs/generated/protocol.md).\
+All the possible requests are documented in [OBS websocket protocol reference](https://github.com/Palakis/obs-websocket/blob/4.x-current/docs/generated/protocol.md).
 
 1. Use `"message-id": "6666"` to get a pop up message on your screen every time you execute the command (useful for troubleshooting). 
 2.  Use `"message-id": "1"` to hide the pop up message. 
