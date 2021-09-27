@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LioranBoard YouTube Live
+title: YouTube Live
 menu: Integrations
 num: 3
 permalink: /integrations/youtube
