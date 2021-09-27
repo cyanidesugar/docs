@@ -1,20 +1,9 @@
-/*
- * Globals
- */
-
-
-/* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; 
 }
-
-
-/*
- * Base structure
- */
 
 body {
   background: #06112a;  
@@ -59,10 +48,4 @@ code {
     margin: 5px 0px;    
     color:rgb(1, 2, 7)
   }
-
-
-
-/*
- * Header
- */
 

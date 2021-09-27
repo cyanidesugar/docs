@@ -8,7 +8,7 @@ permalink: /streamdeck
 Stream Deck 
 Stream Deck is where you press all the buttons you previously created in the Receiver.   
 
-{% include header.html h="3" title="PC Version" %}
+### PC Version
 Desktop version of Stream Deck can be found at `lioranboard/LioranBoard Stream deck(PC)` folder.\
 Once launched, you will see settings for IP and Port which should be left at default.\
 Selected deck is the deck number you want to connect to. 
@@ -17,7 +17,7 @@ Selected deck is the deck number you want to connect to.
 type="image" %}
 
 
-{% include header.html h="3" title="Android Version" %}
+### Android Version
 Android version of Stream Deck can be found at `lioranboard/LioranBoard Stream deck(Android)` folder.\    
 Stream Deck is not available in the Play Store. You need to manually transfer the .apk file to your Android device and install it. You may need to change permissions to install external files.  
 

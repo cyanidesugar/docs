@@ -9,12 +9,11 @@ Transmitter is the <code>tsl_transmitter.html</code> file in your lioranboard fo
 Transmitter connects to your Receiver to receive and send messages. It also controls Twitch connection. 
 {% include alert.html text="Transmitter must be running at all times for Twitch connection and extensions to work." type="warning" %} 
 
-{% include header.html h="4" title="Latest Version" %}
+#### Latest Version
 The latest Transmitter version can be found at our [Github repository](https://github.com/christinna9031/LioranBoard-Transmitter).     
 Go to releases and download the latest version if you just need to replace your current Transmitter with a clean one.
 
-
-{% include header.html h="4" title="How to run Transmitter" %}
+#### How to run Transmitter
 - As a dock in OBS 
 This is the simplest and most effective way. You can create a dock by clicking on View-Docks-Custom Browser Docks and fill in the path to the file. Click on apply and place the dock wherever it suits you in OBS. You will need to keep it open at all times.
    {% include image.html w="75" src="transmitter_dock.png" alt="Transmitter Dock in OBS" %}
@@ -27,10 +26,11 @@ This might be needed for some extensions or debugging purposes.
 
 {% include image.html w="75" src="transmitter.png" alt="Transmitter" %}   
 
-{% include header.html h="4" title="Connection Status" %}
+#### Connection Status
 You can see whether you're connected to Receiver, Twitch Pubsub and Twitch Chat within your Transmitter. Green text 'Connected' or a green dot means the connection is alive.
 
-{% include header.html h="4" title="Tabs" %}
+
+#### Tabs
 Transmitter has a few default tabs. A new tab is created every time you install a new extension. 
 
 - Status - you can check whether you're on the latest versions for all dependencies and components 

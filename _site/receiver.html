@@ -9,10 +9,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.css" integrity="sha512-5RNDl2gYvm6wpoVAU4J2+cMGZQeE2o4/AksK/bi355p/C31aRibC93EYxXczXq3ja2PJj60uifzcocu2Ca2FBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 <link href=/assets/css/main.css rel="stylesheet">
 <link href=/assets/css/dark-mode.css rel="stylesheet"> 
-
 <link rel="icon" href="/assets/images/favicons/favicon-32x32.png sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/images/favicons/favicon-16x16.png sizes="16x16" type="image/png">
 
@@ -28,13 +26,13 @@
 <meta property="og:url" content="http://localhost:4000/receiver" />
 <meta property="og:site_name" content="LioranBoard" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-09-26T14:31:36+00:00" />
+<meta property="article:published_time" content="2021-09-27T12:24:03+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Receiver" />
 <meta name="twitter:site" content="@lioranboard" />
 <meta name="google-site-verification" content="XXX" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Receiver","dateModified":"2021-09-26T14:31:36+00:00","datePublished":"2021-09-26T14:31:36+00:00","description":"Receiver is the main LioranBoard component. You can change all the settings, add and modify your decks, program new buttons, add and edit triggers etc.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/receiver"},"url":"http://localhost:4000/receiver","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Receiver","dateModified":"2021-09-27T12:24:03+00:00","datePublished":"2021-09-27T12:24:03+00:00","description":"Receiver is the main LioranBoard component. You can change all the settings, add and modify your decks, program new buttons, add and edit triggers etc.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/receiver"},"url":"http://localhost:4000/receiver","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -73,7 +71,7 @@
         <a class="nav-link p-2" href="#">Commissions</a>
       </li>
       <li class="nav-item col-6 col-md-auto">
-        <a class="nav-link p-2" href="#">Donate</a>
+        <a class="nav-link p-2" href="https://lioranboard.ca/donate">Donate</a>
       </li>
     </ul>
     <!-- menu items end -->
@@ -214,13 +212,15 @@
             
             
           
-            
-          
-            
-          
-            <li><a href="/integrations/youtube" class="d-inline-flex align-items-center rounded sidebar-subbutton fs-6 ">YouTube Live</a>
+            <li><a href="/integrations/youtube" class="d-inline-flex align-items-center rounded sidebar-subbutton fs-6 ">LioranBoard YouTube Live</a>
             </li>
             
+            
+          
+            
+          
+            
+          
             
           </ul>
           
@@ -474,34 +474,34 @@
     <div class="lb-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
       <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
       <nav id="TableOfContents">
-      <ul><li><a href="#MainMenu" class="nav-link d-flex flex-row">
+      <ul><li><a href="#mainmenu" class="nav-link d-flex flex-row">
         
         
-          Main Menu  
+          Main Menu 
         
         
-      </a></li><li><a href="#Deck" class="nav-link d-flex flex-row">
+      </a></li><li><a href="#deck" class="nav-link d-flex flex-row">
         
         
-          Deck  
+          Deck 
         
         
-      </a></li><li><a href="#Button" class="nav-link d-flex flex-row">
+      </a></li><li><a href="#button" class="nav-link d-flex flex-row">
         
         
-          Button  
+          Button 
         
         
-      </a></li><li><a href="#ButtonCommands" class="nav-link d-flex flex-row">
+      </a></li><li><a href="#buttoncommands" class="nav-link d-flex flex-row">
         
         
-          Button Commands  
+          Button Commands 
         
         
-      </a></li><li><a href="#ButtonTriggers" class="nav-link d-flex flex-row">
+      </a></li><li><a href="#buttontriggers" class="nav-link d-flex flex-row">
         
         
-          Button Triggers  
+          Button Triggers 
         
         
       </a></li></ul>
@@ -518,10 +518,10 @@
 <div class="alert alert-warning" role="alert">
    Receiver is only an editor. Use Stream Deck to press your buttons.
   </div>
-      <h3 class="anchor-header" id="MainMenu" class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="MainMenu">
+      <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="mainmenu">
         
         
-          Main Menu <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#MainMenu" style="padding-left: 0.375em;">#</a> <a href="#MainMenu" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+          Main Menu <a href="#mainmenu" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
         
         
       </h3>
@@ -568,14 +568,15 @@
 <div class="alert alert-info" role="alert">
    Press Tab while in the main menu screen to see all the current variables and stacks.
   </div>
-      <h3 class="anchor-header" id="Deck" class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="Deck">
+      <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="deck">
         
         
-          Deck <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#Deck" style="padding-left: 0.375em;">#</a> <a href="#Deck" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+          Deck <a href="#deck" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
         
         
       </h3>
     
+
 <p>If you press <code class="language-plaintext highlighter-rouge">Add new Deck</code> button, it will create an empty canvas grid, where you can add and modify your buttons.\  <br />
 You can freely rename your deck, change its background (sorry, no transparency options!) and resize it to accommodate as many buttons as you want.</p>
 
@@ -592,10 +593,10 @@ You can freely rename your deck, change its background (sorry, no transparency o
 <div class="alert alert-info" role="alert">
    If you want to back up your decks or share them with others, you can simply send them the corresponding configs.ini file. 
   </div>
-      <h3 class="anchor-header" id="Button" class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="Button">
+      <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="button">
         
         
-          Button <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#Button" style="padding-left: 0.375em;">#</a> <a href="#Button" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+          Button <a href="#button" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
         
         
       </h3>
@@ -636,10 +637,10 @@ Button commands and delays do not affect keyboard macros in any way.</li>
   <li><strong>Groupd ID</strong> - You can group up your buttons by assigning them the same group ID. This will automatically create a queue for your buttons and prevent them from triggering at the same time.</li>
   <li><strong>Button ID</strong> - Change your button ID. 10 character limit. Two buttons cannot have the same ID.</li>
 </ul>
-      <h3 class="anchor-header" id="ButtonCommands" class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="ButtonCommands">
+      <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="buttoncommands">
         
         
-          Button Commands <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#ButtonCommands" style="padding-left: 0.375em;">#</a> <a href="#ButtonCommands" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+          Button Commands <a href="#buttoncommands" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
         
         
       </h3>
@@ -653,10 +654,10 @@ Button commands and delays do not affect keyboard macros in any way.</li>
 </ul>
 
 <p>See the list of all available commands in our Commands section.</p>
-      <h3 class="anchor-header" id="ButtonTriggers" class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="ButtonTriggers">
+      <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="buttontriggers">
         
         
-          Button Triggers <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#ButtonTriggers" style="padding-left: 0.375em;">#</a> <a href="#ButtonTriggers" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+          Button Triggers <a href="#buttontriggers" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
         
         
       </h3>

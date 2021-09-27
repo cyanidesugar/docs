@@ -19,3 +19,5 @@ Your YouTube Live credentials are only ever stored locally on your computer in o
 We do not share, distribute or sell any of your data. 
 
 
+
+

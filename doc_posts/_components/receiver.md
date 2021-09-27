@@ -11,7 +11,7 @@ Receiver is the main LioranBoard component. You can change all the settings, add
 
 {% include alert.html text="Receiver is only an editor. Use Stream Deck to press your buttons." type="warning" %} 
 
-{% include header.html h="3" title="Main Menu" %}
+### Main Menu
 - **Deck Commands**
    - Add New Deck - adds a new deck to your deck collection 
    - Edit Deck - opens a deck and shows all its buttons
@@ -39,8 +39,8 @@ Receiver is the main LioranBoard component. You can change all the settings, add
 
 {% include alert.html text="Press Tab while in the main menu screen to see all the current variables and stacks." type="info" %}   
 
+### Deck
 
-{% include header.html h="3" title="Deck" %}
 If you press `Add new Deck` button, it will create an empty canvas grid, where you can add and modify your buttons.\    
 You can freely rename your deck, change its background (sorry, no transparency options!) and resize it to accommodate as many buttons as you want.
 
@@ -54,7 +54,7 @@ Every deck is active at all times in your Receiver. It does not matter how you o
 
 {% include alert.html text="If you want to back up your decks or share them with others, you can simply send them the corresponding configs.ini file. " type="info" %}      
 
-{% include header.html h="3" title="Button" %}
+### Button 
 Once you create a new deck, you can simply right click on an empty space anywhere within the deck and press `Create Blank Button`. If you now right click on the created button, a new button menu appears: 
 - **Change color** - Change the color of your button (sorry, no transparency options!) and also copy it to other buttons. 
 - **Change text** - Change the text inside your button. Use <code>#</code> to add a new line.
@@ -78,7 +78,7 @@ Button commands and delays do not affect keyboard macros in any way.
 - **Groupd ID** - You can group up your buttons by assigning them the same group ID. This will automatically create a queue for your buttons and prevent them from triggering at the same time. 
 - **Button ID** - Change your button ID. 10 character limit. Two buttons cannot have the same ID. 
 
-{% include header.html h="3" title="Button Commands" %}
+### Button Commands
 When you right click on your button and press Add/Edit commands, you can start adding commands to execute when the button is pressed.     
 - Once a button is triggered, all commands are executed
 - Command delays are absolute and not related to each other. You can think of them as a timeline, they do not affect each other in any way. 
@@ -87,6 +87,6 @@ When you right click on your button and press Add/Edit commands, you can start a
 
 See the list of all available commands in our Commands section. 
 
-{% include header.html h="3" title="Button Triggers" %}
+### Button Triggers
 You can assign a trigger to your button to get automatically executed. 
 See the Triggers section for more information. 
