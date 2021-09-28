@@ -12,9 +12,10 @@
 <link href={{ "assets/css/main.css" | relative_url }} rel="stylesheet">
 <link href={{ "assets/css/basic.css" | relative_url }} rel="stylesheet">
 <link href={{ "assets/css/dark-mode.css" | relative_url }} rel="stylesheet"> 
-<link rel="icon" href="{{ "assets/images/favicons/favicon-32x32.png" | relative_url }} sizes="32x32" type="image/png">
-<link rel="icon" href="{{ "assets/images/favicons/favicon-16x16.png" | relative_url }} sizes="16x16" type="image/png">
-{% if site.google_analytics and jekyll.environment == 'production' %}
+<link rel="apple-touch-icon" sizes="180x180" href={{ "assets/favicon/apple-touch-icon.png" | relative_url }}>
+<link rel="icon" type="image/png" sizes="32x32" href={{ "assets/favicon/favicon-32x32.png" | relative_url }}>
+<link rel="icon" type="image/png" sizes="16x16" href={{ "assets/favicon/favicon-16x16.png" | relative_url }}>
+<link rel="manifest" href={{ "assets/favicon/site.webmanifest" | relative_url }}>{% if site.google_analytics and jekyll.environment == 'production' %}
 {% include analytics.html %}
 {% endif %}
 {% feed_meta %}
