@@ -3,7 +3,7 @@ title: "File: Save Value"
 num: 1
 ---
 
-Saves a real value to .ini file.
+Saves a real value (number) to .ini file.
 
 {% include alert.html text="You cannot use File: Save Value on a string." type="warning" %} 
 

@@ -8,10 +8,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "jekyll"
 gem "webrick", "~> 1.7"
 gem "github-pages", "~> 215", group: :jekyll_plugins
-gem 'html-proofer'
 gem 'tzinfo-data'
-gem 'jekyll-mentions'
-
 
 group :jekyll_plugins do
  gem 'jekyll-algolia'

@@ -9,7 +9,7 @@ Pulls a value from a stack by deleting it from the stack and saving it inside th
 | Box Name | Type | Description | 
 |-------|--------|--------
 |Stack Name	|String	| Name of the stack
-|Position|index/top/bottom {% include asterisk.html%}|Position to pull the value from. Can be **top** {% include tooltip.html content="end of the stack" %}, **bottom** {% include tooltip.html content="beginning of the stack" %} or **index** of the position. 
+|Position|index/top/bottom {% include asterisk.html%}|Position to pull the value from. Can be **top** {% include popover.html content="end of the stack" %}, **bottom** {% include popover.html content="beginning of the stack" %} or **index** of the position. 
 |Variable|String|Variable name to save the pulled value to.
 {:class='table table-primary'}
 

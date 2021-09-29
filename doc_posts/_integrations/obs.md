@@ -41,7 +41,7 @@ You should see the following yellow notification messages:
   If you happen to NOT receive all the messages, please refer to our Troubleshooting section.
 
 #### Control OBS from LioranBoard
-You can now remotely control your OBS Studio with [LioranBoard OBS commands]().   
+You can now remotely control your OBS Studio with [LioranBoard OBS commands]({{ "commands/obs-general" | relative_url }}).   
 
 
 **1. Navigate to an existing deck or click on `Add a new deck` in your LioranBoard Receiver**\

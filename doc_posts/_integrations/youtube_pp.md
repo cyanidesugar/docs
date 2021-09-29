@@ -12,7 +12,7 @@ LioranBoard YouTube Live and its developer take your privacy very seriously. Bey
 
 Please see [Google Privacy Policy](https://policies.google.com/privacy), which services our extension uses.
 
-Any information you provide to us will be only used to generate a token to access the extension and to monitor any excessive traffic in violation with our Terms of Service. 
+Any information you provide to us will be only used to generate a token via our Amazon REST API acting as a middleman to access the extension and to monitor any excessive traffic in violation with our Terms of Service. 
 
 Your YouTube Live credentials are only ever stored locally on your computer in order to use the extension. 
 

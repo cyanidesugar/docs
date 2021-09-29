@@ -12,8 +12,11 @@ Extensions are meant to add new functionality to LioranBoard. They're made be th
 #### Install an extension:
 
 1. Download the .lbe extension file
+   - If you're downloading the extension from **Github**, please refer to the screenshot below.
+   {% include image.html w="75" src="extension_github.png" alt="Correct way to download an extension file from Github" %}
+{:start="2"}
 2. Click on **Install Extension** in your LioranBoard Receiver
-3. Select the extension file you downloaded
+3. Select the .lbe extension file you downloaded
 4. Select your default Transmitter you are using. That's the `tsl_transmitter.html` file residing in your lioranboard folder. Make 100% sure it is the correct file.
 5. Your Transmitter will automatically refresh, adding a new tab for the extension you just installed. You should also see it added in at the bottom list of all the extensions.
 6. Most extensions include a premade deck with buttons. If you do not see one, create a new button, add (Send to Extension)[]  command and select the extension you just installed.

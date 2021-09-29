@@ -3,6 +3,7 @@ title: "Introduction"
 num: 0
 ---
 
+
 A buffer is basically a space within the system memory that is used to store small packets of data for just about anything. Since it is held in system memory, it is very fast to access. You can think of it as a temporary place to put things that need to be worked on or processed.
 
 {% include image.html w="75" src="Buffer_Memory.png" alt="Buffer within memory" %}

@@ -92,7 +92,7 @@ Once you link your account(s) and press `Connect to Twitch` button, LioranBoard 
 - Raids
 - Chat Messages
 
-A guide to setting up native Twitch triggers for your buttons can be found in the [Triggers-Twitch]() section.   
+A guide to setting up native Twitch triggers for your buttons can be found in the [Triggers-Twitch]({{ "triggers/twitch" | relative_url }}) section.   
 
 **Eventsub Webhook**\
 Extends LioranBoard's functionality and listens to Followers, Predictions, Polls and Hype Trains, adding extra triggers for each event.
@@ -105,14 +105,14 @@ Extends LioranBoard's functionality and listens to Followers, Predictions, Polls
 **Join Chat**\
 Your main account automatically joins your Twitch chat and listens to all messages.\
 Special rules apply for [multiple Twitch accounts](multipletwitchaccounts).\
-LioranBoard can join any other Twitch chat channel (even one you do not own) with a [Twitch: Join Channel]() command.
+LioranBoard can join any other Twitch chat channel (even one you do not own) with a [Twitch: Join Channel]({{ "commands/twitch#twitchjoinchannel" | relative_url }}) command.
 
 **Listen to chat and whisper messages**\
-A guide to setting up Twitch chat triggers for your buttons can be found in the [Triggers-Twitch]() section.   
+A guide to setting up Twitch chat triggers for your buttons can be found in the [Triggers-Twitch]({{ "triggers/twitch" | relative_url }}) section.   
 
 #### Send chat messages
 
-LioranBoard can natively send Twitch chat messages, whispers and commands (if the linked account has the permissions) to any Twitch chat channel by using [Twitch: Chat Message]() command.
+LioranBoard can natively send Twitch chat messages, whispers and commands (if the linked account has the permissions) to any Twitch chat channel by using [Twitch: Chat Message]({{ "commands/twitch#twitchchatmessage" | relative_url }}) command.
 
 See a list of all possible [Twitch chat commands](https://help.twitch.tv/s/article/chat-commands?language=en_US#AllMods).
 
@@ -129,7 +129,7 @@ There are several preinstalled extensions in your Transmitter.
 - {% include image_collapse.html src="channel-id-ext.png" btn="1" alt="Get Channel ID" pastebin="JfePhmE0" %} 
 
 **Community made extensions**\
-Our [Community Made Extensions]() allow you to further control your Twitch stream. 
+Our community made extensions allow you to further control your Twitch stream. You can find them all in our [Official Discord Server](https://discord.gg/dXez8Zh) in #releases channel. 
 
 
 Examples of commmunity made extensions:

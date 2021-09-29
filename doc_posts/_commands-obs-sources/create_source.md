@@ -6,9 +6,7 @@ num: 1
 
 Creates a new source and adds it to a scene.\
 You can pass a JSON string containing the new source's settings as well.\
-The source will be added at the top of the list. To reorder it, use a Custom Packet command to send a JSON string containing the new order of all sources in your scene: `{"request-type":"ReorderSceneItems","scene":"YOURSCENENAME","items":[{"name":"YOURSOURCENAME1"},{"name":"YOURSOURCENAME2"},{"name":"YOURSOURCENAME3"},{"name":"YOURSOURCENAME4"}(etc.)],"message-id":"6666"}`. 
-
-{% include image_collapse.html w="100" name="reorder_sources" src="/assets/images/commands/obs_source/reorder_sources.png" alt="Example of reordering sources" %}
+The source will be added at the top of the list. To reorder it, use a Custom Packet command to send a JSON string containing the new order of all sources in your scene: {% include selectAll.html text='<code>{"request-type":"ReorderSceneItems","scene":"YOURSCENENAME","items":[{"name":"YOURSOURCENAME1"},{"name":"YOURSOURCENAME2"},{"name":"YOURSOURCENAME3"},{"name":"YOURSOURCENAME4"}(etc.)],"message-id":"6666"}</code>' %}`.
 
 {% include alert.html text="If you want to add the newly created source into a group, you must do so manually." type="warning" %} 
 

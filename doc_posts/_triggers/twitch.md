@@ -12,7 +12,7 @@ LioranBoard can listen to Twitch events and automatically execute your buttons. 
 1. Right click on the button in your Receiver - Add Twitch Triggers. 
 2. Click on the `+` button and select the trigger type. 
 4. Optionally check `Add to Request Queue`, which acts as a button queue. If there is another trigger event while the button is still active (for example if you get two subscribers at the same time), it will place is in the queue and reactivate the button as soon as it's ready again.
-5. In your button commands, use [Math: Trigger Pull]() command to retrieve all the provided information (viewer's name, their message, emotes, badge etc.). 
+5. In your button commands, use [Math: Trigger Pull]({{ "commands/trigger#mathtriggerpull" | relative_url }}) command to retrieve all the provided information (viewer's name, their message, emotes, badge etc.). 
 
 ### Type of Twitch Triggers 
 

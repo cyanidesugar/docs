@@ -1,10 +1,10 @@
 <p>Changes settings of a source. Not to be confused with item transform settings. <br />
 Requires the same formatting that is used in the OBS JSON file.<br />
-Easy way to see your current source’s settings is to use a Custom Packet command: <code class="language-plaintext highlighter-rouge">{"request-type":"GetSourceSettings","sourceName":"YOURSOURCENAME","message-id":"6666"}</code>. Execute it and you will get back a JSON string of the source’s settings. Paste it into a document and extract the particular value you want to use.</p>
+Easy way to see your current source’s settings is to use a Custom Packet command:  <span class="user-select-all"> <code>{"request-type":"GetSourceSettings","sourceName":"YOURSOURCENAME","message-id":"6666"}</code> </span> . Execute it and you will get back a JSON string of the source’s settings. Paste it into a document and extract the particular value you want to use.</p>
 
-<p><a class="img-toggle" role="button" href="#/assets/images/commands/obs_source/source_settings" data-bs-toggle="collapse" aria-controls="/assets/images/commands/obs_source/source_settings" aria-expanded="false">
+<p><a class="img-toggle" role="button" href="#source_settings" data-bs-toggle="collapse" aria-controls="source_settings" aria-expanded="false">
 <i class="far fa-plus-square fa-2x"></i><i class="far fa-minus-square fa-2x"></i> <b>Find a settings value via Custom Packet and use it in the command </b></a></p>
-<div class="collapse row" id="/assets/images/commands/obs_source/source_settings"><img src="/assets/images/commands-obs-sources//assets/images/commands/obs_source/source_settings.png" class="figure-img img-fluid rounded w-100" alt="Find a settings value via Custom Packet and use it in the command" title="Find a settings value via Custom Packet and use it in the command" /></div>
+<div class="collapse row" id="source_settings"><img src="/assets/images/commands-obs-sources/source_settings.png" class="figure-img img-fluid rounded w-100" alt="Find a settings value via Custom Packet and use it in the command" title="Find a settings value via Custom Packet and use it in the command" /></div>
 
 <p>Use <a href="https://jsonlint.com/">JSON string validator</a> if you want to make sure your formatting is correct.</p>
 
@@ -25,7 +25,7 @@ Easy way to see your current source’s settings is to use a Custom Packet comma
     <tr>
       <td>sourceSettings</td>
       <td>JSON String</td>
-      <td>The settings to be included. Formatted as a (JSON String)[https://www.w3schools.com/js/js_json_syntax.asp]. Must be enclosed in <code class="language-plaintext highlighter-rouge">{}</code>.</td>
+      <td>The settings to be included. Formatted as a <a href="https://www.w3schools.com/js/js_json_syntax.asp">JSON String</a>. Must be enclosed in <code class="language-plaintext highlighter-rouge">{}</code>.</td>
     </tr>
   </tbody>
 </table>
@@ -43,23 +43,23 @@ Easy way to see your current source’s settings is to use a Custom Packet comma
   </thead>
   <tbody>
     <tr>
-      <td>{“url”:”http://twitch.tv”}</td>
+      <td> <span class="user-select-all"> {"url":"http://twitch.tv"} </span> </td>
       <td>Change URL of a browser source</td>
     </tr>
     <tr>
-      <td>{“local_file”:”E:/Stream/hello.html”}</td>
+      <td> <span class="user-select-all"> {"local_file":"E:/Stream/hello.html"} </span> </td>
       <td>Change local file path of a browser source</td>
     </tr>
     <tr>
-      <td>{“file”:”E:/Stream/image.png”}</td>
+      <td> <span class="user-select-all"> {"file":"E:/Stream/image.png"} </span> </td>
       <td>Change local file path of an image source</td>
     </tr>
     <tr>
-      <td>{“playlist”: [{“value”: “E:/videos/video1.mp4”},{“value”: “E:/videos/video2.mkv”}]}</td>
+      <td> <span class="user-select-all"> {"playlist": [{"value": "E:/videos/video1.mp4"},{"value": "E:/videos/video2.mkv"}]} </span> </td>
       <td>Change local file paths for your VLC source. Each <code class="language-plaintext highlighter-rouge">{"value":"X"}</code> represents one file.</td>
     </tr>
     <tr>
-      <td>{“font”: {“face”: “Arial”,”flags”: 8,”size”: 48,”style”: “Regular”}}</td>
+      <td> <span class="user-select-all"> {"font": {"face": "Arial","flags": 8,"size": 48,"style": "Regular"}} </span> </td>
       <td>Change font settings of your GDI+ text source. Needs to include all values.</td>
     </tr>
   </tbody>

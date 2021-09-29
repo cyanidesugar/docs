@@ -1,8 +1,3 @@
-{% assign nodeCount = include.html | strip | split: '<h' %}
-{% if nodeCount.size > 1 %}
-<div class="lb-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-    <nav id="TableOfContents">
 {% capture tocWorkspace %}
     {% comment %}
         Copyright (c) 2017 Vladimir "allejo" Jimenez
@@ -57,9 +52,7 @@
             An ordered or unordered list representing the table of contents of a markdown block. This snippet will only
             generate the table of contents and will NOT output the markdown given to it
     {% endcomment %}
-    <div class="lb-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-        <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-        <nav id="TableOfContents">
+
     {% capture newline %}
     {% endcapture %}
     {% assign newline = newline | rstrip %} <!-- Remove the extra spacing but preserve the newline -->
@@ -187,6 +180,3 @@
         {% endif %}
     {% endif %}
 {% endcapture %}{% assign tocWorkspace = '' %}{{ deprecation_warnings }}{{ jekyll_toc }}
-</nav>
-</div>
-{% endif %}

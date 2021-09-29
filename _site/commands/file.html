@@ -458,10 +458,12 @@
     </div>
   </div>
 <!-- toc --> 
-    <div class="lb-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-      <nav id="TableOfContents">
-      <ul><li><a href="#inifilesgeneral" class="nav-link d-flex flex-row">
+ 
+
+<div class="lb-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+    <nav id="TableOfContents">
+<ul><li><a href="#inifilesgeneral" class="nav-link d-flex flex-row">
         
         
           Ini Files - General 
@@ -522,9 +524,9 @@
         
         
       </a></li></ul>
+</nav>
+</div>
 
-     </nav>
-    </div>
 <!-- content -->
   <div class="lb-content ps-lg-4" tabindex="0">
     <div>
@@ -553,7 +555,7 @@ As of now, LioranBoard can natively read and modify only .ini files in its own f
 </ol>
 <div class="modal fade" id="ini_structurepng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-file/ini_structure.png" class="img-fluid" alt="Ini file structure" /></div></div></div>
 
-<ol>
+<ol start="2">
   <li>You can only save and load .ini files placed in your Receiver folder or one of its inner folders.</li>
   <li>Make sure to use the right command for loading and saving data. There are different commands for strings and different commands for real values (numbers).</li>
   <li>Use relative path for loading and reading ini files. I.e. <code class="language-plaintext highlighter-rouge">test.ini</code> if you wanna load a file from your Receiver folder or <code class="language-plaintext highlighter-rouge">/sound/test.ini</code> if you wanna load one from your Receiver/sound folder.</li>
@@ -569,7 +571,7 @@ As of now, LioranBoard can natively read and modify only .ini files in its own f
         
       </h3>
     
-  <p><p>Saves a real value to .ini file.</p>
+  <p><p>Saves a real value (number) to .ini file.</p>
 
 <div class="alert alert-warning" role="alert">
    You cannot use File: Save Value on a string.
