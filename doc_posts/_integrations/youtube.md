@@ -70,9 +70,9 @@ The failure to exercise or enforce any right or provision of the Terms of Servic
 8. Questions about the Terms of Service should be sent to <a href='mailto&#58;ch&#114;is%74&#105;%6En%61&#37;2E&#107;r&#64;gma%6&#57;l&#46;co&#109;'>chri&#115;t&#105;n&#110;&#97;&#46;&#107;r&#64;g&#109;ail&#46;com</a>.
 
 #### Privacy Policy
-LioranBoard YouTube Live and its developer take your privacy very seriously. Any information you provide to us during the [Authorization process](https://lioranboard.ca/docs/integrations/youtube/auth) will be only used to generate your YouTube Live credentials via our Amazon REST API acting as a middleman to access the extension.\
+LioranBoard and its developer take your privacy very seriously. Any information you provide to us during the [Authorization process](https://lioranboard.ca/docs/integrations/youtube/auth) will be only used to generate your YouTube Live credentials via our Amazon REST API acting as a middleman to access the extension.\
 Our app does not store or share your YouTube Live credentials. Your credentials are only ever stored locally on your computer in your LioranBoard app in order to use the extension.\
-Any other information regarding your YouTube account is only ever accesssed and stored locally on your computer. When our app calls Youtube API to retrieve your data, it is done via Transmitter which is a local HTML file, which then sends the relevant information via a local websocket connection to LioranBoard, which also only runs locally.
+Any other information regarding your YouTube account is only ever accesssed and stored locally on your computer. Accessing any data via YouTube API is done via Transmitter, which is a local HTML file that relays all the relevant data via a local websocket connection to LioranBoard, which also only ever runs locally.\ The data never leaves your computer. 
 Please see [Google Privacy Policy](https://policies.google.com/privacy), which services our extension uses.
 
 
