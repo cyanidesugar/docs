@@ -4,6 +4,7 @@ title: LioranBoard YouTube Live Terms of Service
 menu: Integrations
 parent: YouTube Live
 num: 3
+type: fullpage
 permalink: /integrations/youtube/tos
 ignore: true
 ---

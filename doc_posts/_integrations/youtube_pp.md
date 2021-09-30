@@ -4,6 +4,7 @@ title: LioranBoard YouTube Live Privacy Policy
 menu: Integrations
 parent: YouTube Live
 num: 3
+type: fullpage
 permalink: /integrations/youtube/privacy-policy
 ignore: true
 ---

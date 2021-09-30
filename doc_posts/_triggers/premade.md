@@ -3,6 +3,7 @@ layout: default
 title: Premade Triggers
 menu: Triggers
 num: 3
+type: fullpage
 permalink: /triggers/premade
 ---
 LioranBoard has some very useful premade triggers.     

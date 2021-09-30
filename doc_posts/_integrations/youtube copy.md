@@ -4,6 +4,7 @@ title: LioranBoard YouTube Live
 menu: Integrations
 num: 3
 ignore: true
+type: fullpage
 permalink: /integrations/youtube
 ---
 

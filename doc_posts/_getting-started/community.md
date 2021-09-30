@@ -4,6 +4,7 @@ title: Community
 menu: Getting Started
 num: 5
 permalink: /getting-started/community
+type: fullpage
 ---
 
 ## Where to get support

@@ -3,6 +3,7 @@ layout: default
 title: Transmitter
 menu: Components
 num: 2
+type: fullpage
 permalink: /transmitter
 ---
 Transmitter is the <code>tsl_transmitter.html</code> file in your lioranboard folder. 

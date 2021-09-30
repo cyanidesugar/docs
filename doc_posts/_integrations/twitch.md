@@ -4,6 +4,7 @@ title: Twitch
 menu: Integrations
 num: 2
 permalink: /integrations/twitch
+type: fullpage
 ---
 
 LioranBoard can connect to your Twitch account, remotely control it and listen to events in your stream. 

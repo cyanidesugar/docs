@@ -4,6 +4,7 @@ title: OBS Studio
 menu: Integrations
 num: 1
 permalink: /integrations/obs
+type: fullpage
 ---
 
 LioranBoard communicates with OBS via OBS Websocket (OBSWS), which allows you to remotely control and listen to OBS Studio events. 

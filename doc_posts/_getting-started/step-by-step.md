@@ -4,6 +4,7 @@ title: Step by step tutorial
 menu: Getting Started
 num: 3
 permalink: /getting-started/step-by-step
+type: fullpage
 ---
 
 So you have discovered LioranBoard... I can only say: Welcome to the world of endless possibilities!

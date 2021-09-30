@@ -4,6 +4,7 @@ title: Overview
 permalink: /about
 menu: About
 num: 0
+type: fullpage
 ---
 
 LioranBoard is a closed source app made in GameMaker Studio which has become one of the most popular and customizable OBS Stream Decks.\

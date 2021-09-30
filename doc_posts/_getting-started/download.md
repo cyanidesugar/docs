@@ -4,6 +4,7 @@ title: Download
 menu: Getting Started
 num: 2
 permalink: /download
+type: fullpage
 ---
 
 ### LioranBoard

@@ -4,6 +4,7 @@ title: Twitch Triggers
 menu: Triggers
 num: 1
 grouped_by: base
+type: fullpage
 permalink: /triggers/twitch
 ---
 LioranBoard can listen to Twitch events and automatically execute your buttons. For example, it can automatically trigger a button every time you get a new subscriber. 

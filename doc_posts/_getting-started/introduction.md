@@ -5,6 +5,7 @@ menu: Getting Started
 num: 1
 permalink: /getting-started/introduction
 notoc: true
+type: fullpage
 ---
 
 LioranBoard is a fully customizable Stream Deck that lets your Twitch audience interact with and control your stream. 

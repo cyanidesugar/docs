@@ -1113,3 +1113,16 @@ a {
 .footer-basic a:hover{
   opacity:0.9;
 }
+
+/* edit page button*/
+
+.btn-edit-light {
+  color: #6c757d;
+  border-color: #dee2e6;
+}
+
+.show>.btn-edit-light, .btn-edit-light:hover, .btn-edit-light:active {
+  color: #142e50;
+  background-color: #fff;
+  border-color: #142e50;
+}
