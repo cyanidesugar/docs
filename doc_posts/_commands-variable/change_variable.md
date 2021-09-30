@@ -25,6 +25,8 @@ Creates a new variable or modifies an existing one.
 Bad examples can result in LB crashing. Click on the {% include popover.html content="Click me!" %} for explanation.\
 *`var`* = variable, *`str`* = string
 
+<div class="table-responsive" markdown="1">
+
 | Input Variable *`type`*|operator| Input Value{% include asterisk.html %} *`type`* |  Output Variable | Output Value *`type`*| 
 |-------|--------|--------|--------|--------|
 |_variable *`var`*| = |"Hello World" *`str`*|_variable|{% include popover.html content="Variable names can start with a letter or _." %} "Hello World" *`str`* |
@@ -57,6 +59,7 @@ Bad examples can result in LB crashing. Click on the {% include popover.html con
 |chat_message | = |"User [0]users has /$points$/ points." <br/>*`str+stack value+var`*|chat_message|{% include popover.html content="If your value contains both strings and variables, you must wrap it in <b>&#34; &#34;</b> and use <b>/$$/</b> wrappers for any variables and stack values." %}"User [0]users has 50 points." *`str`* |
 {:class='table table-success w-auto table-hover good-bad' data-toggle='table' data-sticky-header='true' text-break }
 
+</div>
 
 
 
