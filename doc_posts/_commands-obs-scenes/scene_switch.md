@@ -1,7 +1,5 @@
 ---
 title: "Scene Switch"
-menu: Commands
-grouped_by: obs_source
 num: 1
 ---
 

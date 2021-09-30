@@ -1,7 +1,5 @@
 ---
 title: "Source Motion: Rotation"
-menu: Commands
-grouped_by: obs_source
 num: 9
 ---
 Changes the rotation of a source over a set duration.\

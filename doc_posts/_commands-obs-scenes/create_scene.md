@@ -1,7 +1,5 @@
 ---
 title: "Create Scene"
-menu: Commands
-grouped_by: obs_source
 num: 2
 ---
 

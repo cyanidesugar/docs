@@ -1,7 +1,5 @@
 ---
 title: "Source Toggle Mute"
-menu: Commands
-grouped_by: obs_source
 num: 13
 ---
 

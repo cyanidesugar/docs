@@ -1,7 +1,5 @@
 ---
 title: "Source Change Scale"
-menu: Commands
-grouped_by: obs_source
 num: 3
 ---
 Changes the size of a source.\

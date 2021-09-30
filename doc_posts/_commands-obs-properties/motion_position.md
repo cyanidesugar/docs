@@ -1,7 +1,5 @@
 ---
 title: "Source Motion: Position"
-menu: Commands
-grouped_by: obs_source
 num: 6
 ---
 Moves a source from point A to point B over a given duration.\

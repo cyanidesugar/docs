@@ -1,7 +1,5 @@
 ---
 title: "Source Motion: Volume"
-menu: Commands
-grouped_by: obs_source
 num: 10
 ---
 Changes the volume of a given source from volume A to B over a duration.\

@@ -1,7 +1,5 @@
 ---
 title: "String: Wildcard Pull"
-path_vid: /assets/videos/commands/math/
-path_img: /assets/images/commands/math/
 num: 3
 ---
 

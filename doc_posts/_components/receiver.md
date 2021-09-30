@@ -4,7 +4,6 @@ title: Receiver
 menu: Components
 num: 1
 type: fullpage
-
 permalink: /receiver
 ---
 Receiver is the main LioranBoard component. You can change all the settings, add and modify your decks, program new buttons, add and edit triggers etc. 

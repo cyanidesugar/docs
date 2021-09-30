@@ -4,7 +4,6 @@ title: Stream Deck
 menu: Components
 num: 3
 type: fullpage
-
 permalink: /streamdeck
 ---
 Stream Deck 

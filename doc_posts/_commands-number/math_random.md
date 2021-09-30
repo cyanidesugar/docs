@@ -1,10 +1,5 @@
 ---
 title: "Math: Random"
-name: random
-menu: Commands
-grouped_by: math
-path_vid: /assets/videos/commands/math/
-path_img: /assets/images/commands/math/
 num: 4
 ---
 

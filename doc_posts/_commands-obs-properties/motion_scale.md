@@ -1,7 +1,5 @@
 ---
 title: "Source Motion: Scale"
-menu: Commands
-grouped_by: obs_source
 num: 8
 ---
 Resizes a source from Size A to size B over a given duration.\

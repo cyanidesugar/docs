@@ -1,7 +1,5 @@
 ---
 title: "Statement: And "
-path_vid: /assets/videos/commands/conditions/
-path_img: /assets/images/commands/conditions/
 num: 2
 ---
 

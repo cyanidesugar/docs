@@ -1,7 +1,5 @@
 ---
 title: "Source Change Position"
-menu: Commands
-grouped_by: obs_source
 num: 2
 ---
 

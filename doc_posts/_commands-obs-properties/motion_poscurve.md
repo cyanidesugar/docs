@@ -1,7 +1,5 @@
 ---
 title: "Source Motion: Position Curve"
-menu: Commands
-grouped_by: obs_source
 num: 7
 ---
 Moves a Source from point A to point B over a given duration and curves it in a circle pattern.\
