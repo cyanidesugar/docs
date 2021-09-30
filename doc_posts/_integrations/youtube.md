@@ -7,13 +7,15 @@ type: fullpage
 permalink: /integrations/youtube
 ---
 
+
+
 {% include alert.html text="YouTube Live is a <strong>completely new integration</strong> that we have been working on hard to bring to you! <br> Please note it's still in <strong>alpha phase</strong> and there might be bugs. <br> Feel free to report any issues in <i>#bug-report</i> channel in our official <a href='https://discord.gg/dXez8Zh'><strong>LioranBoard Discord server.</strong></a>" type="info" %} 
 
-#### Download and install
+#### Download and install <span class="badge bg-warning text-dark">Only available to select beta testers now</span>
 LioranBoard YouTube Live is not a native integration in LioranBoard, but rather an extension made by [Christina K](https://github.com/christinna9031?tab=repositories).\
 It can be downloaded from Itch.io, which is a platform for developers to share their indie games and tools.
 
-<iframe frameborder="0" src="https://itch.io/embed/1206259?border_width=2&bg_color=0b1a2d&fg_color=ffffff&link_color=790158&border_color=284c7b" width="554" height="169"><a href="https://christinak.itch.io/lb-eventsub-webhook">LioranBoard YouTube Live</a></iframe><br>
+<iframe frameborder="0" src="https://itch.io/embed/1206259?border_width=2&bg_color=0b1a2d&fg_color=ffffff&link_color=790158&border_color=284c7b" width="554" height="169"><a href="#">LioranBoard YouTube Live</a></iframe><br>
 
 Once you have downloaded the zip file, extract it. You will see the following files: 
 - `transmitter_youtube.html` - this is your new Transmitter to use with YouTube Live.\
@@ -73,7 +75,7 @@ The failure to exercise or enforce any right or provision of the Terms of Servic
 #### Privacy Policy
 LioranBoard and its developer take your privacy very seriously. Any information you provide to us during the [Authorization process](https://lioranboard.ca/docs/integrations/youtube/auth) will be only used to generate your YouTube Live credentials via our Amazon REST API acting as a middleman to access the extension.\
 LioranBoard does not store or share your YouTube Live credentials. Your credentials are only ever stored locally on your computer in LioranBoard in order to use the extension.\
-Any other information regarding your YouTube account is only ever accesssed and stored locally on your computer. Accessing any data via YouTube API is done via Transmitter, which is a local HTML file that relays the data via a local websocket connection to LioranBoard, which also only ever runs locally.\ 
+Any other information regarding your YouTube account is only ever accesssed and stored locally on your computer. Accessing any data via YouTube API is done via Transmitter, which is a local HTML file that relays the data via a local websocket connection to LioranBoard, which also only ever runs locally.\
 Please see [Google Privacy Policy](https://policies.google.com/privacy), which services LioranBoard uses.
 
 
