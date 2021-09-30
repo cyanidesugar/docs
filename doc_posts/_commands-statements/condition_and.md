@@ -17,7 +17,7 @@ It allows you to compare multiple conditions where ALL of them need to be true. 
 |Var./real/"string" {% include asterisk.html%}|	Variable, real or string|	Whatever you want to compare the left side with.
 {:class='table table-primary' }
 
-
+{% include media_modal.html img="muted_mic.png" w="100" btn="1" alt="Check if microphone is muted on your BRB scene" pastebin="kBCTn47h" %} 
 
 
 

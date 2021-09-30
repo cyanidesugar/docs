@@ -6,6 +6,10 @@ hr { height: 4px !important; }
 
 code { color: #bf3077; font-size: .910em; }
 
+.embedPastebin { max-height: 100px; }
+
+.modal-backdrop { z-index: 1000; }
+
 /*
 .lb-layout { display: grid; gap: 1.5rem; grid-template-areas: "sidebar main"; grid-template-columns: 250px 1fr; /* background: rgb(0 28 36 / 2%);
 

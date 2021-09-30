@@ -9,7 +9,7 @@ If you wish to reset the button back to its default appearance, set the values t
 
 | Box Name | Type | Description 
 |-------|--------|--------
-|Button ID|	Int| Button ID to change the appearance of
+|Button ID|	Any| Button ID to change the appearance of
 |Red {% include asterisk.html%}	|Int|	Red value, 0-255.
 |Green {% include asterisk.html%}	|Int|	Green value, 0-255.
 |Blue {% include asterisk.html%} |Int|	Blue value, 0-255.

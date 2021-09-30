@@ -24,7 +24,7 @@ Returns a string containing the type of trigger that activated the button. Can b
 Variable|	String|	Variable name to store the returned trigger under.
 {:class='table table-primary ' }
 
-
+{% include media_modal.html img="trigger-type.png" w="100" btn="1" alt="Get a simple popup telling you how your button was triggered" pastebin="0mb2R5Z6" %} 
 
 
 

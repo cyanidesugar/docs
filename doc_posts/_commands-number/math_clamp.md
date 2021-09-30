@@ -23,6 +23,12 @@ Clamps a variable between two values. Intended to use on real values (numbers) o
 | Max {% include asterisk.html%}| Real (number) | Maximum value allowed.
 {:class='table table-primary' }
 
+| Value | Clamp Min| Clamp Max| Result |
+|-------|--------|--------|--------
+|20|50|120|50
+|75|50|120|75
+|980|50|120|120
+{:class='table table-secondary w-auto table-hover data-toggle='table' text-break }
 
 
 

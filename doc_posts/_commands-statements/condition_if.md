@@ -18,7 +18,7 @@ You can think of it as `If something is true, then do something, otherwise do so
 |Var./real/"string" {% include asterisk.html%} |	Variable, real or string|	Whatever you want to compare the left side with.
 {:class='table table-primary' }
 
-
+{% include media_modal.html img="hello_lioran.png" w="50" btn="1" alt="Check if the name of the user who just chatted is Lioran" pastebin="5WTDqW3d" %} 
 
 
 

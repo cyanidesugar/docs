@@ -11,7 +11,7 @@ For Channel ID to be available, the Transmitter must be connected for at least a
 | Box Name | Type | Description | 
 |-------|--------|--------
 Variable | String | Variable to store the data into
-Account Slot | Int | Slot of the account (between 1 and 10). Found in Link Your Twitch menu.
+Account Slot | Int | Slot of the account (between 1 and 10). Found in **Link Your Twitch** menu.
 Type | Channel ID/Login Name/Oauth Token |  Type of data to get
 {:class='table table-primary'}
 

@@ -16,7 +16,7 @@ Statement: Or is used in junction with a Statement: If. It allows you to compare
 |Var./real/"string" {% include asterisk.html%}|	Variable, real or string|	Whatever you want to compare the left side with.
 {:class='table table-primary' }
 
-
+{% include media_modal.html img="change_scene.png" w="100" btn="1" alt="Allow privileged viewers to change your scene" pastebin="nauqmqEk" %} 
 
 
 

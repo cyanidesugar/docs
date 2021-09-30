@@ -18,6 +18,7 @@ Returns a string indicating the type of the variable:
 | Variable Save | String | Variable to save the result in. |
 {:class='table table-primary' }
 
+{% include media_modal.html img="variable_type.png" w="100" btn="1" alt="Checking for different variable types" pastebin="9HNbNCrN" %} 
 
 
 

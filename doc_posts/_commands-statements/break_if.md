@@ -19,6 +19,7 @@ You can use this command in junction with Statement: And and Statement: Or comma
 |Var./real/"string" {% include asterisk.html%} |	Variable, real or string|	Whatever you want to compare the left side with.
 {:class='table table-primary' }
 
+{% include media_modal.html img="winning_number.png" w="100" btn="1" alt="Attempt to find a winning number" pastebin="HVRnqeJx" %} 
 
 
 

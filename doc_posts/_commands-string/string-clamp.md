@@ -16,7 +16,13 @@ You need to specify the index of the first character and the amount of character
 |Count|	Real|	Amount of characters to include in the clamp
 {:class='table table-primary ' }
 
+| Original string | Start| Count| Result| 
+|-------|--------|--------|--------
+|"Hello World!"|0|5|"Hello"
+|"This is cool!"|9|4|"cool"
+{:class='table table-secondary w-auto table-hover data-toggle='table' text-break }
 
+{% include media_modal.html img="split_string.png" w="100" btn="1" alt="Split a string containing multiple usernames into separate variables" pastebin="XmPprLKU" %} 
 
 
 

@@ -1,0 +1,57 @@
+<p>Blocks a button by its ID or an entire Group ID.<br />
+Won’t cancel an ongoing button but will prevent any already existing queue from happening when its turn comes.<br />
+The block does not persist when LioranBoard is restarted.<br />
+By setting the ID to all you can remove all current blocks. This only works for unblocking buttons.</p>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Button ID or Group ID</td>
+      <td>Any</td>
+      <td>Button Id or Group ID to block/unblock</td>
+    </tr>
+    <tr>
+      <td>Block</td>
+      <td>boolean</td>
+      <td>Select true to block a button and false to unblock a button</td>
+    </tr>
+    <tr>
+      <td>Allow Queue</td>
+      <td>boolean</td>
+      <td><strong>True</strong> = queue will wait for button to be unblocked and then will continue as normal <br /> <strong>False</strong> =  any queue when the button is blocked will be ignored and deleted</td>
+    </tr>
+    <tr>
+      <td>Self</td>
+      <td>boolean</td>
+      <td>If you selected <code class="language-plaintext highlighter-rouge">all</code> in your Button ID field, you can choose whether you want to clear this button as well. <br />Does not work if the button ID is itself (in that case use False in Ongoing field).</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Button trigger modal -->
+<p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#block-button1png" title="Click me to view the example">
+  Enable BRB mode to temporarily disable button triggers
+  </button>
+  <!-- Modal --></p>
+<div class="modal fade" id="block-button1png" tabindex="-1" aria-labelledby="block-button1png" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="block-button1png">Enable BRB mode to temporarily disable button triggers</h6>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+              <div class="mb-2"><img src="/assets/images/commands-button/block-button1.png" class="img-fluid" alt="Enable BRB mode to temporarily disable button triggers" /></div><div class="mb-2"><video onclick="this.paused ? this.play() : this.pause()" controls="true" class="embed-responsive-item video w-" src="/assets/videos/commands-button/block-button.mp4" title="Enable BRB mode to temporarily disable button triggers" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></video></div>
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -18,6 +18,7 @@ Refer to our [Triggers]({{ "/triggers/twitch" | relative_url }}) section to lear
 |Turn to real|boolean| Whether you want to turn the pulled value to real (number).
 {:class='table table-primary ' }
 
+{% include media_modal.html img="math-trigger.png" w="100" btn="1" alt="Pull a name of a viewer who types !test in your chat" pastebin="m8TTMThe" %} 
 
 
 

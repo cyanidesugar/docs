@@ -15,7 +15,7 @@ Very useful command to use together with Math: Trigger Pull for Bits or Redeem p
 |Max Word Length*|	String|	Amount of characters to allow before cutting the word in the middle.
 {:class='table table-primary ' }
 
-
+{% include media_modal.html img="string_format.png" w="100" btn="1" alt="Examples of formatted strings in OBS GDI+ Text Sources" %} 
 
 
 

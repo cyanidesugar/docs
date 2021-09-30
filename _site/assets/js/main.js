@@ -27,13 +27,14 @@ $(window).scroll(function () {
 
 document.addEventListener('DOMContentLoaded', () => {
   maintainScroll();
-  // initDrag();
+  initDrag();
   initTooltip();
   initPopOver();
   // imgToggleIcon();
   // sideBarToggle();
   // refreshScrollSpy();
   openLinksNewTab();
+  selectAll();
 });
 
 /*
@@ -145,4 +146,14 @@ function openLinksNewTab() {
   for (let i = 0; i < links.length; i++) {
     if (!links[i].href.includes('lioranboard.ca')) links[i].target = '_blank';
   }
+}
+
+// select all for all embed pastebins
+function selectAll() {
+  const els = document.getElementsByClassName('de1');
+  for (let i = 0; i<els.length;i++) {
+    console.log(els[i])
+    els[i].classList.add("user-select-all");
+  }
+  
 }

@@ -21,6 +21,8 @@ For example, if you set the start value to 10, final value to 0 and duration to 
 | Value {% include asterisk.html%}| Any | Whatever you want to set the variable value to. Can contain complex math.
 {:class='table table-primary' }
 
+{% include media_modal.html img="img.png" w="100" btn="1" alt="Simple countdown for GDI+ Text Source in OBS" pastebin="RkjiUFWH" %} 
+
 
 
 
