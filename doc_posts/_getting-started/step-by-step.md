@@ -51,7 +51,7 @@ In your OBS menu navigate to View - Docks - Custom Browser Docks. Your new dock 
 Press apply and you should see your new dock. If it does not pop up for some reason, you can always press View - Docks - Transmitter.   
 Fit your new dock somewhere in your OBS screen as you see fit. 
 
-{% include image.html w="100" file="transmitter_dock.png" alt="OBS Dock Settings" type="image" %}
+{% include image.html w="100" src="transmitter_dock.png" alt="OBS Dock Settings" type="image" %}
 
 
 {% include alert.html text="Transmitter must be running at all times. Do not close it while LioranBoard is on." type="danger" %} 
@@ -132,11 +132,12 @@ We have now created a button that will send a chat message <code>Hello World</co
 <ol> 
 	<li> Navigate to lioranboard/LioranBoard Stream deck(PC) folder and launch <strong>LioranBoard Stream Deck.exe</strong>. This is your Stream Deck where you can manually trigger buttons you create in your Receiver. </li>  
 
+
 {% include alert.html text="Receiver only acts as an editor. You can press your buttons in Stream Deck." type="warning" %}     
 <li> You will see a green screen with some additional settings. 
 Leave IP and Port at default. Selected Deck number needs to match your newly created deck number in your Receiver. In our case it should be number 6. 	{% include image.html w="50" src="streamdeck_settings.png" alt="OBS Websocket Connection Messages" type="image" %} </li>
 
-<li> Press <strong>Connect</strong> and you should see your newly created button that we named<code>chat message</code>. </li>
+<li> Press <strong>Connect</strong> and you should see your newly created button that we named <code>chat message</code>. </li>
 
 
 <li>  {% include video_collapse.html w="100" src="trigger_button.mp4" name="button_manual" alt="Press your newly created button" %} While looking at your Twitch chat, click on the button in your Stream Deck. It should send a <code>Hello World</code> message to your chat! <br>
@@ -149,7 +150,7 @@ Leave IP and Port at default. Selected Deck number needs to match your newly cre
 <p> Do you still remember the Twitch chat trigger you configured for your button? If you followed the tutorial, it should be <code>!test</code>. 
 
 <ol>
-<li> {% include video_collapse.html w="80" src="trigger_button_Chat.mp4" name="button_trigger_twitch" alt="Trigger your button from Twitch chat" %} Try typing <code>!test</code> (or anything else you chose to be your trigger) in your Twitch chat while looking both at your chat and Stream Deck.\
+<li> {% include video_collapse.html w="80" src="trigger_button_chat.mp4" name="button_trigger_twitch" alt="Trigger your button from Twitch chat" %} Try typing <code>!test</code> (or anything else you chose to be your trigger) in your Twitch chat while looking both at your chat and Stream Deck.<br>
 Two things should happen: 
 	<ul>
 	<li> You will see the button in your Stream Deck blink, just like when you manually pressed it with your mouse. </li>
