@@ -3,7 +3,7 @@ title: Extensions
 num: 1.1
 ---
 
-Extensions are meant to add new functionality to LioranBoard. They're made be the LioranBoard community.
+Extensions are meant to add new functionality to LioranBoard. They're made by the LioranBoard community.
 
 {% include alert.html text="Extensions live in your Transmitter. If you update your Transmitter, you must reinstall all the extensions." type="warning" %} 
 

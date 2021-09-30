@@ -13,7 +13,7 @@ For example, you can make your buttons automatically trigger every time you star
 You can attach a premade trigger by right clicking on a button - Add/Edit Twitch Triggers, clicking on the + sign and selecting Extension trigger.
 
 
-| Trigger Name | Event | Math: Trigger Pull| 
+| Trigger Name | Event | Math: Trigger Pull (extension)| 
 |-------|--------|
 | {% include selectAll.html text="!initlioranboard" %}  | Lioranboard starts up. |
 | {% include selectAll.html text="!reinitializing" %} | Decks are reloaded. | 

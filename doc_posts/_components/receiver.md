@@ -86,8 +86,8 @@ When you right click on your button and press Add/Edit commands, you can start a
 - Button commands and delays do not affect sounds or keyboard macros you added to the button.
 - All variables are global and every command in button in every deck can access them.  
 
-See the list of all available commands in our Commands section. 
+See the list of all available commands in our [Commands]({{ "commands/variables" | relative_url }}) section. 
 
 ### Button Triggers
 You can assign a trigger to your button to get automatically executed. 
-See the Triggers section for more information. 
+See the [Triggers]({{ "triggers/twitch" | relative_url }}) section for more information. 

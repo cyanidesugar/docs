@@ -30,7 +30,7 @@ Once you have downloaded and installed OBS Websocket, you can proceed with conne
 - `Auto connect to OBSws` - check this if you'd like LioranBoard to automatically connect to OBS as soon as you launch it.
 - Hit Accept!
 
-  {% include image.html w="75" src="obsws-settings.png" alt="Example of OBSWS Settings in LioranBoard" %}
+  {% include image.html w="75" src="obsws-settings-lb.png" alt="Example of OBSWS Settings in LioranBoard" %}
 **3. Still in LioranBoard Receiver, click on Connect to OBS.**\
 You should see the following yellow notification messages:
 - *Connected to websocket*
@@ -66,4 +66,4 @@ You can now remotely control your OBS Studio with [LioranBoard OBS commands]({{ 
 
 #### Listen to OBS events in LioranBoard
 You can trigger buttons in your LioranBoard by listening to events in your OBS Studio, such as switching to a new scene or enabling a studio mode.\
-You can find a detailed guide to setting up your OBS triggers in our Triggers-OBS section. 
+You can find a detailed guide to setting up your OBS triggers in our [Triggers-OBS]({{ "triggers/obs" | relative_url }}) section. 
