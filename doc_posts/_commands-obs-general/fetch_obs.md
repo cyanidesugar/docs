@@ -21,8 +21,6 @@ Turn to real|	boolean|	Whether you expect a real value (=number) or a string.
 
 **Fetch OBS Data Examples**
 
-
-
 |Object Snippet (if present)|What to retrieve|OBS Command|Fetch Value|
 |-------|--------|--------|--------|
 |`"stats":{"cpu-usage":0.75013036185501325,...}`|current CPU usage| {"request-type":"GetStats"} | stats.cpu-usage|
@@ -33,6 +31,9 @@ Turn to real|	boolean|	Whether you expect a real value (=number) or a string.
 |`"settings":{"brightness":-0.5,...}` |Color Correction Brightness Value|{"request-type":"GetSourceFilterInfo","sourceName":"YOURSOURCENAME","filterName":"Color Correction"}|settings.brightness|
 |`"sceneItems":["sourceName":"Browser",...},{"sourceName":"Text GDI",...}]`|First source name in a specified scene|{"request-type":"GetSceneItemList","sceneName":"YOURSCENENAME"}|sceneItems[0].sourceName|
 {:class='table table-secondary w-auto table-responsive table-hover text-break' }
+
+{% include example_public.html src="https://i.imgur.com/GGZnfza.jpeg" title="Add 1 to Text GDI+ Source" pastebin="V8eRgmWk" desc=description %} 
+
 
 
 

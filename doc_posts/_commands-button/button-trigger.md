@@ -15,7 +15,7 @@ If the button ID does not exist, sends an extension trigger instead.
 |Hidden Delay|	Int|	This exists to make a button happen without greying it out in case the button is showing valuable info.<br/> The delay is hidden and cannot be cancelled (unless you use Reset or press Done in your Receiver).
 {:class='table table-primary'}
 
-
+{% include example_public.html src="https://i.imgur.com/0HLJLde.jpeg" title="Timers (Auto trigger button)" pastebin="kL3HndM7" desc=description %} 
 
 
 

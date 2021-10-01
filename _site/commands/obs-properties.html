@@ -465,7 +465,13 @@
 <div class="lb-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
     <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
     <nav id="TableOfContents">
-<ul><li><a href="#sourcechangevisibility" class="nav-link d-flex flex-row">
+<ul><li><a href="#pullsourcevalue" class="nav-link d-flex flex-row">
+        
+        
+          Pull Source Value 
+        
+        
+      </a></li><li><a href="#sourcechangevisibility" class="nav-link d-flex flex-row">
         
         
           Source Change Visibility 
@@ -551,6 +557,121 @@
   <div class="lb-content ps-lg-4" tabindex="0">
     <div>
       <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+    <a class="btn btn-sm btn-edit-light mb-2 mb-md-0" href="https://github.com/LioranBoard/docs/edit/main/doc_posts/_commands-obs-properties/pull_source_value.md" title="View and edit page on GitHub" target="_blank" rel="noopener"><i class="fas fa-pen"></i> Edit</a>
+      <h3 class="bd-title" class="anchor-header" id="pullsourcevalue">
+        
+        
+          Pull Source Value <a href="#pullsourcevalue" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+        
+        
+      </h3>
+    
+  </div>
+  <p><p>Pulls the last known value of a source. Will return 0 if the source doesn’t exist.<br />
+Very useful command to use together with Source: Motion commands. For example, you can pull the current X and Y position of a source and then use <a href="/commands/obs-properties#sourcemotionposition">Source: Motion Position</a> to smoothly move it across the screen.</p>
+
+<table class="table table-secondary w-auto table-hover data-toggle='table">
+  <thead>
+    <tr>
+      <th>Pull Type</th>
+      <th>Description</th>
+      <th>Possible values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X/Y position</td>
+      <td>returns X or Y position of the source</td>
+      <td>for example 500</td>
+    </tr>
+    <tr>
+      <td>X/Y scale</td>
+      <td>returns scale of the source that affects its width (X) and height (Y)</td>
+      <td>1 = 100% scale</td>
+    </tr>
+    <tr>
+      <td>Rotation</td>
+      <td>returns the degree of rotation of the source</td>
+      <td>0-360</td>
+    </tr>
+    <tr>
+      <td>Volume</td>
+      <td>returns the volume percentage of the source</td>
+      <td>0-100</td>
+    </tr>
+    <tr>
+      <td>Muted</td>
+      <td>returns boolean value whether the source is muted or not</td>
+      <td>0 for unmuted and 1 for muted</td>
+    </tr>
+    <tr>
+      <td>Visible</td>
+      <td>returns boolean value whether the source is visible or not</td>
+      <td>0 for not visible and 1 for visible</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-danger" role="alert">
+   This command might not work correctly if the source is inside a group. It's recommended to use nested scenes instead.
+  </div>
+
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Box Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scene</td>
+      <td>String</td>
+      <td>Scene name containing the source</td>
+    </tr>
+    <tr>
+      <td>Source</td>
+      <td>String</td>
+      <td>Source name to pull the value</td>
+    </tr>
+    <tr>
+      <td>Variable</td>
+      <td>String</td>
+      <td>Variable name to save the pulled value into</td>
+    </tr>
+    <tr>
+      <td>Pull</td>
+      <td>Dropdown menu</td>
+      <td>Type of the value you wish to pull</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Button trigger modal -->
+<p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#2WaxEEyjpeg" title="Click me to view the example">
+  Add 5% volume to a source
+  </button>
+  <!-- Modal --></p>
+<div class="modal fade" id="2WaxEEyjpeg" tabindex="-1" aria-labelledby="2WaxEEyjpeg" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-title h5" id="2WaxEEyjpeg">Add 5% volume to a source</p>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+            <div class="mb-1"><img src="https://i.imgur.com/2WaxEEy.jpeg" class="img-fluid" title="Add 5% volume to a source" /></div><div class="row mb-1"><b>Import JSON button <a class="bs-popover" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" title="Import JSON Button" data-bs-html="true" data-bs-content="Copy the whole JSON string below. Right click on any empty space in your deck and select &lt;b&gt;Import JSON&lt;/b&gt;."><i class="fas fa-question-circle fa-lg" title="Click me!"></i></a> </b><script src="https://pastebin.com/embed_js.php?i=VQQ32eaE"></script></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</p><hr>
+  
+  
+ <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
     <a class="btn btn-sm btn-edit-light mb-2 mb-md-0" href="https://github.com/LioranBoard/docs/edit/main/doc_posts/_commands-obs-properties/change_visibility.md" title="View and edit page on GitHub" target="_blank" rel="noopener"><i class="fas fa-pen"></i> Edit</a>
       <h3 class="bd-title" class="anchor-header" id="sourcechangevisibility">
         

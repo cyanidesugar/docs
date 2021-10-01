@@ -25,6 +25,8 @@ Channel Name |	String	| Channel to send the message to. Leave blank unless you h
 |/ban lioran| Bans Lioran|
 {:class='table table-secondary w-auto table-hover data-toggle='table' text-break }
 
+{% include example_public.html src="https://i.imgur.com/NBTMyqr.jpeg" title="Steal a VIP" pastebin="VYCCCtjT" desc=description %} 
+
 
 
 

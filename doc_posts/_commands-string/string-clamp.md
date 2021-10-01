@@ -24,6 +24,8 @@ You need to specify the index of the first character and the amount of character
 
 {% include media_modal.html img="split_string.png" w="100" btn="1" alt="Split a string containing multiple usernames into separate variables" pastebin="XmPprLKU" %} 
 
+{% include example_public.html src="https://i.imgur.com/hsvUZl0.jpeg" title="Date in YYMMDD format" pastebin="V5pAsu0L" desc=description %} 
+
 
 
 

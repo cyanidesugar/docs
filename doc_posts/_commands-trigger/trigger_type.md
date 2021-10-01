@@ -24,6 +24,7 @@ Variable|	String|	Variable name to store the returned trigger under.
 
 {% include media_modal.html img="trigger-type.png" w="100" btn="1" alt="Get a simple popup telling you how your button was triggered" pastebin="0mb2R5Z6" %} 
 
+{% include example_public.html src="https://i.imgur.com/mY4ykfw.jpeg" title="Happy" pastebin="qcPK86Jk" desc=description %} 
 
 
 
