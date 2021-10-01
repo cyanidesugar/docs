@@ -46,6 +46,6 @@ Written purely in `markdown`, *yay*!
 <!-- src = full path to the Imgur image, i.e. https://i.imgur.com/zsxdHym.jpeg -->
 <!-- title = title, will be displayed as a button and title of the modal -->
 <!-- pastebin = the pastebin unique ID, NOT the whole url, i.e. https://pastebin.com/HVRnqeJx will be just HVRnqeJx -->
-<!-- If you're NOT including pastebin, delete the pastebin="X" key completely
+<!-- If you're NOT including pastebin, delete the pastebin="X" key completely -->
 <!-- Do not change anything else -->
 {% include example_public.html src="https://i.imgur.com/zsxdHym.jpeg" title="Some cool title" pastebin="9HNbNCrN" desc=description %} 
