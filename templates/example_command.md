@@ -10,7 +10,7 @@ permalink: /example_command
 **Some description**   
 Written purely in `markdown`, *yay*!
 
-<!-- simple mark down list -->
+<!-- simple markdown list -->
 - bullet point
 - another bullet point
 - and another one
@@ -20,7 +20,7 @@ Written purely in `markdown`, *yay*!
 {% include selectAll.html text="This sentence will all be selected even if the user clicks only on a single letter." %}
 
 <!-- colored text  -->
-<!-- where color is the color of your text and text is the text you want to display in that color -->
+<!-- color is the color of your text and text is the text you want to display in that color -->
 {% include colored_text.html color="red" text="Some red text hello 123456" %}
 
 <!-- table -->
@@ -40,9 +40,12 @@ Written purely in `markdown`, *yay*!
 <!-- This must be at the end of your markdown description -->
 {% endcapture %} 
 
+<!-- If you're NOT including any description, you can delete all the content between {% capture description %} and {% endcapture %} tags and even delete the tags themselves -->
+
 <!-- The following line below will display the image and pastebin embed -->
 <!-- src = full path to the image, i.e. https://i.imgur.com/zsxdHym.jpeg -->
 <!-- title = title, will be displayed as a button and title of the modal -->
 <!-- pastebin = the pastebin unique ID, NOT the whole url, i.e. https://pastebin.com/HVRnqeJx will be just HVRnqeJx -->
-<!-- do not change anything else -->
+<!-- If you're NOT including pastebin, delete the pastebin="X" key completely
+<!-- Do not change anything else -->
 {% include example_public.html src="https://i.imgur.com/zsxdHym.jpeg" title="Some cool title" pastebin="9HNbNCrN" desc=description %} 
