@@ -40,7 +40,7 @@ Written purely in `markdown`, *yay*!
 <!-- This must be at the end of your markdown description -->
 {% endcapture %} 
 
-<!-- If you're NOT including any description, you can delete all the content between {% capture description %} and {% endcapture %} tags and even delete the tags themselves -->
+<!-- If you're NOT including any description, you can delete all the content between 'capture description' and 'endcapture' tags and even delete the tags themselves -->
 
 <!-- The following line below will display the image and pastebin embed -->
 <!-- src = full path to the image, i.e. https://i.imgur.com/zsxdHym.jpeg -->
