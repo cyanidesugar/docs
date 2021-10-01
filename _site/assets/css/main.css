@@ -17,7 +17,7 @@ code { color: #bf3077; font-size: .910em; }
 /* h2 anchor link */
 .anchor { /*  padding-top: 50px;  margin-top: -50px;*/ z-index: -1; }
 
-@media (min-width: 768px) { :root { scroll-padding-top: 2rem; } }
+@media (min-width: 768px) { :root { scroll-padding-top: 5rem; } }
 .feather { width: 16px; height: 16px; vertical-align: text-bottom; }
 
 /*button collapse icons*/

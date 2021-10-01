@@ -28,13 +28,13 @@
 <meta property="og:url" content="http://localhost:4000/triggers/twitch" />
 <meta property="og:site_name" content="LioranBoard" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-09-30T16:18:57+00:00" />
+<meta property="article:published_time" content="2021-09-30T17:45:15+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Twitch Triggers" />
 <meta name="twitter:site" content="@lioranboard" />
 <meta name="google-site-verification" content="XXX" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Twitch Triggers","dateModified":"2021-09-30T16:18:57+00:00","datePublished":"2021-09-30T16:18:57+00:00","description":"LioranBoard can listen to Twitch events and automatically execute your buttons. For example, it can automatically trigger a button every time you get a new subscriber.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/triggers/twitch"},"url":"http://localhost:4000/triggers/twitch","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Twitch Triggers","dateModified":"2021-09-30T17:45:15+00:00","datePublished":"2021-09-30T17:45:15+00:00","description":"LioranBoard can listen to Twitch events and automatically execute your buttons. For example, it can automatically trigger a button every time you get a new subscriber.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/triggers/twitch"},"url":"http://localhost:4000/triggers/twitch","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -458,7 +458,7 @@
        
       <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
         <a class="btn btn-sm btn-edit-light mb-2 mb-md-0" href="https://github.com/LioranBoard/docs/edit/main/doc_posts/_triggers/twitch.md" title="View and edit page on GitHub" target="_blank" rel="noopener"><i class="fas fa-pen"></i> Edit</a>
-        <h3 class="bd-title" id="content">Twitch Triggers</h3>
+        <h1 class="bd-title display-4" id="content">Twitch Triggers</h1>
       </div>
       
   </div>
@@ -530,7 +530,7 @@
   <div class="lb-content ps-lg-4" tabindex="0">
     <div>
       <p>LioranBoard can listen to Twitch events and automatically execute your buttons. For example, it can automatically trigger a button every time you get a new subscriber.</p>
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="addanewtrigger">
+      <h5 class="anchor-header" id="addanewtrigger">
         
         
           Add a new trigger <a href="#addanewtrigger" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -544,7 +544,7 @@
   <li>Optionally check <code class="language-plaintext highlighter-rouge">Add to Request Queue</code>, which acts as a button queue. If there is another trigger event while the button is still active (for example if you get two subscribers at the same time), it will place is in the queue and reactivate the button as soon as it’s ready again.</li>
   <li>In your button commands, use <a href="/commands/trigger#mathtriggerpull">Math: Trigger Pull</a> command to retrieve all the provided information (viewer’s name, their message, emotes, badge etc.).</li>
 </ol>
-      <h3 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="typeoftwitchtriggers">
+      <h3 class="anchor-header" id="typeoftwitchtriggers">
         
         
           Type of Twitch Triggers <a href="#typeoftwitchtriggers" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -552,7 +552,7 @@
         
       </h3>
     
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="chatorwhispermessage">
+      <h5 class="anchor-header" id="chatorwhispermessage">
         
         
           Chat or whisper message <a href="#chatorwhispermessage" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -621,7 +621,7 @@ All chat message triggers are case sensitive by default. You can uncheck <code c
 | Badge List | Basic format: <code class="language-plaintext highlighter-rouge">FirstBadgeName/version,SecondBadgeName/version</code> <br /> For example: <code class="language-plaintext highlighter-rouge">broadcaster/1, subscriber/0</code> <br /> <a href="https://badges.twitch.tv/v1/badges/global/display">Global Badges List</a>, <a href="https://badges.twitch.tv/v1/badges/channels/CHANNEL_ID/display">Channel Badges List</a> <br /> To find the badge ID in the JSON, look for BadgeList.badge_sets[<code class="language-plaintext highlighter-rouge">BADGENAME</code>].versions[<code class="language-plaintext highlighter-rouge">VERSION</code>].image_url_1x. The last part 1x can be changed to 2x, 3x or 4x for bigger size. |
 | Channel | Channel Name where the message originated from. Will return <code class="language-plaintext highlighter-rouge">w</code> if it’s a whisper. |
 | Name Color | Chat name color in hexadecimal format. |</p>
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="follower">
+      <h5 class="anchor-header" id="follower">
         
         
           Follower <a href="#follower" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -630,7 +630,7 @@ All chat message triggers are case sensitive by default. You can uncheck <code c
       </h5>
     
 <p>Requires an <a href="https://christinak.itch.io/lb-eventsub-webhook">extension</a>, since Twitch PubSub does not send follower events.</p>
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="subscriber">
+      <h5 class="anchor-header" id="subscriber">
         
         
           Subscriber <a href="#subscriber" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -739,7 +739,7 @@ All chat message triggers are case sensitive by default. You can uncheck <code c
     </tr>
   </tbody>
 </table>
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="giftsubamount">
+      <h5 class="anchor-header" id="giftsubamount">
         
         
           Gift Sub Amount <a href="#giftsubamount" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -804,7 +804,7 @@ All chat message triggers are case sensitive by default. You can uncheck <code c
     </tr>
   </tbody>
 </table>
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="bits">
+      <h5 class="anchor-header" id="bits">
         
         
           Bits <a href="#bits" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -865,7 +865,7 @@ All chat message triggers are case sensitive by default. You can uncheck <code c
     </tr>
   </tbody>
 </table>
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="hostandraid">
+      <h5 class="anchor-header" id="hostandraid">
         
         
           Host and Raid <a href="#hostandraid" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -922,7 +922,7 @@ All chat message triggers are case sensitive by default. You can uncheck <code c
     </tr>
   </tbody>
 </table>
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="channelpointsredeem">
+      <h5 class="anchor-header" id="channelpointsredeem">
         
         
           Channel Points Redeem <a href="#channelpointsredeem" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
@@ -999,7 +999,7 @@ All chat message triggers are case sensitive by default. You can uncheck <code c
     </tr>
   </tbody>
 </table>
-      <h5 class="anchor-header" style="margin-top: -50px !important;padding-top:50px !important" id="channelpointsredeemwithmessage">
+      <h5 class="anchor-header" id="channelpointsredeemwithmessage">
         
         
           Channel Points Redeem With Message <a href="#channelpointsredeemwithmessage" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
