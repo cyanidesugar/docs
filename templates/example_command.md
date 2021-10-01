@@ -24,7 +24,7 @@ Written purely in `markdown`, *yay*!
 {% include colored_text.html color="red" text="Some red text hello 123456" %}
 
 <!-- table -->
-<!-- find list of all table types here: https://getbootstrap.com/docs/5.0/content/tables/#variants and just change the 'secondary' in table-secondary to something else -->
+<!-- find list of all table types here: https://getbootstrap.com/docs/5.0/content/tables/#variants and just change the 'primary' in table-primary to something else -->
 <!-- remove w-auto if you don't wish the table to auto resize based on the text -->
 
 | table header | another header | one more |
