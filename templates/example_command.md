@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /templates/example-command
+permalink: templates/example-command
 ---
 
 <!-- This must be at the beginning of your markdown description -->
