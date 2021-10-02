@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // sideBarToggle();
   // refreshScrollSpy();
   openLinksNewTab();
-  selectAll();
+  editPasteBin();
 });
 
 /*
@@ -148,12 +148,13 @@ function openLinksNewTab() {
   }
 }
 
-// select all for all embed pastebins
-function selectAll() {
+// select all for embed pastebins and force text break
+function editPasteBin() {
   const els = document.getElementsByClassName('de1');
   for (let i = 0; i<els.length;i++) {
     console.log(els[i])
     els[i].classList.add("user-select-all");
+    els[i].classList.add("text-break");    
   }
   
 }
