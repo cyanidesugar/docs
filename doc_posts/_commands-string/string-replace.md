@@ -16,7 +16,7 @@ Searches a string for a specified value and returns a new string where all the o
 | Value to search for | Value to replace it with| String| Result |
 |-------|--------|--------|--------
 |"l"|"/"|"Hello"|"He//o"
-|" "|"/"|"Hello World"|"Hello-World"
+|" "|"-"|"Hello World"|"Hello-World"
 |"black"|"white"|"Mr.Black has a black car and a black cat."|"Mr.Black has a white car and a white cat."
 {:class='table table-secondary w-auto table-hover data-toggle='table' text-break }
 
