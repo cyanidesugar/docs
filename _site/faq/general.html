@@ -595,7 +595,7 @@ This documentation should help you achieve that!</p>
   <li>Download the .lbe extension file
     <ul>
       <li>If you’re downloading the extension from <strong>Github</strong>, please refer to the screenshot below.
-        <figure class="figure"><img src="/assets/images/faq-general/extension_github.png" class="figure-img img-fluid rounded w-75" alt="Correct way to download an extension file from Github" title="Click to enlarge" data-bs-target="#extension_githubpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Correct way to download an extension file from Github </figcaption></figure>
+        <figure class="figure mt-1"><img src="/assets/images/faq-general/extension_github.png" class="figure-img img-fluid rounded w-75" alt="Correct way to download an extension file from Github" title="Click to enlarge" data-bs-target="#extension_githubpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Correct way to download an extension file from Github </figcaption></figure>
       </li>
     </ul>
   </li>
@@ -618,7 +618,7 @@ This documentation should help you achieve that!</p>
 
 <ul>
   <li>You can see all its fields in your <a href="">Send to extension</a> command. If you can only see the extension name, the extension was not installed properly or your Transmitter is not running. The amount of input fields depends on the extension, but it should in most cases contain at least one.
-    <figure class="figure"><img src="/assets/images/faq-general/extension_installed.png" class="figure-img img-fluid rounded w-75" alt="Correctly vs. incorrectly installed extension" title="Click to enlarge" data-bs-target="#extension_installedpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Correctly vs. incorrectly installed extension </figcaption></figure>
+    <figure class="figure mt-1"><img src="/assets/images/faq-general/extension_installed.png" class="figure-img img-fluid rounded w-75" alt="Correctly vs. incorrectly installed extension" title="Click to enlarge" data-bs-target="#extension_installedpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Correctly vs. incorrectly installed extension </figcaption></figure>
   </li>
 </ul>
 <div class="modal fade" id="extension_installedpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/faq-general/extension_installed.png" class="img-fluid" alt="Correctly vs. incorrectly installed extension" /></div></div></div>
@@ -681,7 +681,7 @@ Once you have an extension working, you can submit it in <em>#development</em> c
     <p>Save the file, open Lioranboard and try connecting to the OBS websocket on your streaming PC.<br />
 It should work as long as nothing (antivirus, firewall) is blocking connection to your streaming PC.</p>
 
-    <figure class="figure"><img src="/assets/images/faq-general/obs-another-pc.png" class="figure-img img-fluid rounded w-50" alt="Modified connect.ini" title="Click to enlarge" data-bs-target="#obs-another-pcpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Modified connect.ini </figcaption></figure>
+    <figure class="figure mt-1"><img src="/assets/images/faq-general/obs-another-pc.png" class="figure-img img-fluid rounded w-50" alt="Modified connect.ini" title="Click to enlarge" data-bs-target="#obs-another-pcpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Modified connect.ini </figcaption></figure>
   </li>
 </ol>
 <div class="modal fade" id="obs-another-pcpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/faq-general/obs-another-pc.png" class="img-fluid" alt="Modified connect.ini" /></div></div></div>
@@ -710,7 +710,7 @@ There are multiple ways to accomplish this. This documentation covers the easies
   <li>Type <code class="language-plaintext highlighter-rouge">ngrok authtoken YOURAUTHTOKEN</code> and press enter. You should see a message <code class="language-plaintext highlighter-rouge">Authtoken saved to configuration file: C:\Users\...</code>. This step is necessary to prevent your session from timing out.</li>
   <li>To start the tunnel, type <code class="language-plaintext highlighter-rouge">ngrok tcp 9423</code> and hit enter. <br /> The default region is US. You can change it by adding <code class="language-plaintext highlighter-rouge">-region=REGION</code> flag. Available regions: us, eu, ap, au, sa, jp, in. Example: <code class="language-plaintext highlighter-rouge">ngrok tcp -region=eu 9423</code>.</li>
   <li>You should see your session started. Go to your Stream Deck and paste the new IP and port from the Forwarding line (make sure to omit the <code class="language-plaintext highlighter-rouge">tcp://</code> part). As long as your tunnel is active, you can connect to your Receiver from anywhere in the world now! :)
-    <figure class="figure"><img src="/assets/images/faq-general/ngrok.png" class="figure-img img-fluid rounded w-50" alt="Creating a new tunnel via ngrok" title="Click to enlarge" data-bs-target="#ngrokpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Creating a new tunnel via ngrok </figcaption></figure>
+    <figure class="figure mt-1"><img src="/assets/images/faq-general/ngrok.png" class="figure-img img-fluid rounded w-50" alt="Creating a new tunnel via ngrok" title="Click to enlarge" data-bs-target="#ngrokpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Creating a new tunnel via ngrok </figcaption></figure>
   </li>
 </ol>
 <div class="modal fade" id="ngrokpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/faq-general/ngrok.png" class="img-fluid" alt="Creating a new tunnel via ngrok" /></div></div></div>
