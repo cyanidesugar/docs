@@ -1,4 +1,4 @@
-{% assign id = include.src | strip | remove: '.'| split: 'com/' %}
+{% assign id = include.src | strip | remove: '.'| remove: '0' | remove: '1' | remove: '2' | remove: '3' | remove: '4' | remove: '5' | remove: '6' | remove: '7' | remove: '8' | remove: '9' | split: 'com/' %}
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{ id[1] }}" title="Click me to view the example">
   {{ include.title }}
