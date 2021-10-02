@@ -19,6 +19,10 @@ The **position** you're adding the value to can be:
 
 {% include alert.html text="Any position index higher than the stack size will be regarded as the top." type="info" %} 
 
+{% include alert.html text="In the TAB window you will see at the top of your screen the position 0, and at the bottom the last position. However, the TOP position of the stack is still the last one, and the BOTTOM position is 0. Be careful as this can be confusing at first." type="warning" %}
+
+{% include image.html w="75" src="https://i.imgur.com/qBeMTGK.jpg" alt="Top and bottom of a stack shows different in screen" %}
+
 | Box Name | Type | Description | 
 |-------|--------|--------
 |Stack Name	|String	| Name of the stack
