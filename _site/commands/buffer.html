@@ -663,12 +663,10 @@
 <ul>
   <li>Fixed - A buffer of a fixed size in bytes. The size is set when the buffer is created and cannot be changed again. LioranBoard will crash when you reach the limit size.</li>
   <li>Grow - A buffer that will grow dynamically as data is added. You create it with an initial size (which should be an approximation of the size of the data expected to be stored), and then it will expand to accept further data that overflows this initial size.</li>
-  <li>
-    <p>Wrap - A buffer where the data will wrap. When the data being added reaches the limit of the buffer size, the overwrite will be placed back at the start of the buffer, and further writing will continue from that point.</p>
-
-    <figure class="figure mt-1"><img src="/assets/images/commands-buffer/Buffer_Types.png" class="figure-img img-fluid rounded w-200px" alt="Buffer types" title="Click to enlarge" data-bs-target="#Buffer_Typespng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Buffer types </figcaption></figure>
-  </li>
+  <li>Wrap - A buffer where the data will wrap. When the data being added reaches the limit of the buffer size, the overwrite will be placed back at the start of the buffer, and further writing will continue from that point.</li>
 </ul>
+
+<figure class="figure mt-1"><img src="/assets/images/commands-buffer/Buffer_Types.png" class="figure-img img-fluid rounded w-200px" alt="Buffer types" title="Click to enlarge" data-bs-target="#Buffer_Typespng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Buffer types </figcaption></figure>
 <div class="modal fade" id="Buffer_Typespng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-buffer/Buffer_Types.png" class="img-fluid" alt="Buffer types" /></div></div></div>
 
 <div class="alert alert-info" role="alert">

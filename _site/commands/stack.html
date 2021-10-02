@@ -471,7 +471,19 @@
           Introduction 
         
         
-      </a></li><li><a href="#stackadd" class="nav-link d-flex flex-row">
+      </a><ul><li><a href="#whatsastack" class="nav-link d-flex flex-row">
+        
+        
+          What’s a stack? 
+        
+        
+      </a></li><li><a href="#stackmanipulation" class="nav-link d-flex flex-row">
+        
+        
+          Stack manipulation 
+        
+        
+      </a></li></ul></li><li><a href="#stackadd" class="nav-link d-flex flex-row">
         
         
           Stack: Add  
@@ -567,22 +579,43 @@
       </h3>
     
   </div>
-  <p><p>Stack is a special variable which can hold more than one value at a time. It works similar to an array in other programming languages.<br />
+  <p>
+      <h4 class="anchor-header" id="whatsastack">
+        
+        
+          What’s a stack? <a href="#whatsastack" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+        
+        
+      </h4>
+    
+<p>Stack is a special variable which can hold more than one value at a time. It works similar to an array in other programming languages.<br />
 If you have a list of items (for example viewer names), storing them in single variables would look like this:</p>
 <ul>
   <li>var name1 = “Lioran”</li>
   <li>var name2 = “Neverwho”</li>
-  <li>
-    <p>var name3 = “Daryl”
-This seems quite inefficient if you happen to have a lot of names to store. The answer is to store them all in a stack, which can hold many values under a single name and you can access them by referring to an index number: stack <code class="language-plaintext highlighter-rouge">names = ["Lioran", "Neverwho", "Daryl"]</code>.<br />
-If you want to retrieve a specific value from a stack, you can use the following formatting: <code class="language-plaintext highlighter-rouge">[position]stackname</code>. Going by the example above, <code class="language-plaintext highlighter-rouge">[2]names</code> would retrieve <code class="language-plaintext highlighter-rouge">'Neverwho'</code>. [position] can also contain other variables or complex math.<br />
-Stack values can be viewed by pressing Tab in the main Receiver menu and typing the full name of the stack.<br />
-One thing to note is that a stack is cleared every time you close or reset Receiver. If you wish to save it, you can use Stack: Stringify and File: Save String commands.</p>
-
-    <figure class="figure mt-1"><img src="/assets/images/commands-stack/array.png" class="figure-img img-fluid rounded w-75" alt="Representation of an array" title="Click to enlarge" data-bs-target="#arraypng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Representation of an array </figcaption></figure>
-  </li>
+  <li>var name3 = “Daryl”</li>
 </ul>
+
+<p>This seems quite inefficient if you happen to have a lot of names to store. The answer is to store them all in a stack, which can hold many values under a single name and you can access them by referring to an index number: stack <code class="language-plaintext highlighter-rouge">names = ["Lioran", "Neverwho", "Daryl"]</code>.\</p>
+
+<figure class="figure mt-1"><img src="/assets/images/commands-stack/array.png" class="figure-img img-fluid rounded w-75" alt="Representation of an array" title="Click to enlarge" data-bs-target="#arraypng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Representation of an array </figcaption></figure>
 <div class="modal fade" id="arraypng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/array.png" class="img-fluid" alt="Representation of an array" /></div></div></div>
+      <h4 class="anchor-header" id="stackmanipulation">
+        
+        
+          Stack manipulation <a href="#stackmanipulation" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+        
+        
+      </h4>
+    
+<p>If you want to retrieve a specific value from a stack, you can use the following formatting: <code class="language-plaintext highlighter-rouge">[position]stackname</code>. Going by the example above, <code class="language-plaintext highlighter-rouge">[2]names</code> would retrieve <code class="language-plaintext highlighter-rouge">'Neverwho'</code>. [position] can also contain other variables or complex math.<br />
+Stack values can be viewed by pressing Tab in the main Receiver menu and typing the full name of the stack.<br />
+In the TAB window you will see at the top of your screen the position 0, and at the bottom the last position. However, the TOP position of the stack is still the last one, and the BOTTOM position is 0. Be careful as this can be confusing at first.</p>
+
+<figure class="figure mt-1"><img src="https://i.imgur.com/qBeMTGK.jpg" class="figure-img img-fluid rounded w-75" alt="Top and bottom of a stack shows different in screen" title="Click to enlarge" data-bs-target="#https:iimgurcomqBeMTGKjpg-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Top and bottom of a stack shows different in screen </figcaption></figure>
+<div class="modal fade" id="https:iimgurcomqBeMTGKjpg-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="https://i.imgur.com/qBeMTGK.jpg" class="img-fluid" alt="Top and bottom of a stack shows different in screen" /></div></div></div>
+
+<p>One thing to note is that a stack is cleared every time you close or reset Receiver. If you wish to save it, you can use Stack: Stringify and File: Save String commands.</p>
 
 </p><hr>
   
@@ -603,21 +636,17 @@ One thing to note is that a stack is cleared every time you close or reset Recei
 <p>The <strong>position</strong> you’re adding the value to can be:</p>
 
 <ul>
-  <li>
-    <p>top - adds a value to the end of the stack (same as Array Push in Javascript)</p>
-
-    <figure class="figure mt-1"><img src="/assets/images/commands-stack/push.png" class="figure-img img-fluid rounded w-75" alt="Add a value to the end of the stack" title="Click to enlarge" data-bs-target="#pushpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the end of the stack </figcaption></figure>
-  </li>
+  <li>top - adds a value to the end of the stack (same as Array Push in Javascript)</li>
 </ul>
+
+<figure class="figure mt-1"><img src="/assets/images/commands-stack/push.png" class="figure-img img-fluid rounded w-50" alt="Add a value to the end of the stack" title="Click to enlarge" data-bs-target="#pushpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the end of the stack </figcaption></figure>
 <div class="modal fade" id="pushpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/push.png" class="img-fluid" alt="Add a value to the end of the stack" /></div></div></div>
 
 <ul>
-  <li>
-    <p>bottom - adds a value to the beginning of the stack (same as Array Unshift in Javascript), the positions of all elements will shifted by one</p>
-
-    <figure class="figure mt-1"><img src="/assets/images/commands-stack/unshift.png" class="figure-img img-fluid rounded w-75" alt="Add a value to the beginning of the stack" title="Click to enlarge" data-bs-target="#unshiftpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the beginning of the stack </figcaption></figure>
-  </li>
+  <li>bottom - adds a value to the beginning of the stack (same as Array Unshift in Javascript), the positions of all elements will shifted by one</li>
 </ul>
+
+<figure class="figure mt-1"><img src="/assets/images/commands-stack/unshift.png" class="figure-img img-fluid rounded w-50" alt="Add a value to the beginning of the stack" title="Click to enlarge" data-bs-target="#unshiftpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the beginning of the stack </figcaption></figure>
 <div class="modal fade" id="unshiftpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/unshift.png" class="img-fluid" alt="Add a value to the beginning of the stack" /></div></div></div>
 
 <ul>
