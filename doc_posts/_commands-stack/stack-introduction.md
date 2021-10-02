@@ -20,7 +20,7 @@ Stack values can be viewed by pressing Tab in the main Receiver menu and typing 
 In the TAB window you will see at the top of your screen the position 0, and at the bottom the last position. However, the TOP position of the stack is still the last one, and the BOTTOM position is 0. Be careful as this can be confusing at first.
 {% include image.html w="75" src="https://i.imgur.com/qBeMTGK.jpg" alt="Top and bottom of a stack shows different in screen" external=true %}
 
-One thing to note is that a stack is cleared every time you close or reset Receiver. If you wish to save it, you can use Stack: Stringify and File: Save String commands.
+One thing to note is that a stack is cleared every time you close or reset Receiver. If you wish to save it, you can use [Stack: Stringify]({{ "commands/stack#stackstringify" | relative_url }}) and [File: Save String]({{ "commands/file#filesavestring" | relative_url }}) commands.
 
 
 
