@@ -9,13 +9,15 @@ permalink: /triggers/twitch
 ---
 LioranBoard can listen to Twitch events and automatically execute your buttons. For example, it can automatically trigger a button every time you get a new subscriber. 
 
-##### Add a new trigger 
+#### Add a new trigger 
 1. Right click on the button in your Receiver - Add Twitch Triggers. 
 2. Click on the `+` button and select the trigger type. 
 4. Optionally check `Add to Request Queue`, which acts as a button queue. If there is another trigger event while the button is still active (for example if you get two subscribers at the same time), it will place is in the queue and reactivate the button as soon as it's ready again.
-5. In your button commands, use [Math: Trigger Pull]({{ "commands/trigger#mathtriggerpull" | relative_url }}) command to retrieve all the provided information (viewer's name, their message, emotes, badge etc.). 
+5. In your button commands, use [Math: Trigger Pull]({{ "commands/trigger#mathtriggerpull" | relative_url }}) command to retrieve all the provided information (viewer's name, their message, emotes, badge etc.).   
+<br>
 
-### Type of Twitch Triggers 
+
+#### Type of Twitch Triggers 
 
 ##### Chat or whisper message  
 Listens to all chat messages and triggers when specific conditions are met.     
@@ -43,7 +45,7 @@ Message | Chat message to listen to. Must be an exact match. Can include wild ca
 | Display Name | Viewer's display name (can contain uppercase characters). |
 | User ID | Viewer's user ID. |
 | Message | Viewer's message. |
-| Emote List | Viewer's available emotes. <br/> Basic format: `FirstEmoteID:FirstIndex-LastIndex/ SecondEmoteID:FirstIndex-LastIndex` <br/> Message containing multiple emotes will be formatted such as: `FirstEmoteID:FirstIndex(1)-LastIndex(1),FirstIndex(2)-LastIndex(2),FirstIndex(3)-LastIndex(3)` <br/> {% include image_collapse_table.html name="chat_emotes" src="chat_emotes.png" alt="Chat Emotes List" btn="Emotes Example" %}  |
+| Emote List | Viewer's available emotes. <br/> Basic format: `FirstEmoteID:FirstIndex-LastIndex/ SecondEmoteID:FirstIndex-LastIndex` <br/> Message containing multiple emotes will be formatted such as: `FirstEmoteID:FirstIndex(1)-LastIndex(1),FirstIndex(2)-LastIndex(2),FirstIndex(3)-LastIndex(3)` <br/>{% include image_collapse_table.html name="chat_emotes" src="chat_emotes.png" alt="Chat Emotes List" btn="Emotes Example" %}|
 | Badge List | Basic format: `FirstBadgeName/version,SecondBadgeName/version` <br/> For example: `broadcaster/1, subscriber/0` <br/> [Global Badges List](https://badges.twitch.tv/v1/badges/global/display), [Channel Badges List](https://badges.twitch.tv/v1/badges/channels/CHANNEL_ID/display) <br/> To find the badge ID in the JSON, look for BadgeList.badge_sets[`BADGENAME`].versions[`VERSION`].image_url_1x. The last part 1x can be changed to 2x, 3x or 4x for bigger size. |
 | Channel | Channel Name where the message originated from. Will return `w` if it's a whisper. |
 | Name Color | Chat name color in hexadecimal format. |

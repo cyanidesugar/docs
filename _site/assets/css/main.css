@@ -82,8 +82,6 @@ a[aria-expanded=true] .fa-plus-square { display: none; }
 
 a[aria-expanded=false] .fa-minus-square { display: none; }
 
-.col-6 { flex: 0 0 auto; width: 50%; }
-
 .p-2 { padding: 0.5rem !important; }
 
 /* layout navbar media */
