@@ -295,6 +295,7 @@ DEPENDENCIES
   github-pages (~> 215)
   jekyll
   jekyll-algolia
+  jekyll-feed
   jekyll-seo-tag
   jekyll-toc
   tzinfo-data
