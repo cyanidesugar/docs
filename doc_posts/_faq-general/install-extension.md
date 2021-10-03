@@ -26,7 +26,7 @@ Extensions are meant to add new functionality to LioranBoard. They're made by th
 
 **Extension is installed properly if:**
 
-- You can see all its fields in your [Send to extension]() command. If you can only see the extension name, the extension was not installed properly or your Transmitter is not running. The amount of input fields depends on the extension, but it should in most cases contain at least one.
+- You can see all its fields in your [Send to extension]({{ "commands/misc#sendtoextension" | relative_url }}) command. If you can only see the extension name, the extension was not installed properly or your Transmitter is not running. The amount of input fields depends on the extension, but it should in most cases contain at least one.
   {% include image.html w="75" src="extension_installed.png" alt="Correctly vs. incorrectly installed extension" %}
 - Your Transmitter displays that it's correctly installed. You should see a new tab and a checkbox at the bottom with the extension name added.
 
@@ -40,4 +40,4 @@ Extensions are meant to add new functionality to LioranBoard. They're made by th
 Lioranboard communicates with all its extensions via transmitter.html and its own websocket.\
 Information about how to make your own extension can be found in `LioranBoard/extension/readme.txt` file.\
 We encourage you to go over a few premade extensions to understand the process.\
-Once you have an extension working, you can submit it in *#development* channel in the official [LioranBoard Discord server](https://discord.gg/dXez8Zh). You will need one of the mods to approve it before it can officially released. 
+Once you have an extension working, you can submit it in *#development* channel in the official [LioranBoard Discord server](https://discord.gg/dXez8Zh). You will need one of the mods to approve it before it can be officially released. 

@@ -29,6 +29,6 @@ Here's a few ways:
 - Have you made your own extension and would like to share it with the rest of the community? Contact our moderators on the official [LioranBoard Discord server](https://discord.gg/dXez8Zh) for the approval! All our released extensions are tested and checked for any harmful code. 
 - Found a bug? Fill out a bug report either in our Discord channel or in the bug report section on this website! Please follow the guidelines to make it as easy as possible for us to track down the issue. <span class="badge bg-warning text-dark">Under construction</span>
 
-## LioranBoard Content Creators <span class="badge bg-warning text-dark">Under construction</span>
+## LioranBoard Content Creators <span class="badge bg-warning text-dark">Coming soon</span>
 Watch videos from members of the LioranBoard community to give you tips and tricks on how to use LioranBoard. 
 

@@ -22,7 +22,7 @@ The **position** you're adding the value to can be:
 | Box Name | Type | Description | 
 |-------|--------|--------
 |Stack Name	|String	| Name of the stack
-|Position|index/top/bottom {% include asterisk.html%}|Position to add the value to. Can be **top** {% include popover.html content="end of the stack" %}, **bottom** {% include popover.html content="beginning of the stack" %} or **index** of the position. 
+|Position|index/top/bottom {% include asterisk.html%}|Position to add the value to. Can be **top** {% include popover.html content="beginning of the stack" %}, **bottom** {% include popover.html content="end of the stack" %} or **index** of the position. 
 |Var./real/"string" {% include asterisk.html%}| Variable, real or string | Value you want to add to the stack
 {:class='table table-primary'}
 
