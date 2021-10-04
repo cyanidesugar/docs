@@ -7,7 +7,7 @@ With the following commands you can save and load data to .ini files. Unlike wit
 As of now, LioranBoard can natively read and modify only .ini files in its own folder. There are two possible default locations for the .ini files:
 
 - `\lioranboard\LioranBoard Receiver` - this is the primary location
-- `C:\Users\USERNAME\\Local\LioranBoard` - this is the secondary location. Files are saved here instead if something blocks LioranBoard from saving them in their primary location.
+- `C:\Users\USERNAME\AppData\Local\LioranBoard` - this is the secondary location. Files are saved here instead if something blocks LioranBoard from saving them in their primary location.
 
 **Rules for saving and loading ini files:**
 
