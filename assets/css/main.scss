@@ -974,6 +974,18 @@ a {
    color: #d4d4d4;
   }
 
+  .lb-navbar.navbar {
+  background-color: #612121d1;
+  }
+
+  .container-xxl.lb-layout {
+  background-color: #08111d;
+  }
+
+  .footer-basic {
+    background-color: #612121d1;
+  }
+
   .lb-navbar .navbar-nav .nav-link.active {
     font-weight: bolder;
   }
@@ -983,8 +995,8 @@ a {
 }
  
 .lb-links .btn:hover, .lb-links .btn:focus {
-  color: rgba(0,0,0,0.85);
-  background-color: rgb(105 127 169 / 25%);
+  color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(105, 127, 169,0.25);
 }
 /*
 .lb-content .btn-primary {
