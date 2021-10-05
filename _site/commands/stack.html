@@ -597,7 +597,7 @@ If you have a list of items (for example viewer names), storing them in single v
 
 <p>This seems quite inefficient if you happen to have a lot of names to store. The answer is to store them all in a stack, which can hold many values under a single name and you can access them by referring to an index number: stack <code class="language-plaintext highlighter-rouge">names = ["Lioran", "Neverwho", "Daryl"]</code>.\</p>
 
-<figure class="figure mt-1 mb-1"><img src="/assets/images/commands-stack/array.png" class="figure-img img-fluid rounded w-75" alt="Representation of an array" title="Click to enlarge" data-bs-target="#arraypng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Representation of an array </figcaption></figure>
+<figure class="figure mt-1"><img src="/assets/images/commands-stack/array.png" class="figure-img img-fluid rounded w-75" alt="Representation of an array" title="Click to enlarge" data-bs-target="#arraypng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Representation of an array </figcaption></figure>
 <div class="modal fade" id="arraypng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/array.png" class="img-fluid" alt="Representation of an array" /></div></div></div>
       <h4 class="anchor-header" id="stackmanipulation">
         
@@ -610,7 +610,7 @@ If you have a list of items (for example viewer names), storing them in single v
 <p>If you want to retrieve a specific value from a stack, you can use the following formatting: <code class="language-plaintext highlighter-rouge">[position]stackname</code>. Going by the example above, <code class="language-plaintext highlighter-rouge">[2]names</code> would retrieve <code class="language-plaintext highlighter-rouge">'Neverwho'</code>. [position] can also contain other variables or complex math.<br />
 Stack values can be viewed by pressing Tab in the main Receiver menu and typing the full name of the stack.<br />
 In the TAB window you will see at the top of your screen the position 0, and at the bottom the last position. However, the TOP position of the stack is still the last one, and the BOTTOM position is 0. Be careful as this can be confusing at first.</p>
-<figure class="figure mt-1 mb-1"><img src="https://i.imgur.com/qBeMTGK.jpg" class="figure-img img-fluid rounded w-75" alt="Top and bottom of a stack shows different in screen" title="Click to enlarge" data-bs-target="#iimgurcomqBeMTGKjpg-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Top and bottom of a stack shows different in screen </figcaption></figure>
+<figure class="figure mt-1"><img src="https://i.imgur.com/qBeMTGK.jpg" class="figure-img img-fluid rounded w-75" alt="Top and bottom of a stack shows different in screen" title="Click to enlarge" data-bs-target="#iimgurcomqBeMTGKjpg-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Top and bottom of a stack shows different in screen </figcaption></figure>
 <div class="modal fade" id="iimgurcomqBeMTGKjpg-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="https://i.imgur.com/qBeMTGK.jpg" class="img-fluid" alt="Top and bottom of a stack shows different in screen" /></div></div></div>
 
 <p>One thing to note is that a stack is cleared every time you close or reset Receiver. If you wish to save it, you can use <a href="/commands/stack#stackstringify">Stack: Stringify</a> and <a href="/commands/file#filesavestring">File: Save String</a> commands.</p>
@@ -637,14 +637,14 @@ In the TAB window you will see at the top of your screen the position 0, and at 
   <li>top - adds a value to the end of the stack (same as Array Push in Javascript)</li>
 </ul>
 
-<figure class="figure mt-1 mb-1"><img src="/assets/images/commands-stack/push.png" class="figure-img img-fluid rounded w-50" alt="Add a value to the end of the stack" title="Click to enlarge" data-bs-target="#pushpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the end of the stack </figcaption></figure>
+<figure class="figure mt-1"><img src="/assets/images/commands-stack/push.png" class="figure-img img-fluid rounded w-50" alt="Add a value to the end of the stack" title="Click to enlarge" data-bs-target="#pushpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the end of the stack </figcaption></figure>
 <div class="modal fade" id="pushpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/push.png" class="img-fluid" alt="Add a value to the end of the stack" /></div></div></div>
 
 <ul>
   <li>bottom - adds a value to the beginning of the stack (same as Array Unshift in Javascript), the positions of all elements will shifted by one</li>
 </ul>
 
-<figure class="figure mt-1 mb-1"><img src="/assets/images/commands-stack/unshift.png" class="figure-img img-fluid rounded w-50" alt="Add a value to the beginning of the stack" title="Click to enlarge" data-bs-target="#unshiftpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the beginning of the stack </figcaption></figure>
+<figure class="figure mt-1"><img src="/assets/images/commands-stack/unshift.png" class="figure-img img-fluid rounded w-50" alt="Add a value to the beginning of the stack" title="Click to enlarge" data-bs-target="#unshiftpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Add a value to the beginning of the stack </figcaption></figure>
 <div class="modal fade" id="unshiftpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/unshift.png" class="img-fluid" alt="Add a value to the beginning of the stack" /></div></div></div>
 
 <ul>
@@ -1057,7 +1057,7 @@ The randomization will happen with an equal chance for each value.</p>
   <p><p>Joins two stack together.<br />
 Appends another stack at the end of first stack.</p>
 
-<figure class="figure mt-1 mb-1"><img src="/assets/images/commands-stack/concat.png" class="figure-img img-fluid rounded w-75" alt="Stack: Concat" title="Click to enlarge" data-bs-target="#concatpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Stack: Concat </figcaption></figure>
+<figure class="figure mt-1"><img src="/assets/images/commands-stack/concat.png" class="figure-img img-fluid rounded w-75" alt="Stack: Concat" title="Click to enlarge" data-bs-target="#concatpng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Stack: Concat </figcaption></figure>
 <div class="modal fade" id="concatpng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-stack/concat.png" class="img-fluid" alt="Stack: Concat" /></div></div></div>
 
 <table class="table table-primary">
