@@ -5,12 +5,12 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.css" integrity="sha512-5RNDl2gYvm6wpoVAU4J2+cMGZQeE2o4/AksK/bi355p/C31aRibC93EYxXczXq3ja2PJj60uifzcocu2Ca2FBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href={{ "assets/css/main.css" | relative_url }} rel="stylesheet">
-<link href={{ "assets/css/dark-mode.css" | relative_url }} rel="stylesheet"> 
-<link rel="apple-touch-icon" sizes="180x180" href={{ "assets/favicon/apple-touch-icon.png" | relative_url }}>
-<link rel="icon" type="image/png" sizes="32x32" href={{ "assets/favicon/favicon-32x32.png" | relative_url }}>
-<link rel="icon" type="image/png" sizes="16x16" href={{ "assets/favicon/favicon-16x16.png" | relative_url }}>
-<link rel="manifest" href={{ "assets/favicon/site.webmanifest" | relative_url }}>
+<link href="{{ 'assets/css/main.css' | relative_url }}" rel="stylesheet">
+<link href="{{ 'assets/css/dark-mode.css' | relative_url }}" rel="stylesheet"> 
+<link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/favicon/apple-touch-icon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/favicon/favicon-32x32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/favicon/favicon-16x16.png' | relative_url }}">
+<link rel="manifest" href="{{ 'assets/favicon/site.webmanifest' | relative_url }}">
 {% if site.google_analytics and jekyll.environment == 'production' %}
 {% include analytics.html %}
 {% endif %}
@@ -22,7 +22,7 @@
   <nav class="container-xxl flex-wrap flex-lb-nowrap me-10" aria-label="Top Navigation">
     <!-- brand -->
     <a class="navbar-brand p-0 me-2" href="/" aria-label="LioranBoard">
-    <img src="{{ "assets/favicon/lb.png" | relative_url }}" width="35" height="35">
+    <img src="{{ 'assets/favicon/lb.png' | relative_url }}" width="35" height="35">
     </a>
     <!-- navbar toggler -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lbNavbar" aria-controls="lbNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,22 +35,22 @@
     <!-- menu items start -->
     <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-lg-0">
       <li class="nav-item col-6 col-lg-auto">
-        <a class="nav-link p-2" href="https://lioranboard.ca">Home</a>
+        <a class="nav-link p-2 {% if page.title == 'LioranBoard Home' %} active {% endif %}" href="https://lioranboard.ca">Home</a>
       </li>
       <li class="nav-item col-6 col-lg-auto">
-        <a class="nav-link p-2 active" aria-current="true" href="https://lioranboard.ca/docs" >Documentation</a>
+        <a class="nav-link p-2 {% if page.title == 'Documentation' or page.nav == 'Documentation' %} active {% endif %}" href="https://lioranboard.ca/docs" >Documentation</a>
       </li>
       <li class="nav-item col-6 col-lg-auto">
-        <a class="nav-link p-2" disabled href="#">Examples</a>
+        <a class="nav-link p-2 disabled" href="#">Examples</a>
       </li>
       <li class="nav-item col-6 col-lg-auto">
-        <a class="nav-link p-2" href="https://lioranboard.ca/extensions">Extensions</a>
+        <a class="nav-link p-2 {% if page.title == 'Extensions' or page.nav == 'Extensions' %} active {% endif %}" href="https://lioranboard.ca/extensions">Extensions</a>
       </li>
       <li class="nav-item col-6 col-lg-auto">
-        <a class="nav-link p-2" href="https://lioranboard.ca/commissions">Commissions</a>
+        <a class="nav-link p-2 {% if page.title == 'Commissions' %} active {% endif %}" href="https://lioranboard.ca/commissions">Commissions</a>
       </li>
       <li class="nav-item col-6 col-lg-auto">
-        <a class="nav-link p-2" href="https://lioranboard.ca/donate">Donate</a>
+        <a class="nav-link p-2 {% if page.title == 'Donate' %} active {% endif %}" href="https://lioranboard.ca/donate">Donate</a>
       </li>
     </ul>
     <!-- menu items end -->
@@ -145,7 +145,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.js" integrity="sha512-Wm00XTqNHcGqQgiDlZVpK4QIhO2MmMJfzNJfh8wwbBC9BR0FtdJwPqDhEYy8jCfKEhWWZe/LDB6FwY7YE9QhMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-<script src={{ '/assets/js/main.js' | relative_url }}></script>
-<script src={{ '/assets/js/dark-mode-switch.min.js' | relative_url }}></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/dark-mode-switch.min.js' | relative_url }}"></script>
 <div at-magnifier-wrapper=""><div class="at-theme-light"><div class="at-base notranslate" translate="no"><div class="Z1-AJ" style="top: 0px; left: 0px;"></div></div></div></div>
 </html>
