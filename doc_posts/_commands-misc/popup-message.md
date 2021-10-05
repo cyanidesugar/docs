@@ -9,7 +9,7 @@ Will not freeze the Receiver, but it's still recommended to use it rather sparin
 
 | Box Name | Type | Description | 
 |-------|--------|--------
-|Message|	String|	The message you want to display. <br\> Use # to add a new line and \# to display #.
+|Message|	String|	The message you want to display. <br> Use # to add a new line and \\# to display #.
 {:class='table table-primary'}
 
 
