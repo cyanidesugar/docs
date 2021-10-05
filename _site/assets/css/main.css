@@ -310,7 +310,8 @@ border:1px solid #ccc;*/ margin: 0 8px; color: white; opacity: 0.75; }
   .lb-navbar .navbar-nav .nav-link.active { font-weight: bolder; }
   code { color: #88b8ff; }
   .lb-links .btn:hover, .lb-links .btn:focus { color: rgba(0, 0, 0, 0.85); background-color: rgba(105, 127, 169, 0.25); }
-  /* .lb-content .btn-primary { color: #fff; background-color: #6c2e39; border-color: #8f6d73; }  .lb-content .btn-primary:hover { color: #fff; background-color: #9d4656; border-color: #8f6d73; }*/
+  .lb-content .btn-primary { color: #fff; background-color: #00367c; border-color: #00367c; }
+  /*  .lb-content .btn-primary:hover { color: #fff; background-color: #9d4656; border-color: #8f6d73; }*/
   .lb-content .btn-outline-secondary { color: #8b969f; border-color: #8b969f; }
   .lb-content .btn-outline-secondary:hover { color: #fff; border-color: #757f87; background-color: #757f87; }
   .lb-subnavbar { background: #08111d; }
