@@ -21,7 +21,7 @@ a { text-decoration: none; }
 hr { height: 4px !important; }
 
 /* adjust size of pastebins */
-.embedPastebin { max-height: 100px; }
+.embedPastebin { border: none; max-height: 100px; margin-top: .25rem; margin-bottom: 0.5rem; }
 
 /* bootstrap tooltip */
 [data-bs-toggle]::before { pointer-events: none; }
@@ -325,4 +325,4 @@ border:1px solid #ccc;*/ margin: 0 8px; color: white; opacity: 0.75; }
   .alert { color: #e4eaf1db !important; }
   .btn-lb-download:hover, .btn-lb-download:active { color: #091638 !important; background-color: #c9d2ee; border-color: #c9d2ee; }
   /* pastebin dark mode  */
-  .de1, .embedPastebin .highlighted-code .source, .embedPastebin .embedFooter { background: #050c14 !important; color: white !important; } }
+  .de1, .embedPastebin .highlighted-code .source, .embedPastebin .embedFooter { background: #212121 !important; color: white !important; } }

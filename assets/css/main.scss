@@ -59,10 +59,13 @@ height: 4px !important;
 
 /* adjust size of pastebins */
 .embedPastebin  {
- max-height: 100px
+  border: none !important;
+  max-height: 100px;
+  margin-top: .25rem;
+  margin-bottom: 0.5rem;
+
 }
  
-
 /* bootstrap tooltip */
 [data-bs-toggle]::before {
   pointer-events: none;
@@ -1066,7 +1069,7 @@ a {
 /* pastebin dark mode  */
 
 .de1, .embedPastebin .highlighted-code .source, .embedPastebin .embedFooter  {
-  background: #050c14 !important;
+  background: #212121 !important;
   color: white !important;
 }
 
