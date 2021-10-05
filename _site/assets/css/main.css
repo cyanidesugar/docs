@@ -21,7 +21,7 @@ a { text-decoration: none; }
 hr { height: 4px !important; }
 
 /* adjust size of pastebins */
-.embedPastebin { border: none; max-height: 100px; margin-top: .25rem; margin-bottom: 0.5rem; }
+.embedPastebin { border: none !important; max-height: 100px; margin-top: .25rem; margin-bottom: 0.5rem; }
 
 /* bootstrap tooltip */
 [data-bs-toggle]::before { pointer-events: none; }
