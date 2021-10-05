@@ -1063,4 +1063,13 @@ a {
   border-color: #c9d2ee;
 }
 
+/* pastebin dark mode  */
+
+.de1, .embedPastebin .highlighted-code .source, .embedPastebin .embedFooter  {
+  background: #050c14 !important;
+  color: white !important;
+}
+
+
+
  }
