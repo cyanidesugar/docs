@@ -23,7 +23,7 @@ hr { height: 4px !important; }
 /* adjust size of pastebins */
 .embedPastebin { border: none !important; max-height: 100px; margin-top: .25rem !important; margin-bottom: 0.5rem !important; }
 
-.embedPastebin .embedFooter { border: none !important; }
+div.embedPastebin div.embedFooter { border: none !important; }
 
 /* bootstrap tooltip */
 [data-bs-toggle]::before { pointer-events: none; }
