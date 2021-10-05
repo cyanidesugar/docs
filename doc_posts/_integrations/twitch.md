@@ -12,7 +12,7 @@ LioranBoard can connect to your Twitch account, remotely control it and listen t
 {% include alert.html text="Your Transmitter must be running at all times for Twitch to stay connected." type="warning" %}
 
 #### Link a single Twitch account
-First we need to authorize LioranBoard to interact with your Twitch account.\
+First we need to authorize LioranBoard to interact with your Twitch account.
 
 1. In your Receiver click on **Link your Twitch** button. 
 A new menu will pop up and you will see the following options:
@@ -20,7 +20,7 @@ A new menu will pop up and you will see the following options:
  - Scopes - you can give LioranBoard permissions as to what it can access. 
 2. Click on **Open URL** which should open a new browser window and redirect you to Twitch to authorize LioranBoard.  
 Press **Authorize** and wait to be redirected again to see `All good, you can go back to LioranBoard now` message in your browser.
-3. Go back to your Receiver. You should see a green text `Token was obtained successfully. Token will expire on XXX.` It means you will need to repeat this process again on this date. Don't worry, LioranBoard will remind you when it's due. Press Close.
+3. Go back to your Receiver. You should see a green text `Token was obtained successfully. Token will expire on XXX.` It means you will need to repeat this process again on this date. Don't worry, LioranBoard will remind you when it's due. Press Close. 
    {% include image.html w="50" src="twitch_connect.png" alt="Successfully linked Twitch account" type="image" %}
 {:start="4"}
 4. Press **Connect to Twitch** button. The button will grey out and you should see **all** the following yellow notification messages:
@@ -122,12 +122,13 @@ See a list of all possible [Twitch chat commands](https://help.twitch.tv/s/artic
 **Premade extensions**\
 There are several preinstalled extensions in your Transmitter.
 
-- {% include image_collapse.html src="change-twitch-status.png" btn="1" alt="Change Twitch Status" pastebin="kSBfhGsy" %} 
-- {% include image_collapse.html src="viewer-count.png" btn="1" alt="Viewer Count" pastebin="ZfC1tkBB" %} 
-- {% include image_collapse.html src="sub-count.png" btn="1" alt="Subscriber Count" pastebin="sjh1tLvV" %} 
-- {% include image_collapse.html src="bits_leaderboard.png" btn="1" alt="Bits Leaderboard" pastebin="Tc8Zukqg" %} 
-- {% include image_collapse.html src="profile-picture.png" btn="1" alt="Get Profile picture" pastebin="gVis7DLg" %} 
-- {% include image_collapse.html src="channel-id-ext.png" btn="1" alt="Get Channel ID" pastebin="JfePhmE0" %} 
+  {% include image_collapse.html src="change-twitch-status.png" btn="1" alt="Change Twitch Status" pastebin="kSBfhGsy" %} 
+  {% include image_collapse.html src="viewer-count.png" btn="1" alt="Viewer Count" pastebin="ZfC1tkBB" %} 
+  {% include image_collapse.html src="sub-count.png" btn="1" alt="Subscriber Count" pastebin="sjh1tLvV" %} 
+  {% include image_collapse.html src="bits_leaderboard.png" btn="1" alt="Bits Leaderboard" pastebin="Tc8Zukqg" %} 
+  {% include image_collapse.html src="profile-picture.png" btn="1" alt="Get Profile picture" pastebin="gVis7DLg" %} 
+  {% include image_collapse.html src="channel-id-ext.png" btn="1" alt="Get Channel ID" pastebin="JfePhmE0" %} 
+
 
 **Community made extensions**\
 Our community made extensions allow you to further control your Twitch stream. You can find them all in our [Official Discord Server](https://discord.gg/dXez8Zh) in #releases channel. 

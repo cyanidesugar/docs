@@ -61,9 +61,13 @@ height: 4px !important;
 .embedPastebin  {
   border: none !important;
   max-height: 100px;
-  margin-top: .25rem;
-  margin-bottom: 0.5rem;
+  margin-top: .25rem !important;
+  margin-bottom: 0.5rem !important;
 
+}
+
+.embedPastebin .embedFooter {
+border:none !important;
 }
  
 /* bootstrap tooltip */
@@ -187,20 +191,17 @@ justify-content:flex-start;
 
 /*button collapse icons*/
 
-.fa-plus-square {
+.iconCollapse {
+padding:2px;
+}
+
+.fa-plus-square, .fa-minus-square {
+  margin-right: 0.25rem !important;
   text-align: center;
   vertical-align: middle;
 }
 
-.fa-minus-square {
-text-align: center;
-vertical-align: middle;
-}
-
-a[aria-expanded=true] .fa-plus-square {
-  display: none;
-}
-a[aria-expanded=false] .fa-minus-square {
+a[aria-expanded=true] .fa-plus-square, a[aria-expanded=false] .fa-minus-square  {
   display: none;
 }
 

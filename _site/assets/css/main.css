@@ -21,7 +21,9 @@ a { text-decoration: none; }
 hr { height: 4px !important; }
 
 /* adjust size of pastebins */
-.embedPastebin { border: none !important; max-height: 100px; margin-top: .25rem; margin-bottom: 0.5rem; }
+.embedPastebin { border: none !important; max-height: 100px; margin-top: .25rem !important; margin-bottom: 0.5rem !important; }
+
+.embedPastebin .embedFooter { border: none !important; }
 
 /* bootstrap tooltip */
 [data-bs-toggle]::before { pointer-events: none; }
@@ -74,13 +76,11 @@ iframe.itch { border-radius: 15px; }
 .nav-link { display: block; padding: .5rem 1rem; color: #0d6efd; text-decoration: none; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; }
 
 /*button collapse icons*/
-.fa-plus-square { text-align: center; vertical-align: middle; }
+.iconCollapse { padding: 2px; }
 
-.fa-minus-square { text-align: center; vertical-align: middle; }
+.fa-plus-square, .fa-minus-square { margin-right: 0.25rem !important; text-align: center; vertical-align: middle; }
 
-a[aria-expanded=true] .fa-plus-square { display: none; }
-
-a[aria-expanded=false] .fa-minus-square { display: none; }
+a[aria-expanded=true] .fa-plus-square, a[aria-expanded=false] .fa-minus-square { display: none; }
 
 .p-2 { padding: 0.5rem !important; }
 

@@ -553,13 +553,12 @@ As of now, LioranBoard can natively read and modify only .ini files in its own f
 <p><strong>Rules for saving and loading ini files:</strong></p>
 
 <ol>
-  <li>Each file needs to have a specific structure for LioranBoard to read it, containing [section] and key=”value”.<br /></li>
+  <li>Each file needs to have a specific structure for LioranBoard to read it, containing [section] and key=”value”.<br />
+    <figure class="figure mt-1 mb-1"><img src="/assets/images/commands-file/ini_structure.png" class="figure-img img-fluid rounded w-75" alt="Ini file structure" title="Click to enlarge" data-bs-target="#ini_structurepng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Ini file structure </figcaption></figure>
+  </li>
 </ol>
-
-<figure class="figure mt-1"><img src="/assets/images/commands-file/ini_structure.png" class="figure-img img-fluid rounded w-75" alt="Ini file structure" title="Click to enlarge" data-bs-target="#ini_structurepng-modal" data-bs-toggle="modal" /><figcaption class="figure-caption">Ini file structure </figcaption></figure>
-<div class="modal fade" id="ini_structurepng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-file/ini_structure.png" class="img-fluid" alt="Ini file structure" /></div></div></div>
-
-<ol start="2">
+<div class="modal fade" id="ini_structurepng-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" start="2"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><img src="/assets/images/commands-file/ini_structure.png" class="img-fluid" alt="Ini file structure" /></div></div></div>
+<ol>
   <li>You can only save and load .ini files placed in your Receiver folder or one of its inner folders.</li>
   <li>Make sure to use the right command for loading and saving data. There are different commands for strings and different commands for real values (numbers).</li>
   <li>Use relative path for loading and reading ini files. I.e. <code class="language-plaintext highlighter-rouge">test.ini</code> if you wanna load a file from your Receiver folder or <code class="language-plaintext highlighter-rouge">/sound/test.ini</code> if you wanna load one from your Receiver/sound folder.</li>
