@@ -12,7 +12,7 @@ You can check whether your OBS websocket is correctly installed by going to OBS-
 Try running LioranBoard as administrator. Right click on LioranBoard Receiver and select `Run as administrator`.
 - **Check your firewall and antivirus**\
 Make sure your firewall is not blocking LB.\
-You can try [temporatily disabling your antivirus/firewall](https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960) or [adding an exception](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) to allow the app through.
+You can try [temporarily disabling your antivirus/firewall](https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960) or [adding an exception](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) to allow the app through.
 - **Check OBS websocket password**\
 Your passwords in OBS-Tools-Websockets Server Settings and LioranBoard Receiver-Options need to match. If you do not use a password, uncheck Enable authentication.\
   {% include image.html w="75" src="obsws-pw.png" alt="Matching passwords for OBSWS" %}

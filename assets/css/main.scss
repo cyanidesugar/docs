@@ -298,7 +298,7 @@ a[aria-expanded=false] .fa-minus-square {
 }
 
 .lb-search .form-control:focus {
-	border-color: #7952b3;
+	border-color: #233e77;
 	box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25)
 }
 
@@ -963,3 +963,103 @@ a {
 }
 
 
+/*dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+   background: #08111d !important;
+   color: #d4d4d4 !important
+  }
+
+  .lb-navbar .navbar-nav .nav-link.active {
+    font-weight: bolder;
+  }
+
+  code {
+    color: #88b8ff;
+}
+ 
+  .lb-subnavbar {
+    background: #08111d !important;
+  }
+
+ .navbar a, .footer-basic a, .feature-icon a, .lb-sidebar, .lb-main-ext a, .lb-sidebar a, .lb-sidebar .btn, .lb-toc a,.btn-edit-light, .anchorjs-link,  .anchorjs-link:hover, .fa-plus-square, .fa-minus-square, .fa-asterisk {
+   color: #b6bdc5 !important
+ }
+
+ .lb-navbar .navbar-nav .nav-link:hover, .lb-navbar .navbar-nav .nav-link:focus {
+  color: #fff !important;
+}
+
+
+ a{
+ color:#d7665b !important
+ }
+
+ a:hover {
+  color: #d37b6e !important ;
+}
+ 
+ .ext-container h3 {
+   color: #d4d4d4 !important
+ 
+ }
+
+ .lb-links .active {
+  font-weight: bolder;
+}
+
+.lb-links a:hover {
+  color: #b6bdc5 !important
+}
+
+ .lb-links .btn::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='#d4d4d4' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+
+.lb-links .btn::before, #Commands-collapse .sidebar-sidemenu .btn::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23d4d4d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+
+}
+
+.lb-toc .nav-link.active::before {
+  border-left-color: #d4d4d4 !important;
+  content: "";
+}
+
+.show > .btn-edit-light, .btn-edit-light:hover, .btn-edit-light:active {
+  color: #142e50 !important;
+  background-color: #c9d2ee !important;
+}
+
+.table.good-bad > tbody > tr:nth-child(even) > td, .table.good-bad > tbody > tr:nth-child(even) > th {
+  background-color: #6d3737;
+}
+
+.table-hover.good-bad>tbody>tr:nth-child(even):hover { 
+  --bs-table-accent-bg: #7d4242; 
+}
+
+/*.fas .fa-asterisk {
+  color: rgb(109, 18, 18) !important;
+}*/
+
+.fa-question-circle {
+  color: #ffffffe0 !important;
+}
+
+.alert {
+  color: #e4eaf1db !important;
+}
+
+.btn-lb-download:hover, .btn-lb-download:active {
+  color: #091638 !important;
+  background-color: #c9d2ee;
+  border-color: #c9d2ee;
+}
+
+ }

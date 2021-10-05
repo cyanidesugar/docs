@@ -152,7 +152,6 @@ function openLinksNewTab() {
 function editPasteBin() {
   const els = document.getElementsByClassName('de1');
   for (let i = 0; i<els.length;i++) {
-    console.log(els[i])
     els[i].classList.add("user-select-all");
     els[i].classList.add("text-break");    
   }
