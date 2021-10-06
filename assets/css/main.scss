@@ -275,6 +275,11 @@ a[aria-expanded=true] .fa-plus-square, a[aria-expanded=false] .fa-minus-square  
 	background-size: .75rem .75rem
 }
 
+.lb-subnavbar .container-xxl .lb-sidebar-toggle:focus, .lb-subnavbar .container-xxl .lb-sidebar-toggle:hover {
+  color: #929ead;
+  box-shadow: none;
+}
+
 .lb-search {
 	position: relative
 }
@@ -307,8 +312,8 @@ a[aria-expanded=true] .fa-plus-square, a[aria-expanded=false] .fa-minus-square  
 }
 
 .lb-search .form-control:focus {
-	border-color: #233e77;
-	box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25)
+	border-color: #42587f78;
+	box-shadow: none;
 }
 
 /* algolia and docsearch */
@@ -320,7 +325,7 @@ a[aria-expanded=true] .fa-plus-square, a[aria-expanded=false] .fa-minus-square  
 .algolia-docsearch-suggestion--category-header {
 	padding: .125rem 1rem;
 	font-weight: 600;
-	color: #7952b3
+	color: #174683
 }
 
 :not(.algolia-docsearch-suggestion__main)>.algolia-docsearch-suggestion--category-header {
@@ -372,7 +377,7 @@ a[aria-expanded=true] .fa-plus-square, a[aria-expanded=false] .fa-minus-square  
 }
 
 .algolia-docsearch-suggestion--highlight {
-	color: #6f42c1;
+	color: #4260c1;
 	background-color: rgba(111, 66, 193, 0.1)
 }
 
@@ -396,11 +401,11 @@ a[aria-expanded=true] .fa-plus-square, a[aria-expanded=false] .fa-minus-square  
 
 .lb-sidebar-toggle:hover,
 .lb-sidebar-toggle:focus {
-	color: #7952b3
+	color: #5264b3
 }
 
 .lb-sidebar-toggle:focus {
-	box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25)
+	box-shadow: 0 0 0 3px rgba(82, 100, 179, 0.25)
 }
 
 .lb-sidebar-toggle .bi-collapse {
@@ -439,10 +444,6 @@ a[aria-expanded=true] .fa-plus-square, a[aria-expanded=false] .fa-minus-square  
   }
 }
 
-a.nav-link.sidebar-innerbutton.fs-7.active {
-  border-left-color: #9146FF;  
-}
-
 a.nav-link.sidebar-innerbutton {
 margin-left:1rem
 }
@@ -457,10 +458,6 @@ font-size:0.95rem
   border-left: 2px solid rgba(0, 0, 0, 0);
   margin-right: 10px;
   transition: all .5s ease;
-}
-
-#sidebar-innermenu a.active::before {
-  border-left-color: #9146FF;  
 }
 
 .lb-links {
@@ -1037,18 +1034,24 @@ a {
 
   @media (max-width: 767.98px) {
     .lb-layout .lb-sidebar {
-      background: #1b1b1b;
+      background-color: #1b1b1b;
   
     }
   
     .lb-layout .collapse.lb-links.show {
-      background:#1b1b1b
+      background-color:#1b1b1b
     }
+
+    .lb-layout .lb-links > ul {
+      padding: 1.5rem .75rem;
+      background-color: #1b1b1b;
+      border-bottom: none;
+  }
   }
 
-  .lb-subnavbar .lb-sidebar-toggle.btn:hover {
-    color: #929ead;
-}
+  
+
+
 
   .nav-link .p-2 .active {
   font-weight: bolder;
