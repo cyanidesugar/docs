@@ -297,6 +297,7 @@ DEPENDENCIES
   jekyll-algolia
   jekyll-feed
   jekyll-seo-tag
+  jekyll-sitemap
   jekyll-toc
   tzinfo-data
   webrick (~> 1.7)
