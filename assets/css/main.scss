@@ -1035,6 +1035,21 @@ a {
     font-weight: bolder;
   }
 
+  @media (max-width: 767.98px) {
+    .lb-layout .lb-sidebar {
+      background: #1b1b1b;
+  
+    }
+  
+    .lb-layout .collapse.lb-links.show {
+      background:#1b1b1b
+    }
+  }
+
+  .lb-subnavbar .lb-sidebar-toggle.btn:hover {
+    color: #929ead;
+}
+
   .nav-link .p-2 .active {
   font-weight: bolder;
   }
