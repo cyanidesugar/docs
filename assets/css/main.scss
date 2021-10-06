@@ -990,6 +990,16 @@ a {
     font-weight: bolder;
   }
 
+  .nav-link .p-2 .active {
+  font-weight: bolder;
+  }
+
+  .btn-lb-download:hover, .btn-lb-download:active {
+    color: #ccced3 !important;
+    background-color: #3a2828;
+    border-color: #c9d2ee;
+}
+
   code {
     color: #88b8ff;
 }

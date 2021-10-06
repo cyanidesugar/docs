@@ -304,10 +304,12 @@ border:1px solid #ccc;*/ margin: 0 8px; color: white; opacity: 0.75; }
 
 /*dark mode */
 @media (prefers-color-scheme: dark) { body { background: #08111d; color: #d4d4d4; }
-  .lb-navbar.navbar { background-color: #612121d1; }
+  .lb-navbar.navbar { background-color: #5a1313d1; }
   .container-xxl.lb-layout { background-color: #08111d; }
-  .footer-basic { background-color: #612121d1; }
+  .footer-basic { background-color: #5a1313d1; }
   .lb-navbar .navbar-nav .nav-link.active { font-weight: bolder; }
+  .nav-link .p-2 .active { font-weight: bolder; }
+  .btn-lb-download:hover, .btn-lb-download:active { color: #ccced3 !important; background-color: #3a2828; border-color: #c9d2ee; }
   code { color: #88b8ff; }
   .lb-links .btn:hover, .lb-links .btn:focus { color: rgba(0, 0, 0, 0.85); background-color: rgba(105, 127, 169, 0.25); }
   .lb-content .btn-primary { color: #fff; background-color: #00367c; border-color: #00367c; }
