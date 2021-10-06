@@ -1121,10 +1121,18 @@ a {
 
 /* pastebin dark mode  */
 
-.de1, .embedPastebin .highlighted-code .source, .embedPastebin .embedFooter  {
-  background: #212121 !important;
-  color: white !important;
+.lb-content .highlighted-code .source .text .li1 .de1,.lb-content .embedPastebin .highlighted-code .source,.lb-content .embedPastebin .embedFooter  {
+  background: #212121;
+  color: white;
 }
+
+.lb-content .embedPastebin .embedFooter>a,.lb-content .embedPastebin .embedFooter>a:visited  {
+color: #97aabd;
+}
+
+.lb-content .embedPastebin .embedFooter>a:hover {
+  color: var(--bs-red);
+  }
 
 
 
