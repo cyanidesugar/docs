@@ -19,7 +19,7 @@ We will walk you through a step by step tutorial on how to set up LioranBoard, a
 
 #### 2. Download LioranBoard
 
-<a href="https://obsproject.com/forum/resources/lioranboard-stream-deck-animator.862/"><button type="button" class="btn btn-primary">Download LioranBoard</button></a>
+<a href="https://obsproject.com/forum/resources/lioranboard-stream-deck-animator.862/"><button type="button" class="btn btn-primary mt-1">Download LioranBoard</button></a>
   
 Unpack the zip file and place the folder anywhere in your computer, preferably in your non windows drive. 
 
@@ -130,8 +130,7 @@ We have now created a button that will send a chat message <code>Hello World</co
 <h5>Trigger the button manually from Stream Deck</h5>
 
 <ol> 
-	<li> Navigate to lioranboard/LioranBoard Stream deck(PC) folder and launch <strong>LioranBoard Stream Deck.exe</strong>. This is your Stream Deck where you can manually trigger buttons you create in your Receiver. </li>  
-
+	<li> <p> Navigate to lioranboard/LioranBoard Stream deck(PC) folder and launch <strong>LioranBoard Stream Deck.exe</strong>. This is your Stream Deck where you can manually trigger buttons you create in your Receiver. </li> </p>
 
 {% include alert.html text="Receiver only acts as an editor. You can press your buttons in Stream Deck." type="warning" %}     
 <li> You will see a green screen with some additional settings. 

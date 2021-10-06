@@ -3,7 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="color-scheme" content="light dark">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.1/dist/css/bootstrap-dark.min.css" rel="stylesheet">    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.css" integrity="sha512-5RNDl2gYvm6wpoVAU4J2+cMGZQeE2o4/AksK/bi355p/C31aRibC93EYxXczXq3ja2PJj60uifzcocu2Ca2FBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.1/dist/css/bootstrap-dark.min.css" rel="stylesheet">  
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.css" integrity="sha512-5RNDl2gYvm6wpoVAU4J2+cMGZQeE2o4/AksK/bi355p/C31aRibC93EYxXczXq3ja2PJj60uifzcocu2Ca2FBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="/assets/css/main.css" rel="stylesheet">
 <link href="/assets/css/dark-mode.css" rel="stylesheet"> 
@@ -84,8 +85,8 @@
 </header>
 
 <!-- search bar -->
-<nav class="lb-subnavbar pt-2" aria-label="Secondary navigation">
-  <div class="container-xxl d-flex align-items-center justify-content-center">
+<nav class="lb-subnavbar pt-1 mt-1" aria-label="Secondary navigation">
+  <div class="container-xxl d-flex align-items-center justify-content-center mb-1">
     <button class="btn lb-sidebar-toggle d-md-none px-1 me-auto  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lb-docs-nav" aria-controls="lb-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
@@ -461,25 +462,69 @@
 <!-- toc --> 
  
 
+<div class="lb-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+    <nav id="TableOfContents">
+<ul><li><a href="#connectiontotwitch" class="nav-link d-flex flex-row">
+        
+        
+          Connection to Twitch 
+        
+        
+      </a></li><li><a href="#connectiontoobsstudio" class="nav-link d-flex flex-row">
+        
+        
+          Connection to OBS Studio 
+        
+        
+      </a></li><li><a href="#extensions" class="nav-link d-flex flex-row">
+        
+        
+          Extensions 
+        
+        
+      </a></li></ul>
+</nav>
+</div>
+
 <!-- content -->
   <div class="lb-content ps-lg-4" tabindex="0">
     <div>
-      <p><p>LioranBoard is a fully customizable Stream Deck that lets your Twitch audience interact with and control your stream. 
-It is fully compatible with <a href="https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/">OBS Websocket</a> which can remotly control your <a href="https://obsproject.com/">OBS Studio</a>.</p>
+      <p><p class="lb-lead">LioranBoard is a fully customizable Stream Deck that lets your Twitch audience control and interact with your stream. </p>
+
+<p>It is fully compatible with <a href="https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/">OBS Websocket</a> which can remotly control your <a href="https://obsproject.com/">OBS Studio</a>.</p>
 
 <p>You can easily create buttons for the most basic things, such as automatic scene switching and custom alerts. However, once you get more familiar with the software, whole new possibilites will open up for you.</p>
 
 <p>LioranBoard itself works like a simple programming language. It has variables, operators, arrays, string and number methods, array operarations, IF and ELSE statements, loops and much more.</p>
-
-<p><strong>Connection to Twitch</strong></p>
+      <h4 class="anchor-header" id="connectiontotwitch">
+        
+        
+          Connection to Twitch <a href="#connectiontotwitch" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+        
+        
+      </h4>
+    
 
 <p>LioranBoard can listen to Twitch alerts and chat messages, send chat messages and fully control your Twitch stream via Twitch API.</p>
-
-<p><strong>Connection to OBS Studio</strong></p>
+      <h4 class="anchor-header" id="connectiontoobsstudio">
+        
+        
+          Connection to OBS Studio <a href="#connectiontoobsstudio" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+        
+        
+      </h4>
+    
 
 <p>LioranBoard can directly connect to OBS Websocket to control your OBS Studio. You can start/stop streaming, switch scenes, change source stetings, control media, animate your sources, toggle filters and much more.</p>
-
-<p><strong>Extensions</strong></p>
+      <h4 class="anchor-header" id="extensions">
+        
+        
+          Extensions <a href="#extensions" class="anchorjs-link" data-anchorjs-icon="#" aria-label="Anchor" style="padding-left: 0.375em;">#</a>
+        
+        
+      </h4>
+    
 
 <p>If all of the above is not enough for your needs, LioranBoard also supports community made JavaScript extensions, which can greatly extend its functionality, such as controlling other apps and services directly from your stream.</p>
 </p>
