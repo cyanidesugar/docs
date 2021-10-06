@@ -69,10 +69,11 @@ Linking your Twitch account to LioranBoard is a necessary step if you want to be
 A new menu will pop up and you will see a bunch of options to check and select between main and alternate accounts. Leave them all at default values. 
 2. Click on **Open URL** which should open a new browser window and redirect you to Twitch to authorize LioranBoard.  
 Press **Authorize** and wait to be redirected again to see `All good, you can go back to LioranBoard now` message in your browser.
-3. Go back to your Receiver. You should see a green text `Token was obtained successfully. Token will expire on XXX.` It means you will need to repeat this process again on this date. Don't worry, LioranBoard will remind you when it's due. Press Close. 
+3. Go back to your Receiver. You should see a green text `Token was obtained successfully. Token will expire on XXX.` It means you will need to repeat this process again on this date. Don't worry, LioranBoard will remind you when it's due. Press Close.
 
 	{% include image.html w="75" src="twitch_connect.png" alt="Successfully linked Twitch account" type="image" %}
 
+{:start="4"}	
 4. Press **Connect to Twitch** button. The button will grey out and you should see **all** the following yellow notification messages: 
 
 	{% include image.html w="100" src="twitch_connected_message.png" alt="Successfully connected to Twitch" type="image" %}
@@ -130,21 +131,17 @@ We have now created a button that will send a chat message <code>Hello World</co
 <h5>Trigger the button manually from Stream Deck</h5>
 
 <ol> 
-	<li> <p> Navigate to lioranboard/LioranBoard Stream deck(PC) folder and launch <strong>LioranBoard Stream Deck.exe</strong>. This is your Stream Deck where you can manually trigger buttons you create in your Receiver. </li> </p>
+	<li> <p> Navigate to lioranboard/LioranBoard Stream deck(PC) folder and launch <strong>LioranBoard Stream Deck.exe</strong>. This is your Stream Deck where you can manually trigger buttons you create in your Receiver. </p></li> 
 
 {% include alert.html text="Receiver only acts as an editor. You can press your buttons in Stream Deck." type="warning" %}     
 <li> You will see a green screen with some additional settings. 
-Leave IP and Port at default. Selected Deck number needs to match your newly created deck number in your Receiver. In our case it should be number 6. 	{% include image.html w="50" src="streamdeck_settings.png" alt="OBS Websocket Connection Messages" type="image" %} </li>
+Leave IP and Port at default. Selected Deck number needs to match your newly created deck number in your Receiver. In our case it should be number 6. {% include image.html w="50" src="streamdeck_settings.png" alt="OBS Websocket Connection Messages" type="image" %} </li>
 
 <li> Press <strong>Connect</strong> and you should see your newly created button that we named <code>chat message</code>. </li>
 
-
-<li>  {% include video_collapse.html w="100" src="trigger_button.mp4" name="button_manual" alt="Press your newly created button" %} While looking at your Twitch chat, click on the button in your Stream Deck. It should send a <code>Hello World</code> message to your chat! <br>
-<b>Important:</b> Your Receiver must be running, connected to Transmitter and connected to Twitch.
- </li>
-
-</ol>
-<br><p>
+<li>{% include video_collapse.html w="100" src="trigger_button.mp4" name="button_manual" alt="Press your newly created button" %} While looking at your Twitch chat, click on the button in your Stream Deck. It should send a <code>Hello World</code> message to your chat! <br>
+<b>Important:</b> Your Receiver must be running, connected to Transmitter and connected to Twitch.</li>
+</ol><br>
 <h5>Trigger the button via your Twitch chat</h5>
 <p> Do you still remember the Twitch chat trigger you configured for your button? If you followed the tutorial, it should be <code>!test</code>. 
 

@@ -88,6 +88,10 @@ a.tooltip {
 cursor: pointer;
 }
 
+.badge.bg-warning {
+  font-size: 1rem;
+}
+
 /* bootstrap modal */
 
 .modal-dialog {
@@ -1023,11 +1027,10 @@ a {
   color: inherit;
   }
 
-  .anchor-header .anchorjs-link {
+  .anchor-header .anchorjs-link, .anchorheader .anchorjs-link a:hover  {
   text-decoration: none;
   }
 
-  
   .lb-navbar .navbar-nav .nav-link.active {
     font-weight: bolder;
   }
@@ -1075,7 +1078,7 @@ a {
 .lb-content .btn-primary {
   color: #cbd0d7;
   background-color: #0c2b55;
-  border-color: #0c2b55;
+  border-color: #4b6589c2;
 }
 
 
@@ -1083,7 +1086,6 @@ a {
 .lb-content .btn-primary:hover {
   color: #cbd0d7;
   background-color: rgb(31, 69, 119);
-  border-color: rgb(31, 69, 119);
 }
 
 .lb-content .btn-outline-secondary {
@@ -1106,7 +1108,8 @@ a {
       color: #cbd0d7
       }
     
-  
+
+
 
  .navbar a, .footer-basic a, .feature-icon a, .lb-sidebar, .lb-main-ext a, .lb-sidebar a, .lb-sidebar .btn, .btn-edit-light, .fa-asterisk {
    color: #cbd0d7 !important;
@@ -1126,6 +1129,10 @@ a {
  .lb-content a:hover {
   color: #f74b6a;
   text-decoration: underline;
+}
+
+.lb-content a:visited {
+  color: #f74b6a;
 }
 
 .lb-content .img-toggle {

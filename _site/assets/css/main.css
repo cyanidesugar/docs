@@ -35,6 +35,8 @@ a.tooltip { pointer-events: none; }
 /* bootstrap popover */
 .bs-popover { cursor: pointer; }
 
+.badge.bg-warning { font-size: 1rem; }
+
 /* bootstrap modal */
 .modal-dialog { position: relative; display: table; overflow-y: auto; overflow-x: auto; width: auto; min-width: 300px; }
 
@@ -315,7 +317,7 @@ border:1px solid #ccc;*/ margin: 0 8px; color: white; opacity: 0.75; }
   .lb-content table { color: #cbd0d7; }
   .lb-content .table-success { background-color: #034030 !important; }
   .lb-content .alert a, .lb-content .alert a:hover { color: inherit; }
-  .anchor-header .anchorjs-link { text-decoration: none; }
+  .anchor-header .anchorjs-link, .anchorheader .anchorjs-link a:hover { text-decoration: none; }
   .lb-navbar .navbar-nav .nav-link.active { font-weight: bolder; } }
 @media (prefers-color-scheme: dark) and (max-width: 767.98px) { .lb-layout .lb-sidebar { background-color: #1b1b1b; }
   .lb-layout .collapse.lb-links.show { background-color: #1b1b1b; }
@@ -324,8 +326,8 @@ border:1px solid #ccc;*/ margin: 0 8px; color: white; opacity: 0.75; }
   .btn-lb-download:hover, .btn-lb-download:active { color: #ccced3 !important; background-color: #3a2828; border-color: #c9d2ee; }
   code { color: #88b8ff; }
   .lb-links .btn:hover, .lb-links .btn:focus { color: rgba(0, 0, 0, 0.85); background-color: rgba(105, 127, 169, 0.25); }
-  .lb-content .btn-primary { color: #cbd0d7; background-color: #0c2b55; border-color: #0c2b55; }
-  .lb-content .btn-primary:hover { color: #cbd0d7; background-color: #1f4577; border-color: #1f4577; }
+  .lb-content .btn-primary { color: #cbd0d7; background-color: #0c2b55; border-color: #4b6589c2; }
+  .lb-content .btn-primary:hover { color: #cbd0d7; background-color: #1f4577; }
   .lb-content .btn-outline-secondary { color: #a3b3c9; border-color: #a3b3c9; }
   .lb-content .btn-outline-secondary:hover { color: #cbd0d7; border-color: #4d5d72; background-color: #4d5d72; }
   .lb-main .lb-toc #TableOfContents ul li a:hover { color: #f74b6a; }
@@ -334,6 +336,7 @@ border:1px solid #ccc;*/ margin: 0 8px; color: white; opacity: 0.75; }
   .lb-navbar .navbar-nav .nav-link:hover, .lb-navbar .navbar-nav .nav-link:focus { color: #fff !important; }
   .lb-content a { /*text-decoration: underline;*/ color: #f74b6a; }
   .lb-content a:hover { color: #f74b6a; text-decoration: underline; }
+  .lb-content a:visited { color: #f74b6a; }
   .lb-content .img-toggle { text-decoration: none; }
   .ext-container h3 { color: #cbd0d7 !important; }
   .lb-links .active { font-weight: bolder; }
