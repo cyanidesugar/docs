@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // refreshScrollSpy();
   openLinksNewTab();
   editPasteBin();
-  darkModeSwitcher();
+  initDarkModeSwitcher();
 });
 
 /*
@@ -160,7 +160,7 @@ function editPasteBin() {
 
 /* eslint-disable */
 
-function darkModeSwitcher() {
+function darkModeSwitcher() {/*
   (() => {
     const e = document.getElementById('DarkModeSwitch');
     window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -200,5 +200,25 @@ function darkModeSwitcher() {
   })(),
   window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
     location.reload(), localStorage.removeItem('scheme');
-  });
+  });*/
 }
+
+function initDarkModeSwitcher () {
+const e = document.getElementById('DarkModeSwitch');
+
+e.addEventListener('click', () => {
+  document.getElementById('scheme').remove()
+  if (e.checked) {
+    document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>');
+    document.documentElement.setAttribute('data-theme', 'dark')
+    window.localStorage.setItem('scheme', 'dark');
+   }
+   else {
+     document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>');
+     document.documentElement.setAttribute('data-theme', 'light')
+     window.localStorage.setItem('scheme', 'light');
+   }
+
+})
+
+} 

@@ -11070,7 +11070,7 @@ fieldset:disabled .btn {
 	}
 }
 
-	:root body.dark  {
+	 [data-theme="dark"]  {
 		--bs-blue: #375a7f;
 		--bs-indigo: #673ab7;
 		--bs-purple: #654ea3;
@@ -11119,7 +11119,11 @@ fieldset:disabled .btn {
 		--bs-gradient: linear-gradient(180deg, rgba(17, 17, 17, 0.15), rgba(17, 17, 17, 0))
 	}
 
-	.dark {
+	[data-theme="dark"] {
+	body {
+		background: #1b1b1b;
+		color: #d4d4d4;
+	}	
 	hr {
 		color: #fafafa;
 		opacity: .1
