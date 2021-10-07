@@ -164,6 +164,10 @@ background-color:#142e50;
 	color: #fff
 }
 
+#TableOfContents .nav-link:hover, #TableOfContents .nav-link:focus {
+color: inherit;
+}
+
 .navbar-expand-md {
 flex-wrap:nowrap;
 justify-content:flex-start;
