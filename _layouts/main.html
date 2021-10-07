@@ -3,11 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="color-scheme" content="light dark">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.1/dist/css/bootstrap-dark.min.css" rel="stylesheet">  
- <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.css" integrity="sha512-5RNDl2gYvm6wpoVAU4J2+cMGZQeE2o4/AksK/bi355p/C31aRibC93EYxXczXq3ja2PJj60uifzcocu2Ca2FBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+ <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.1/dist/css/bootstrap-dark.min.css" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.css" integrity="sha512-5RNDl2gYvm6wpoVAU4J2+cMGZQeE2o4/AksK/bi355p/C31aRibC93EYxXczXq3ja2PJj60uifzcocu2Ca2FBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="{{ 'assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
 <link href="{{ 'assets/css/main.css' | relative_url }}" rel="stylesheet">
-<link href="{{ 'assets/css/dark-mode.css' | relative_url }}" rel="stylesheet"> 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/favicon/apple-touch-icon.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/favicon/favicon-32x32.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/favicon/favicon-16x16.png' | relative_url }}">
@@ -60,7 +60,11 @@
       <ul class="navbar-nav flex-row flex-wrap ms-lg-auto">
       </ul>
       <!-- social media end --> 
-    <!-- download button --> 
+    <!-- dark mode switch and download button --> 
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" id="DarkModeSwitch" checked>
+      <label class="form-check-label" for="DarkModeSwitch"></label>
+    </div>
     <a class="btn btn-lb-download d-lg-inline-block my-2 my-lg-0 ms-lg-3" href="https://discord.gg/dXez8Zh">Join Discord</a>
     <a class="btn btn-lb-download d-lg-inline-block my-2 my-lg-0 ms-lg-3" href="https://lioranboard.ca/docs/download">Download</a>
     </div>
@@ -69,7 +73,7 @@
 </header>
 
 <!-- search bar -->
-<nav class="lb-subnavbar pt-1 mt-1" aria-label="Secondary navigation">
+<nav class="lb-subnavbar py-2" aria-label="Secondary navigation">
   <div class="container-xxl d-flex align-items-center justify-content-center mb-1">
     <button class="btn lb-sidebar-toggle d-md-none px-1 me-auto  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lb-docs-nav" aria-controls="lb-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">

@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // refreshScrollSpy();
   openLinksNewTab();
   editPasteBin();
+  darkModeSwitcher();
 });
 
 /*
@@ -151,9 +152,53 @@ function openLinksNewTab() {
 // select all for embed pastebins and force text break
 function editPasteBin() {
   const els = document.getElementsByClassName('de1');
-  for (let i = 0; i<els.length;i++) {
-    els[i].classList.add("user-select-all");
-    els[i].classList.add("text-break");    
+  for (let i = 0; i < els.length; i++) {
+    els[i].classList.add('user-select-all');
+    els[i].classList.add('text-break');
   }
-  
+}
+
+/* eslint-disable */
+
+function darkModeSwitcher() {
+  (() => {
+    const e = document.getElementById('DarkModeSwitch');
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? (document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>'),
+      document.body.classList.add('dark'),
+      e && (e.checked = !0),
+      window.localStorage.getItem('scheme')
+              && (document.getElementById('scheme').remove(), document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>'), document.body.classList.remove('dark'), e && (e.checked = !1)),
+      e
+              && e.addEventListener('click', () => {
+                e.checked
+                  ? (document.getElementById('scheme').remove(),
+                  document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>'),
+                  document.body.classList.add('dark'),
+                  localStorage.removeItem('scheme'))
+                  : (document.getElementById('scheme').remove(),
+                  document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>'),
+                  document.body.classList.remove('dark'),
+                  localStorage.setItem('scheme', 1));
+              }))
+      : (document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>'),
+      e && (e.checked = !1),
+      window.localStorage.getItem('scheme')
+              && (document.getElementById('scheme').remove(), document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>'), document.body.classList.add('dark'), e && (e.checked = !0)),
+      e
+              && e.addEventListener('click', () => {
+                e.checked
+                  ? (document.getElementById('scheme').remove(),
+                  document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>'),
+                  document.body.classList.add('dark'),
+                  localStorage.setItem('scheme', 1))
+                  : (document.getElementById('scheme').remove(),
+                  document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>'),
+                  document.body.classList.remove('dark'),
+                  localStorage.removeItem('scheme'));
+              }));
+  })(),
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
+    location.reload(), localStorage.removeItem('scheme');
+  });
 }

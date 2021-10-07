@@ -1,0 +1,73 @@
+title: LioranBoard Stream Deck
+tagline: LioranBoard | Free and powerful Stream Deck for your Twitch and YouTube | Works with OBS
+description: Transform your ordinary stream into interactive experience for your viewers with LioranBoard Stream Deck
+name: LioranBoard • Free Stream Deck 
+url: "https://lioranboard.ca"
+author:
+  twitter: christina_kral
+repository: https://github.com/LioranBoard/1
+logo: /assets/favicon/favicon-32x32.png
+social:
+  name: LioranBoard
+  links:
+    - https://twitter.com/lioranboard
+    - https://obsproject.com/forum/resources/lioranboard-stream-deck-animator.862/
+timezone: US/Pacific
+google_analytics_id: G-BW26WQFHV8
+google_site_verification: XXX
+twitter:
+    username: lioranboard
+    card: summary
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-toc
+  - jekyll-mentions
+  - jekyll-relative-links
+sass:
+    style: compressed
+relative_links:
+  enabled:     true
+  collections: true
+kramdown:
+  auto_ids: false
+toc:
+  min_level: 1
+  max_level: 6
+  ordered_list: false
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: "nav-link d-flex flex-row"
+  item_prefix: toc-
+defaults:
+- scope:
+    path: docs
+    type: pages
+  values:
+    layout: post
+- scope: 
+    path: docs/commands
+  values:
+    menu: Commands
+- scope: 
+    path: docs/faq
+  values:
+    menu: FAQ    
+- scope: 
+    path: docs/troubleshooting
+  values:
+    menu: Troubleshooting   
+sass:
+    sass_dir: _sass
+algolia:
+    application_id: T1W4YLUXZS
+    index_name:  main # You can replace that with whatever name you want
+collections_dir: doc_posts
+collections:
+  getting-started:
+      output: true
+
+ 

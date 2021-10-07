@@ -39,6 +39,7 @@ code {
   
   :hover > .anchorjs-link, .anchorjs-link:focus {
     opacity: 1;
+    text-decoration: none;
   }
   
   .anchorjs-link:focus, .anchorjs-link:hover {
@@ -50,6 +51,14 @@ code {
 a {
     text-decoration:none
   }
+
+a:hover {
+ text-decoration:underline
+}
+
+.navbar a:hover {
+  text-decoration:none
+}
 
 /* horizontal line to divide posts*/
 .lb-content hr {
@@ -141,7 +150,7 @@ background-color:#142e50;
 .lb-navbar .navbar-nav .nav-link {
   padding-right: .25rem;
   padding-left: .25rem;
-  color: rgba(255,255,255,0.85);
+  color: #cbd0d7 !important
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -150,6 +159,7 @@ background-color:#142e50;
 
 .lb-navbar .navbar-nav .nav-link:hover,
 .lb-navbar .navbar-nav .nav-link:focus {
+  text-decoration: none;
 	color: #fff
 }
 
@@ -172,7 +182,7 @@ justify-content:flex-start;
 .btn-lb-download {
   font-weight: 600;
   color: #dee7ff;
-  border-color: #e6ecff
+  border-color: #a6b7ce
 }
 
 .btn-lb-download:hover, .btn-lb-download:active {
@@ -967,15 +977,11 @@ a {
 
 
 /*dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-   background: #1b1b1b;
-   color: #d4d4d4;
-  }
 
-  .lb-navbar.navbar {
-    background-color: #142e50;
-    }
+.dark {
+
+  background: #1b1b1b;
+  color: #d4d4d4;
   
     .container-xxl.lb-layout {
     background-color: #1b1b1b;
@@ -1022,10 +1028,14 @@ a {
   background-color: #034030 !important;
   }
 
-
-  .lb-content .alert a, .lb-content .alert a:hover  {
-  color: inherit;
+  .lb-layout .lb-content .alert,.lb-layout .lb-content .alert a, .lb-layout .lb-content .alert a:visited {
+    color: #e4eaf1db;
   }
+
+  .lb-layout  .lb-content .alert a {
+  text-decoration: underline
+  }
+  
 
   .anchor-header .anchorjs-link, .anchorheader .anchorjs-link a:hover  {
   text-decoration: none;
@@ -1051,9 +1061,6 @@ a {
       border-bottom: none;
   }
   }
-
-  
-
 
 
   .nav-link .p-2 .active {
@@ -1081,8 +1088,6 @@ a {
   border-color: #4b6589c2;
 }
 
-
-
 .lb-content .btn-primary:hover {
   color: #cbd0d7;
   background-color: rgb(31, 69, 119);
@@ -1109,9 +1114,7 @@ a {
       }
     
 
-
-
- .navbar a, .footer-basic a, .feature-icon a, .lb-sidebar, .lb-main-ext a, .lb-sidebar a, .lb-sidebar .btn, .btn-edit-light, .fa-asterisk {
+ .navbar a, .footer-basic a, .feature-icon a, .lb-sidebar, .lb-main-ext a, .lb-sidebar a, .lb-sidebar .btn, .btn-edit-light, .fa-asterisk, .nav-link {
    color: #cbd0d7 !important;
  }
 
@@ -1121,40 +1124,24 @@ a {
 }
 
 
- .lb-content a {
- /*text-decoration: underline;*/
+ .lb-content a, .lb-content a:hover, .lb-content a:visited  {
  color:#f74b6a;
  }
 
- .lb-content a:hover {
-  color: #f74b6a;
-  text-decoration: underline;
-}
-
-.lb-content a:visited {
-  color: #f74b6a;
-}
 
 .lb-content .img-toggle {
 text-decoration: none;
 }
  
- .ext-container h3 {
-   color: #cbd0d7 !important
- 
- }
-
  .lb-links .active {
   font-weight: bolder;
 }
 
+/*
  .lb-links .btn::before {
-  width: 1.25em;
-  line-height: 0;
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='#d4d4d4' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-  transition: transform 0.35s ease;
-  transform-origin: 0.5em 50%;
 }
+*/
 
 
 .lb-links .btn::before, #Commands-collapse .sidebar-sidemenu .btn::before {
@@ -1163,8 +1150,7 @@ text-decoration: none;
 }
 
 .lb-toc .nav-link.active::before {
-  border-left-color: #cbd0d7 !important;
-  content: "";
+  border-left-color: #c1c3c7 !important;
 }
 
 
@@ -1185,18 +1171,18 @@ text-decoration: none;
   color: rgb(109, 18, 18) !important;
 }*/
 
-.fa-question-circle {
-  color: #ffffffe0 !important;
+.lb-content .fa-question-circle {
+  color: #ffffffe0;
 }
 
-.alert {
-  color: #e4eaf1db !important;
+
+.navbar-collapse .btn.btn-lb-download {
+  border: 1px solid #a6b7ce;
 }
 
 .btn-lb-download:hover, .btn-lb-download:active {
   color: #091638 !important;
   background-color: #a6b7ce;
-  border-color: #a6b7ce;
 }
 
 /* pastebin dark mode  */
