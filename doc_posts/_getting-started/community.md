@@ -24,6 +24,7 @@ Written purely in `markdown`, *yay*!
 {% include alert.html text="Some important alert text" type="warning" %}
 {% endcapture %}
 
+{:class='mt-2'}
 ## Where to get support
 If you're looking for support for LioranBoard, you have these options: 
 1. Read this documentation. You can use the search function to find any relevant topics for your question. 
