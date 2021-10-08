@@ -1,54 +1,12 @@
-/*
-$('.sidebar-toggle').click(() => {
-  $('#sidebar').removeClass('hidden-xs');
-  $('#sidebarwrap').toggleClass('d-none');
-});
-*/
-
-/*
-$('img-toggle').click(() => {
-  $('img-toggle span').toggleClass('fa-minus-square fa-plus-square');
-}); */
-
-/// enlarge image on click using ligthtbox
-
-/*
-$(document).on('click', '[data-toggle="lightbox"]', function (event) {
-  event.preventDefault();
-  $(this).ekkoLightbox({
-    alwaysShowClose: true,
-  });
-}); */
-
-/*
-$(window).scroll(function () {
-  sessionStorage.scrollTop = $(this).scrollTop();
-}); */
-
 document.addEventListener('DOMContentLoaded', () => {
   maintainScroll();
   initDrag();
   initTooltip();
   initPopOver();
-  // imgToggleIcon();
-  // sideBarToggle();
-  // refreshScrollSpy();
   openLinksNewTab();
   editPasteBin();
   initDarkModeSwitcher();
 });
-
-/*
-$(document).ready(() => {
-  if (sessionStorage.scrollTop != 'undefined') {
-    $(window).scrollTop(sessionStorage.scrollTop);
-  }
-  // init off canvas drag
-  initDrag();
-  // init tooltips
-
-});
-*/
 
 /// maintain scroll position
 function maintainScroll() {
@@ -115,14 +73,6 @@ function initPopOver() {
   const popoverList = popoverTriggerList.map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
 }
 
-// toggle plus minus icon on image
-/*
-function imgToggleIcon() {
-  document.querySelector('.img-toggle').addEventListener('click', () => {
-    document.querySelector('.img-toggle span').classList.toggle('fa-minus-square fa-plus-square');
-  });
-} */
-
 // toggle sidebar on mobile devices
 function sideBarToggle() {
   document.querySelector('.sidebar-toggle').addEventListener('click', () => {
@@ -156,51 +106,6 @@ function editPasteBin() {
     els[i].classList.add('user-select-all');
     els[i].classList.add('text-break');
   }
-}
-
-/* eslint-disable */
-
-function darkModeSwitcher() {/*
-  (() => {
-    const e = document.getElementById('DarkModeSwitch');
-    window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? (document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>'),
-      document.body.classList.add('dark'),
-      e && (e.checked = !0),
-      window.localStorage.getItem('scheme')
-              && (document.getElementById('scheme').remove(), document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>'), document.body.classList.remove('dark'), e && (e.checked = !1)),
-      e
-              && e.addEventListener('click', () => {
-                e.checked
-                  ? (document.getElementById('scheme').remove(),
-                  document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>'),
-                  document.body.classList.add('dark'),
-                  localStorage.removeItem('scheme'))
-                  : (document.getElementById('scheme').remove(),
-                  document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>'),
-                  document.body.classList.remove('dark'),
-                  localStorage.setItem('scheme', 1));
-              }))
-      : (document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>'),
-      e && (e.checked = !1),
-      window.localStorage.getItem('scheme')
-              && (document.getElementById('scheme').remove(), document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>'), document.body.classList.add('dark'), e && (e.checked = !0)),
-      e
-              && e.addEventListener('click', () => {
-                e.checked
-                  ? (document.getElementById('scheme').remove(),
-                  document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:dark}</style>'),
-                  document.body.classList.add('dark'),
-                  localStorage.setItem('scheme', 1))
-                  : (document.getElementById('scheme').remove(),
-                  document.head.insertAdjacentHTML('beforeend', '<style id="scheme">:root{color-scheme:light}</style>'),
-                  document.body.classList.remove('dark'),
-                  localStorage.removeItem('scheme'));
-              }));
-  })(),
-  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
-    location.reload(), localStorage.removeItem('scheme');
-  });*/
 }
 
 function initDarkModeSwitcher () {
