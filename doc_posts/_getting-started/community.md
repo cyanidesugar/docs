@@ -50,7 +50,7 @@ Want to **add your own button example** to any of the commands in the [Commands]
 6. Scroll down to **Commit changes**, create a meaningful title and press `Commit changes` button. 
 7. Wait for an approval for it to show live on our page!
 
-{:class='mt-1'}
+{:class='mt-2'}
 ### Submit your own extension 
 Have you made your own extension and would like to share it with the rest of the community? You can now [submit it](https://lioranboard.ca/extensions/submit) directly from this website! 
 
