@@ -30,7 +30,7 @@ If you're looking for support for LioranBoard, you have these options:
 2. Become a member of our [subreddit](http://reddit.com/r/lioranboard). It's still pretty new, help us get it going! 
 3. Join the official [LioranBoard Discord server](https://discord.gg/dXez8Zh). The latest news are always posted in the #announcements channel. 
 
-{:class='mt-2'}
+{:class='mt-2 anchor-header'}
 ## Ways to contribute 
 Interested in contributing to LioranBoard documentation or building an extension? We’d love your help! 
 
@@ -51,7 +51,7 @@ Want to **add your own button example** to any of the commands in the [Commands]
 6. Scroll down to **Commit changes**, create a meaningful title and press `Commit changes` button. 
 7. Wait for an approval for it to show live on our page!
 
-{:class='mt-2'}
+{:class='mt-2 anchor-header'}
 ### Submit your own extension 
 Have you made your own extension and would like to share it with the rest of the community? You can now [submit it](https://lioranboard.ca/extensions/submit) directly from this website! 
 
