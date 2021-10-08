@@ -64,7 +64,7 @@ sass:
     sass_dir: _sass
 algolia:
     application_id: T1W4YLUXZS
-    index_name:  main # You can replace that with whatever name you want
+    index_name:  docs # You can replace that with whatever name you want
 collections_dir: doc_posts
 collections:
   getting-started:
