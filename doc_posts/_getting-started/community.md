@@ -24,13 +24,13 @@ Written purely in `markdown`, *yay*!
 {% include alert.html text="Some important alert text" type="warning" %}
 {% endcapture %}
 
-{:class='mt-2'}
 ## Where to get support
 If you're looking for support for LioranBoard, you have these options: 
 1. Read this documentation. You can use the search function to find any relevant topics for your question. 
 2. Become a member of our [subreddit](http://reddit.com/r/lioranboard). It's still pretty new, help us get it going! 
 3. Join the official [LioranBoard Discord server](https://discord.gg/dXez8Zh). The latest news are always posted in the #announcements channel. 
 
+{:class='mt-2'}
 ## Ways to contribute 
 Interested in contributing to LioranBoard documentation or building an extension? We’d love your help! 
 
