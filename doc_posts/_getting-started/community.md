@@ -42,6 +42,7 @@ Interested in contributing to LioranBoard documentation or building an extension
 5. Once the page reloads, click on <button type="button" class="btn btn-success btn-sm">**Create pull request**</button>  
 6. Wait for an approval for it to show live on our page!
 
+<br>
 {% include video.html w="50" src="edit_page.mp4" alt="Editing a page on Github" %}
 
 ### Add your own button example
