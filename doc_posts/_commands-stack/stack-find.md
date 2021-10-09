@@ -23,6 +23,8 @@ Return -1 if not found.
 | "blue" | ["yellow","Blue","blue cat","blue"] | 3
 {:class='table table-secondary w-auto table-hover data-toggle='table' text-break }
 
+{% include example_public.html src="https://i.imgur.com/iqXZByZ.png" title="Greet chatter at their first message (every session)" pastebin="BTCTGm8e" %}
+
 
 
 
