@@ -25,7 +25,7 @@ LioranBoard is compatible with OBS Studio. Other streaming software, such as Str
 <a href="https://obsproject.com/"><button type="button" class="btn btn-outline-secondary">Download OBS Studio</button></a>
   
 **OBS Websocket**       
-This is how LioranBoard communicates with OBS Studio. We recommend always installing the latest 4.9x version. 
+This is how LioranBoard communicates with OBS Studio. We recommend always installing the latest 4.X version. 
 
 {% include alert.html text="LioranBoard is not compatible with OBSWS 5.0 and up." type="warning" %} 
 
