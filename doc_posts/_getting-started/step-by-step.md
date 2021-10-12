@@ -15,7 +15,7 @@ We will walk you through a step by step tutorial on how to set up LioranBoard, a
 
 #### 1. Install all dependencies
 - Download and install **[OBS Studio](https://obsproject.com/)**. As of now, LioranBoard does not support other streaming software.
-- Download and install **[OBS Websocket](https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/)**. This is how LioranBoard communicates with OBS Studio. 
+- Download and install **[OBS Websocket](https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/)** (4.X) This is how LioranBoard communicates with OBS Studio. 
 
 #### 2. Download LioranBoard
 
