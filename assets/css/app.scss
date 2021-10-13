@@ -20,6 +20,23 @@ body {
     max-width: 65em;
 }
 
+/* youtube signin button */
+.ytButton {
+    width: 191px;
+    height: 46px;
+    border:none;
+    vertical-align:bottom;
+    background:url("/assets/images/integrations/ytbutton_normal.png") no-repeat;
+    }
+    
+    .ytButton:hover, .ytButton:focus {
+    background:url("/assets/images/integrations/ytbutton_focus.png") no-repeat;
+    }
+    
+    .ytButton:active {
+    background:url("/assets/images/integrations/ytbutton_pressed.png") no-repeat;
+    }
+
 h3 {
     color: #faa915;
 }
