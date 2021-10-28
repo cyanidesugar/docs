@@ -5,8 +5,9 @@ num: 3
 Allows you to request data from OBS websocket and save it in a variable.\
 All the possible requests are documented in [OBS websocket protocol reference](https://github.com/Palakis/obs-websocket/blob/4.x-current/docs/generated/protocol.md).\
 The requested value will not be saved immediately, you must give you other commands a delay of 100-500ms to process the request.\
+
 If the requested value is inside another object already, you can access it with a simple dot-notation.\
-For example, if you want to retrieve Brightness value from Color Correction Filter, you will notice that it is inside an object called settings. `{"settings": {"brightness": 0.78}, "status": "ok", "type": "color_filter"}`. In this case, the Fetch Value will be `settings.brightness`.\
+For example, if you want to retrieve Brightness value from Color Correction Filter, you will notice that it is inside an object called settings. `{"settings": {"brightness": 0.78}, "status": "ok", "type": "color_filter"}</code>. In this case, the Fetch Value will be `settings.brightness`.\
 Use [JSON string validator](https://jsonlint.com/) if you want to make sure your formatting is correct.
 
 {% include alert.html text="If the name of the fetched value contains dots, it needs to be wrapped in parentheses like this: <code>(Filter.Transform.Rotation.X)</code>." type="warning" %} 
@@ -23,13 +24,13 @@ Turn to real|	boolean|	Whether you expect a real value (=number) or a string.
 
 |Object Snippet (if present)|What to retrieve|OBS Command|Fetch Value|
 |-------|--------|--------|--------|
-|`"stats":{"cpu-usage":0.75013036185501325,...}`|current CPU usage| {"request-type":"GetStats"} | stats.cpu-usage|
-|N/A|Time elapsed since streaming started |{"request-type":"GetStreamingStatus"}|stream-timecode|
-|N/A|Current width of a source|{"scene-name":"YOURSCENENAME","item":"YOURSOURCENAME","request-type":"GetSceneItemProperties"}|width|
-|`"crop":{"left":0,...}`|Current left crop of a source|{"scene-name":"YOURSCENENAME","item":"YOURSOURCENAME","request-type":"GetSceneItemProperties"}|crop.left|
-|N/A|Current text in a GDI source|{"request-type":"GetTextGDIPlusProperties","source":"YOURSOURCENAME"}|text|
-|`"settings":{"brightness":-0.5,...}` |Color Correction Brightness Value|{"request-type":"GetSourceFilterInfo","sourceName":"YOURSOURCENAME","filterName":"Color Correction"}|settings.brightness|
-|`"sceneItems":["sourceName":"Browser",...},{"sourceName":"Text GDI",...}]`|First source name in a specified scene|{"request-type":"GetSceneItemList","sceneName":"YOURSCENENAME"}|sceneItems[0].sourceName|
+|<code class="user-select-all">"stats":{"cpu-usage":0.75013036185501325,...}</code>|current CPU usage| {"request-type":"GetStats"} | stats.cpu-usage|
+|N/A|Time elapsed since streaming started |<code class="user-select-all">{"request-type":"GetStreamingStatus"}</code>|stream-timecode|
+|N/A|Current width of a source|<code class="user-select-all">{"scene-name":"YOURSCENENAME","item":"YOURSOURCENAME","request-type":"GetSceneItemProperties"}</code>|width|
+|<code class="user-select-all">"crop":{"left":0,...}</code>|Current left crop of a source|<code class="user-select-all">{"scene-name":"YOURSCENENAME","item":"YOURSOURCENAME","request-type":"GetSceneItemProperties"}</code>|crop.left|
+|N/A|Current text in a GDI source|<code class="user-select-all">{"request-type":"GetTextGDIPlusProperties","source":"YOURSOURCENAME"}</code>|text|
+|<code class="user-select-all">"settings":{"brightness":-0.5,...}</code> |Color Correction Brightness Value|<code class="user-select-all">{"request-type":"GetSourceFilterInfo","sourceName":"YOURSOURCENAME","filterName":"Color Correction"}</code>|settings.brightness|
+|<code class="user-select-all">"sceneItems":["sourceName":"Browser",...},{"sourceName":"Text GDI",...}]</code>|First source name in a specified scene|<code class="user-select-all">{"request-type":"GetSceneItemList","sceneName":"YOURSCENENAME"}</code>|sceneItems[0].sourceName|
 {:class='table table-secondary w-auto table-responsive table-hover text-break' }
 
 {% include example_public.html src="https://i.imgur.com/GGZnfza.jpeg" title="Add 1 to Text GDI+ Source" pastebin="V8eRgmWk" desc=description %} 
