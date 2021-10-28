@@ -15,7 +15,7 @@ The latest Transmitter version can be found at our [Github repository](https://g
 Go to releases and download the latest version if you just need to replace your current Transmitter with a clean one.
 
 #### How to run Transmitter
-- As a dock in OBS 
+- As a dock in OBS    
 This is the simplest and most effective way. You can create a dock by clicking on View-Docks-Custom Browser Docks and fill in the path to the file. Click on apply and place the dock wherever it suits you in OBS. **You will need to keep the dock open at all times.**
    {% include image.html w="75" src="transmitter_dock.png" alt="Transmitter Dock in OBS" %}
 - As a browser source in OBS.    
