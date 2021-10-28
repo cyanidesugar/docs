@@ -6,10 +6,10 @@ Sends a custom packet to the OBS websocket in JSON format.\
 All the possible requests are documented in [OBS websocket protocol reference](https://github.com/Palakis/obs-websocket/blob/4.x-current/docs/generated/protocol.md).
 
 1. Use `"message-id": "6666"` to get a pop up message on your screen every time you execute the command (useful for troubleshooting). 
-2.  Use `"message-id": "1"` to hide the pop up message.  
+2. Use `"message-id": "1"` to hide the pop up message.  
+<br/>
 
-
-If the value you're requesting is inside an object, you have to provide the whole object. For example, to set the scale for a scene item in `SetSceneItemProperties` request, you need to do `"scale":{"x":NEW SCALE X, "y":NEW SCALE Y }`, just `scale.x : NEW SCALE X` is not gonna work as it's not a valid JSON format.\
+If the value you're requesting is inside an object, you have to provide the whole object. For example, to set the scale for a scene item in `SetSceneItemProperties` request, you need to do: `"scale":{"x":NEW SCALE X, "y":NEW SCALE Y }`, just `scale.x : NEW SCALE X` is not gonna work as it's not a valid JSON format.\
 Use [JSON string validator](https://jsonlint.com/) if you want to make sure your formatting is correct.
 
 | Box Name | Type | Description | 
