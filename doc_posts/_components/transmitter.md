@@ -41,7 +41,7 @@ Transmitter has a few default tabs. A new tab is created every time you install 
 
 #### Preinstalled extensions
 
-Please see our [FAQ section]({{ "faq-general#extensions" | relative_url }}) to understand how to install and use extensions. 
+Please see our [FAQ section]({{ "faq/general#extensions" | relative_url }}) to understand how to install and use extensions. 
 
 If you do not wish for the preinstalled extensions to be included, you can use the empty Transmitter file in <code>lioranboard/extensions</code> folder instead.
 
