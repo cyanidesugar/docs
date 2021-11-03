@@ -4,7 +4,33 @@ main:
 - name: Components
   collection: components
 - name: Integrations
-  collection: integrations  
+  submenus: 
+    - name: OBS 
+      link: integrations/obs
+      collection: integrations-obs
+    - name: Twitch
+      link: integrations/twitch
+      collection: integrations-twitch
+    - name: YouTube
+      subitems:
+          - name: General
+            link: integrations/youtube/general
+            collection: youtube-general
+          - name: Download
+            link: integrations/youtube/download
+            collection: youtube-download
+          - name: Setup
+            link: integrations/youtube/setup
+            collection: youtube-setup
+          - name: Transmitter
+            link: integrations/youtube/transmitter
+            collection: youtube-transmitter
+          - name: Commands
+            link: integrations/youtube/commands
+            collection: youtube-commands
+          - name: Triggers
+            link: integrations/youtube/triggers
+            collection: youtube-triggers
 - name: Commands
   submenus: 
     - name: Variables

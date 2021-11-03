@@ -97,7 +97,7 @@ function Update(success, response) {
     hideContent('getRefreshToken');
     document.getElementById('token').innerHTML = `<code>${response.refresh_token}</code> <button class='btn btn-success mx-2 my-2' id='copyCred'>Copy to Clipboard</button><br>`;
     document.getElementById('copyCred').addEventListener('click', () => {
-      CopyToClipboard(token, 'copyCred');
+      CopyToClipboard(response.refresh_token, 'copyCred');
     });
   } else {
     hideContent('getRefreshToken');

@@ -53,6 +53,10 @@ defaults:
   values:
     menu: Commands
 - scope: 
+    path: docs/integrations
+  values:
+    menu: Integrations
+- scope: 
     path: docs/faq
   values:
     menu: FAQ    
@@ -74,6 +78,22 @@ collections:
   components:
       output: true
   integrations:
+      output: true
+  integrations-obs:
+      output: true
+  integrations-twitch:
+      output: true
+  youtube-general:
+      output: true
+  youtube-download:
+      output: true
+  youtube-setup:
+      output: true
+  youtube-transmitter:
+      output: true
+  youtube-commands:
+      output: true
+  youtube-triggers:
       output: true
   triggers:
       output: true
