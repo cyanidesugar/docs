@@ -31,7 +31,7 @@ Press **Authorize** and wait to be redirected again to see `All good, you can go
 
 
 #### Link multiple Twitch accounts
-You can link multiple Twitch accounts to your LioranBoard. This is useful if you want to use a different Twitch account to send Twitch chat messages from. It makes it easier for your viewers to tell the difference between you personally interacting with them and any automated messages you have set up in LioranBoard.\
+You can link multiple Twitch accounts to your LioranBoard. This is useful if you want to use a different Twitch account to send Twitch chat messages from. It makes it easier for your viewers to tell the difference between you personally interacting with them and any automated messages you have set up in LioranBoard.
 
 {% include alert.html text="All Twitch chat messages will be sent from your Twitch account that is marked as <strong>Main</strong> in the <code>Link to Twitch</code> menu. Unlink your primary Twitch account and link your bot/alternate Twitch account instead as <strong>Main</strong> account if you wish to send chat messages from it." type="danger" %} 
 
