@@ -12,8 +12,10 @@ For example, if you set the start value to 10, final value to 0 and duration to 
 | Box Name | Type | Description | 
 |-------|--------|--------
 | Variable | String | Name of the variable. |
-| Operator | Dropdown | Operator you wish to use on the value.|
-| Value {% include asterisk.html%}| Any | Whatever you want to set the variable value to. Can contain complex math.
+|Start Value {% include asterisk.html%}|	Real (number)|	Starting point (where the counting starts from)|
+|Final Value {% include asterisk.html%}|	Real (number)|	Finishing point (where the counting stops at)|
+|Allow Float|	boolean|	Float=values with decimal points, int=values without decimal points (rounded down)|
+|Dur.(MS)|	Int|	Duration of the transition|
 {:class='table table-primary' }
 
 {% include media_modal.html img="countdown.png" w="100" btn="1" alt="Simple countdown for GDI+ Text Source in OBS" pastebin="RkjiUFWH" %} 
