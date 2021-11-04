@@ -10,11 +10,12 @@ All stats will be saved in the stack name you specified (if successfully retriev
 
 **Stats retrieved:**
 - title: `[0]stackName`
-- duration (hours): `[1]stackName`
-- view count: `[2]stackName`
-- like count: `[3]stackName`
-- dislike count: `[4]stackName`
-- concurrent viewers: `[5]stackName`
+- URL: `[1]stackName`
+- duration (hours): `[2]stackName`
+- view count: `[3]stackName`
+- like count: `[4]stackName`
+- dislike count: `[5]stackName`
+- concurrent viewers: `[6]stackName`
 
 | Box Name | Type | Description | 
 |-------|--------|--------
