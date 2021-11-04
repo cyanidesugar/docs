@@ -1,6 +1,6 @@
 ---
 title: Send Chat Message
-num: 2
+num: 1
 ---
 
 `Command: Send to Extension - YouTube Live Chat Message`\
