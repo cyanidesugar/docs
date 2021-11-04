@@ -17,11 +17,10 @@ permalink: integrations/youtube/auth
 </div>
 <div id="info"><p>
     <ol>
-    <li>In your Receiver, go to the <strong>YouTube Live premade deck</strong> which was created when you installed the extension. Make sure your Transmitter is running and connected. </li>
-    <li>Right click on the red <strong>INIT button</strong> - edit commands. </li>
-    <li>Scroll down to <strong>Send to Extension</strong> command and fill out the following fields: 
+    <li>In your Receiver, go to the <strong>YouTube Live premade deck</strong> which was created when you installed the extension. </li>
+    <li>Right click on the red <strong>PARAMS INIT button</strong> - edit commands. </li>
+    <li>Scroll down to <strong>Send to Extension</strong> command and fill out the following field: 
         <ul>
-        <li><strong>itch_key</strong> = your Itch key you filled out in step 2</li>
         <li><strong>refresh_token</strong> = your refresh token you just obtained</li>
         </ul>
     <li>Press <strong>Done and again Done</strong> until you're in the main LioranBoard Receiver menu.</li>
@@ -60,6 +59,7 @@ async function Auth() {
 function Update(success, response) {
   displayContent('setRefreshToken');
   if (success) {
+    hideContent('authLink')
     document.getElementById('token').innerHTML = `<code>${response.refresh_token}</code> <button class='btn btn-success mx-2 my-2' id='copyCred'>Copy to Clipboard</button><br>`;
     document.getElementById('copyCred').addEventListener('click', () => {
       CopyToClipboard(response.refresh_token, 'copyCred');
@@ -68,7 +68,7 @@ function Update(success, response) {
     hideContent('tokenDiv');
     hideContent('info');
     const { error } = response;
-    document.getElementById('tokenError').innerHTML = `<p>Error retrieving refresh token: <span style="color:red">${response}</span>. <br>Please try to authorize the app again.<p>`;
+    document.getElementById('tokenError').innerHTML = `<p>Error retrieving refresh token: <span style="color:red">${error}</span>. <br>Please try to authorize the app again.<p>`;
     displayContent('authLink');
   }
 }
