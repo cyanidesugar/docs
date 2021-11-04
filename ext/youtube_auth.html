@@ -66,8 +66,7 @@ function Update(success, response) {
   } else {
     hideContent('tokenDiv');
     hideContent('info');
-    const { error } = response;
-    document.getElementById('tokenError').innerHTML = `<p>Error retrieving refresh token: <span style="color:red">${error}</span>. <br>Please try to authorize the app again.<p>`;
+    document.getElementById('tokenError').innerHTML = `<p>Error retrieving refresh token: <span style="color:red">${response}</span>. <br>Please try to authorize the app again.<p>`;
     displayContent('authLink');
   }
 }
