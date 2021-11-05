@@ -25,5 +25,6 @@ If you enable event replays, all recent (max 15) events will show up in the drop
 Transmitter will remember the state between reloads.
 
 #### Error logging
-If you get any errors, they will be all saved in a log and available to download as json file. 
+If you get any errors, they will be all saved in a log and available to download as json file.\
+*This feature now only works if Transmitter is running outside of OBS in your browser.*
 {% include image.html w="75" src="yt-tsl-errors.png" %}

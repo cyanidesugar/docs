@@ -1,6 +1,6 @@
 ---
 title: Terms of Service 
-num: 2
+num: 3
 ---
 
 By using the LioranBoard Youtube Live (“Service) integration created by Christina K. ( “We”, “Us”, “Our" ), you are agreeing to be bound by the following terms and conditions ("Terms of Service").<br/>

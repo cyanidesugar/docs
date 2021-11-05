@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-num: 3
+num: 4
 ---
 
 LioranBoard and its developer take your privacy very seriously. Any information you provide to us during the [Authorization process](https://lioranboard.ca/docs/integrations/youtube/auth) will be only used to generate your YouTube Live credentials via our secure AWS API acting as a middleman to access the integration.\

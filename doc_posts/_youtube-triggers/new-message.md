@@ -25,7 +25,6 @@ This trigger is a bit different. It is a modified version of the original Twitch
   | Math Trigger Pull Name | Description | 
   |-------|--------|
   |Display Name|Viewer's chat display name.|
-  |User Name|Viewer's display name converted to all lower case characters. YouTube does not actually provide usernames.|
   |User ID|Viewer's channel ID.|
   |Channel|Viewer's channel URL.|
   |Badge List|Viewer's badges. ADJUSTED to fit YouTube instead of Twitch, so it might look weird if you never used Twitch.<br/> `broadcaster/1` = viewer is a broadcaster, `moderator/1` = viewer is a mod, `subscriber/1` = viewer is a member, `vip` = viewer is verified. |
