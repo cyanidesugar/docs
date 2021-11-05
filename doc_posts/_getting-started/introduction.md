@@ -8,7 +8,7 @@ notoc: true
 type: fullpage
 ---
 
-<p class="lb-lead">LioranBoard is a fully customizable Stream Deck that lets your Twitch audience control and interact with your stream. </p>
+<p class="lb-lead">LioranBoard is a fully customizable Stream Deck that lets your Twitch and YouTube Live (in beta now) audience control and interact with your stream. </p>
 
 It is fully compatible with [OBS Websocket](https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/) which can remotly control your [OBS Studio](https://obsproject.com/).
 
@@ -19,6 +19,10 @@ LioranBoard itself works like a simple programming language. It has variables, o
 #### Connection to Twitch
 
 LioranBoard can listen to Twitch alerts and chat messages, send chat messages and fully control your Twitch stream via Twitch API. 
+
+#### Connection to YouTube Live
+
+LioranBoard can newly listen to YouTube Live events and control your live stream! Find out more in [Integrations-YouTube](https://lioranboard.ca/docs/integrations/youtube/general). 
 
 #### Connection to OBS Studio
 
