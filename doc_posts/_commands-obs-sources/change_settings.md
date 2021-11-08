@@ -26,7 +26,7 @@ Use [JSON string validator](https://jsonlint.com/) if you want to make sure your
 |{% include selectAll.html text='{"font": {"face": "Arial","flags": 8,"size": 48,"style": "Regular"}}' %}|Change font settings of your GDI+ text source. Needs to include all values.|
 {:class='table table-secondary w-auto table-responsive table-hover' }
 
-
+{% include example_public.html src="https://imgur.com/a/UvkGNjA" size="100" title="Play Random Video Example" desc=description %}
 
 
 
