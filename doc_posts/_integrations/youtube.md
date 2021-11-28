@@ -9,7 +9,7 @@ permalink: /integrations/youtube
 
 
 
-{% include alert.html text="YouTube Live is a <strong>completely new free integration</strong> that we have been working on hard to bring to you! <br> Please note it's still in <strong>alpha phase</strong> and there might be bugs. <br> Feel free to report any issues in <i>#bug-report</i> channel in our official <a href='https://discord.gg/dXez8Zh'><strong>LioranBoard Discord server.</strong></a>" type="info" %} 
+{% include alert.html text="YouTube Live is a <strong>completely new free integration</strong> that we have been working on hard to bring to you! <br> Please note it's still in <strong>beta phase</strong> and there might be bugs. <br> Feel free to report any issues in <i>#bug-report</i> channel in our official <a href='https://discord.gg/dXez8Zh'><strong>LioranBoard Discord server.</strong></a>" type="info" %} 
 
 #### Introduction
 YouTube Live is LioranBoard integration made by [Christina K](https://github.com/christinna9031?tab=repositories).\
@@ -17,7 +17,7 @@ Unlike Twitch, YouTube API is very limited and cannot be freely used without goi
 
 Please consider [donating](https://lioranboard.ca/donate) or supporting me on [Patreon](https://www.patreon.com/Christinna?fan_landing=true), so I can keep further developing and maintaining the integration. Thank you!  
 
-#### Download and install <span class="badge bg-warning text-dark">Only available to select beta testers now</span>
+#### Download and install
 
 Proceed to the link below to download the integration.
 
