@@ -3,8 +3,5 @@ title: "Latest version"
 num: 1
 ---
 
-<span class="badge bg-warning text-dark">Only available to patrons and select beta testers now</span>  
-
-Become a [Patron](https://www.patreon.com/Christinna) to get early beta access! 
-
-When you download the integration (and create an Itch.io account), you will get an email notification whenever there's a new major update! 
+You can download the extension at [Itch.io](https://christinak.itch.io/lioranboard-youtube) for free.  
+Please consider becoming my [Patron](https://www.patreon.com/Christinna?fan_landing=true) or donating to support me in developing this extension further! 
