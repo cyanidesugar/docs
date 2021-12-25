@@ -12,7 +12,7 @@ Use [JSON string validator](https://jsonlint.com/) if you want to make sure your
 |-------|--------|--------
 |sourceName	|String	| Source name containing the filter
 |filterName	|String	| Filter name to change the visibility
-|filterEnabled|boolean| Enable or disable filter's visibility. On/off or toggle to reverse current state.
+|Settings|JSON|JSON string containing the new filter settings
 {:class='table table-primary'}
 
 
