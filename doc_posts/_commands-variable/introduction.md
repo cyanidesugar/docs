@@ -19,8 +19,7 @@ Value of a variable can be:
 All variables inside Receiver are global and get deleted every time you close or reset Receiver.\
 Variables are not unique to a button that created them and any button/deck can access them.
 
-{% include alert.html text="Press Tab in the main screen of the Receiver to view all the existing variables." type="info" %} 
-
+{% include alert.html text="Press Tab in the main screen of the Receiver to view all your existing buttons. Click on the eye icon to expand the contents of the button and view the variables related to the button." type="info" %}
 
 
 
